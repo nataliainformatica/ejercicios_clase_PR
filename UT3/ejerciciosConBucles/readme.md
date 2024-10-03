@@ -133,4 +133,21 @@ Imprimir un patrón de asteriscos en forma de un triángulo rectángulo
 
 ![image](https://github.com/profeMelola/Programacion-03-2023-24/assets/91023374/fb997025-eb9b-4600-8f1e-d1753867c723)
 
+## Ejercicio 10: Continuación a Calcular Patas (añadiendo bucles) 
+
+Un biólogo está realizando un estudio de distintas especies de invertebrados y necesita una aplicación que le ayude a contabilizar el número de patas que tienen en total todos los animales capturados durante una jornada de trabajo.
+
+Para ello, te ha solicitado que escribas una aplicación a la que hay que proporcionar.
+
+El número de hormigas capturadas (6 patas)
+
+El número de arañas capturadas (8 patas)
+
+El número de cochinillas capturadas (14 patas)
+
+La aplicación debe mostrar el número tota de patas.
+
+Si el número de patas total es mayor o igual a 32, felicitaremos al biólogo y el programa termina. 
+Si el número de patas total es inferior a 32, pediremos al biólogo que siga trabajando, y volveremos a preguntarle por los animales capturados, teniendo en cuenta los capturados anteriormente. 
+Hasta que no llegue a 32, seguiremos pidiéndole que continúe cazando. 
 

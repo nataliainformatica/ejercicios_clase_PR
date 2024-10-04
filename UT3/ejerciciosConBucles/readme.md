@@ -150,3 +150,31 @@ Si el número de patas total es mayor o igual a 32, felicitaremos al biólogo y 
 Si el número de patas total es inferior a 32, pediremos al biólogo que siga trabajando, y volveremos a preguntarle por los animales capturados, teniendo en cuenta los capturados anteriormente. 
 Hasta que no llegue a 32, seguiremos pidiéndole que continúe cazando. 
 
+## Ejercicio 11
+Haz un menú de usuario:
+
+*** MENÚ DE USUARIO
+*** ELIGE UNA OPCIÓN
+1. Introduce tu nombre
+2. Introduce tu dirección
+3. Introduce DNI
+4. Salir comprobando campos
+5. Salir sin comprobar
+
+Para las opciones del 1 al 3, aparecerá el mensaje correspondiente para que el usuario introduzca, nombre, dirección o dni. 
+Si el usuario pulsa la opción 4.  el programa comprobará que el usuario ha introducido todos los datos. Si no los ha introducido, le pedirá que continúe. 
+"te falta algún dato por introducir, continúa por favor"
+
+Si el usuario pulsa la opción 5, el programa saldrá sin comprobar que se han introducido todos los datos. 
+
+Si al salir del menú, se disponen de todos los datos del usuario, se mostrará un mensaje: 
+
+DATOS CONFIRMADOS DEL USUARIO:  "NOMBRE" ,  "DIRECCION", "DNI"
+
+Si no se disponen de todos los datos,  no mostrará el mensaje anterior. 
+
+
+
+
+
+

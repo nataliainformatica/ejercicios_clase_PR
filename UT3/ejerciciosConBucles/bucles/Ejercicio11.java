@@ -60,19 +60,20 @@ public class Ejercicio11 {
                     break;
                 case "4":
                     System.out.println("COMPROBANDO CAMPOS");
-                    if (nombre.isEmpty() && dni.isEmpty() && direccion.isEmpty()) {
+                    System.out.println("TRAZA " + (nombre.equals("") || dni.equals("") || direccion.equals("")));
+                    // if (nombre.isEmpty() && dni.isEmpty() && direccion.isEmpty()) {
+                    if (nombre.equals("") || dni.equals("") || direccion.equals("")) {
                         System.out.println("DATOS INCOMPLETOS");
                         System.out.println("DATOS CONFIRMADOS DEL USUARIO: Nombre " + nombre + ", Dirección:  "
                                 + direccion + ", DNI:  " + dni);
                         System.out.println("TE FALTAN  DATOS POR INTRODUCIR, CONTINUA POR FAVOR");
                         continua = true;
-
                         break;
                     } else {
                         System.out.println("DATOS COMPLETOS");
                         System.out.println("DATOS CONFIRMADOS DEL USUARIO: Nombre " + nombre + ", Dirección:  "
                                 + direccion + ", DNI:  " + dni);
-                        continua = true;
+                        continua = false;
                         datosCompletos = true;
                         break;
                     }
@@ -93,7 +94,6 @@ public class Ejercicio11 {
             System.out.println("DATOS CONFIRMADOS DEL USUARIO: Nombre " + nombre + ", Dirección:  " + direccion
                     + ", DNI:  " + dni);
         }
-
 
         System.out.println("FIN");
 

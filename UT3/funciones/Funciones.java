@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Funciones {
     public static void main(String[] args) {
 
-        // Ejercicio 1.
+        // Ejercicio .
 
         /*
-         * Vamos a realizar un ejercicio que use dos funciones.
+         * Vamos a realizar un ejercicio que use varias funciones.
          * La primera será la responsable de mostrar por consola un menú con opciones
          * que el usuario puede elegir. La segunda es la responsable de pedir al usuario
          * la opción
@@ -37,7 +37,7 @@ public class Funciones {
 
         menu();
         opcion = pedirOpcion();
-        
+
         switch (opcion) {
             case 1:
                 ejercicio4();
@@ -59,6 +59,7 @@ public class Funciones {
         System.out.println("2. Ejecutar Ejercicio 5");
         System.out.println("******************");
     }
+
 
     public static int pedirOpcion() {
         Scanner sc = new Scanner(System.in);

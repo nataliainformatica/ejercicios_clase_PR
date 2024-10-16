@@ -32,9 +32,9 @@ Completa el código de una aplicación que podrá calcular el área o el volumen
 
 <img width="226" alt="image" src="https://github.com/user-attachments/assets/44047e15-8ee4-480c-801f-f0d3062b0982">
 
-Es requisito que la petición de datos se haga en el método main, y el cálculo de haga en una función con la siguiente firma o declaración: 
+Es requisito que la petición de datos al usuario (radio, altura, y la opción de área o volumen)  se haga en el método main  y el cálculo se haga en una función con la siguiente firma o declaración: 
 
- ***static void areaVolumenCilindro(double radio, double altura, int opcion) { ......}***
+ ***static double areaVolumenCilindro(double radio, double altura, int opcion) { ......}***
  
 
  

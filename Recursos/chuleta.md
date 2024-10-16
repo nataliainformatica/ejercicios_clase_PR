@@ -12,7 +12,7 @@ public class Clase{
 ## Estructuras repetitivas
 
 //for( inicialización; condición;incremento){
-  for(int i=0; i< 3; i++){}
+  for(int i=0; i< 3; i++){
     // bloque de código
 }
 

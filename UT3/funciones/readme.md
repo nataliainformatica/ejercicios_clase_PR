@@ -37,5 +37,10 @@ Es requisito que la petición de datos al usuario (radio, altura, y la opción d
  ***static double areaVolumenCilindro(double radio, double altura, int opcion) { ......}***
  
 
+ ## Ejercicio 3
+En este ejercicio además de crear funciones vamos a repasar los métodos de String. Para ello debes pedir al usuario  por consola que introduzca un carácter. *¿Existe un método de Scanner que permita recoger el tipo char ?*, 
+
+ Completa una función que compruebe si el el  carácter es una vocal, la función devolverá un booleano. 
+
  
 

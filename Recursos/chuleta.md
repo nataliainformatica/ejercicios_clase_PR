@@ -27,8 +27,11 @@ do{
 
 ## Sintaxis de Scanner
 Scanner lectorTeclado = new Scanner(System.in);
+
 lectorTeclado.nextInt();
+
 lectorTeclado.nextLine();
+
 lectorTeclado.nextDouble();
 
 ## String - métodos para conocer

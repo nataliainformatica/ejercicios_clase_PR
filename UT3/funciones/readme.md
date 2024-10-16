@@ -1,4 +1,4 @@
-  // Ejercicio Funciones.
+  ## Ejercicio Funciones.
 
         /*
          * Vamos a realizar un ejercicio que use varias  funciones.
@@ -24,3 +24,18 @@
          * Comprobar que el 1er número es mayor que el 2º.
          * Si no es así, indicarlo mediante un mensaje, y no hacer nada más.
          */
+
+
+## Ejercicio 2
+
+Completa el código de una aplicación que podrá calcular el área o el volumen de un cilindro: 
+
+<img width="226" alt="image" src="https://github.com/user-attachments/assets/44047e15-8ee4-480c-801f-f0d3062b0982">
+
+Es requisito que la petición de datos se haga en el método main, y el cálculo de haga en una función con la siguiente firma o declaración: 
+
+ ***static void areaVolumenCilindro(double radio, double altura, int opcion) { ......}***
+ 
+
+ 
+

@@ -43,6 +43,18 @@ La función devolverá el char que ha introducido el usuario.
 Después completa una función que compruebe si el el  carácter es una vocal, la función devolverá un booleano. 
 En el método main, realizarás la llamada a la función de pedirCaracter, y con su resultado comprobarás si es una vocal o no. 
 
+## Ejercicio 4
+Realiza un aplicación de calculadora, que tendrá 4 funciones para las operaciones aritméticas de suma, resta, multiplicación y división. 
+
+En el método main, se pedirán al usuario dos números, y después la operación que quiere realizar. 
+/***
+Introduce número 1: 
+Introduce número 2: 
+¿Qué operacion quieres realizar?: 1. suma 2.resta 3.multiplicación 4.división
+El resultado de la operación es: 
+*//
+
+
 
  
 

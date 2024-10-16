@@ -38,9 +38,11 @@ Es requisito que la petición de datos al usuario (radio, altura, y la opción d
  
 
  ## Ejercicio 3
-En este ejercicio además de crear funciones vamos a repasar los métodos de String. Para ello debes pedir al usuario  por consola que introduzca un carácter. *¿Existe un método de Scanner que permita recoger el tipo char ?*, 
+En este ejercicio además de crear funciones vamos a repasar los métodos de String. Para ello hacer una función que será la encargada de  pedir al usuario  por consola que introduzca un carácter. *¿Existe un método de Scanner que permita recoger el tipo char ?*. 
+La función devolverá el char que ha introducido el usuario.
+Después completa una función que compruebe si el el  carácter es una vocal, la función devolverá un booleano. 
+En el método main, realizarás la llamada a la función de pedirCaracter, y con su resultado comprobarás si es una vocal o no. 
 
- Completa una función que compruebe si el el  carácter es una vocal, la función devolverá un booleano. 
 
  
 

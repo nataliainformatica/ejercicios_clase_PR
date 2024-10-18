@@ -35,6 +35,7 @@ Completa el código de una aplicación que podrá calcular el área o el volumen
 Es requisito que la petición de datos al usuario (radio, altura, y la opción de área o volumen)  se haga en el método main  y el cálculo se haga en una función con la siguiente firma o declaración: 
 
  ***static double areaVolumenCilindro(double radio, double altura, int opcion) { ......}***
+ La función areaVolumenCilindro, debe estar en un paquete distinto al que tiene el código principal. 
  
 
  ## Ejercicio 3

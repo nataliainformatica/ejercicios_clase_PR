@@ -32,7 +32,7 @@ import java.util.Scanner;
  */
 public class PracticaRA3 {
     public static void main(String[] args) {
-        int opcion;
+        String opcion;
         Scanner sc = new Scanner(System.in);
         int nModulos = 0;
         int nota = 0;
@@ -43,7 +43,7 @@ public class PracticaRA3 {
 
         opcion = pedirOpcion(sc);
         switch (opcion) {
-            case 1:
+            case "1":
                 System.out.println("Opcion 1");
                 System.out.println("INTRODUCE EL NÚMERO DE MÓDULOS");
                 nModulos = sc.nextInt();
@@ -64,11 +64,11 @@ public class PracticaRA3 {
                 System.out.println("LA NOTA MAS BAJA ES: " + notaBaja);
 
                 break;
-            case 2:
+            case "2":
                 System.out.println("Opcion 2");
                 System.out.println("NOTA MEDIA: " + notaMedia);
                 break;
-            case 3:
+            case "3":
                 System.out.println("Opcion 3");
               
                 break;
@@ -80,23 +80,23 @@ public class PracticaRA3 {
 
     }
 
-    public static int pedirOpcion(Scanner sc) {
+    public static String pedirOpcion(Scanner sc) {
         boolean continua = true;
 
-        int opcion = 0;
+        String opcion = 0;
         while (continua) {
             System.out.println("*********MENU*********");
             System.out.println("1. Calcular nota media");
             System.out.println("2. Ver el resultado");
             System.out.println("3. Salir");
             System.out.println("Introduce una opcion");
-            opcion = sc.nextInt();
+            opcion = sc.nextLine();
 
-            if (opcion == 1 || opcion == 2 || opcion == 3) {
+            if (opcion .equals("1") || opcion .equals("2") || opcion .equals("3") )  {
                 continua = false;
             } else {
                 System.out.println("Opcion incorrecta");
-            }
+            }d
 
         }
         return opcion;

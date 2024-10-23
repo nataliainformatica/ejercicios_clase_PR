@@ -10,22 +10,28 @@ public class Clase{
 }
 
 ## Estructuras repetitivas
+
 //for( inicialización; condición;incremento){
-  for(int i=0; i< 3; i++){}
+  for(int i=0; i< 3; i++){
     // bloque de código
 }
+
 
 while(condicion){
     // bloque de código
 }
+
 do{
     // bloque de código
 }while(condicion);
 
 ## Sintaxis de Scanner
 Scanner lectorTeclado = new Scanner(System.in);
+
 lectorTeclado.nextInt();
+
 lectorTeclado.nextLine();
+
 lectorTeclado.nextDouble();
 
 ## String - métodos para conocer

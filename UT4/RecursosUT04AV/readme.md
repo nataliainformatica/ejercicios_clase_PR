@@ -4,16 +4,32 @@
 
 
   **PROGRAMA QUE CALCULA EL IMPORTE TOTAL DE TODAS LAS FACTURAS Y SUS GASTOS ASOCIADOS**
- 
-  *REQUISITOS:*
+
+  
+   *REQUISITOS:*
   - Debe pedir el número de facturas del cliente.
   - Por cada factura debe pedir el número de gastos que tiene la factura.
   - Por cada gasto debe pedir el importe del mismo.
-  - Debe mostrar el importe total de gastos de cada factura.
-  - Finalmente debe mostrar el importe total de todas las facturas del usuario
+
+Una vez que se han introducido todos los datos, aparecerá un menú que nos permitirá: 
+
+1. Mostrar todos los importes totales de las facturas.
+2. Mostrar el total de todas las facturas
+3. Muestra  el importe más alto. Es requisito que este cálculo se efectúe como función que devolverá  el valor del importe. 
+4. Muestra el importe más bajo. Es requisito que éste cálculo se efectúe como función que devolverá el valor del importe. 
+5. Salir
+
+
+     Hasta que no se pulse la opción de salir, seguirá en este último menú de opciones.
+
+
+
+   
+
+
  
  
 
 **Ejemplo salida por consola:**
 
-![image](https://user-images.githubusercontent.com/91023374/194542169-7907b105-48f9-4209-89a3-1ed1e2284925.png)
+

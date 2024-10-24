@@ -1,10 +1,9 @@
 # Ejercicios para practicar con bucles en ejercicios sencillos
 
-![image](https://github.com/profeMelola/Programacion-03-2023-24/assets/91023374/bff7fafe-25a3-409b-a1ca-9428acdd8a34)
 
 
 ## Ejercicio 1: Eco
-Programa que muestre un mensaje repetido por consola tantas veces como se hay introducido por teclado.
+Programa que muestre un mensaje repetido por consola tantas veces como se haya introducido por teclado.
 
 Hazlo de tres formas:
 - con bucle for.
@@ -132,5 +131,50 @@ La salida del programa debe ser:
 Imprimir un patrón de asteriscos en forma de un triángulo rectángulo
 
 ![image](https://github.com/profeMelola/Programacion-03-2023-24/assets/91023374/fb997025-eb9b-4600-8f1e-d1753867c723)
+
+## Ejercicio 10: Continuación a Calcular Patas (añadiendo bucles) 
+
+Un biólogo está realizando un estudio de distintas especies de invertebrados y necesita una aplicación que le ayude a contabilizar el número de patas que tienen en total todos los animales capturados durante una jornada de trabajo.
+
+Para ello, te ha solicitado que escribas una aplicación a la que hay que proporcionar.
+
+El número de hormigas capturadas (6 patas)
+
+El número de arañas capturadas (8 patas)
+
+El número de cochinillas capturadas (14 patas)
+
+La aplicación debe mostrar el número tota de patas.
+
+Si el número de patas total es mayor o igual a 32, felicitaremos al biólogo y el programa termina. 
+Si el número de patas total es inferior a 32, pediremos al biólogo que siga trabajando, y volveremos a preguntarle por los animales capturados, teniendo en cuenta los capturados anteriormente. 
+Hasta que no llegue a 32, seguiremos pidiéndole que continúe cazando. 
+
+## Ejercicio 11
+Haz un menú de usuario:
+
+*** MENÚ DE USUARIO
+*** ELIGE UNA OPCIÓN
+1. Introduce tu nombre
+2. Introduce tu dirección
+3. Introduce DNI
+4. Salir comprobando campos
+5. Salir sin comprobar
+
+Para las opciones del 1 al 3, aparecerá el mensaje correspondiente para que el usuario introduzca, nombre, dirección o dni. 
+Si el usuario pulsa la opción 4.  el programa comprobará que el usuario ha introducido todos los datos. Si no los ha introducido, le pedirá que continúe. 
+"te falta algún dato por introducir, continúa por favor"
+
+Si el usuario pulsa la opción 5, el programa saldrá sin comprobar que se han introducido todos los datos. 
+
+Si al salir del menú, se disponen de todos los datos del usuario, se mostrará un mensaje: 
+
+DATOS CONFIRMADOS DEL USUARIO:  "NOMBRE" ,  "DIRECCION", "DNI"
+
+Si no se disponen de todos los datos,  no mostrará el mensaje anterior. 
+
+
+
+
 
 

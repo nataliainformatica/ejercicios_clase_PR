@@ -13,11 +13,12 @@
 
 Una vez que se han introducido todos los datos, aparecerá un menú que nos permitirá: 
 
-1. Mostrar todos los importes totales de las facturas.
-2. Mostrar el total de todas las facturas
+1. Mostrar todos los importes totales de cada una de las facturas.  Es requisito que este cálculo se efectúe como función que mostrará los valores. 
+2. Mostrar la suma de todas las facturas. Es requisito que este cálculo se efectúe como función que mostrará la suma. 
 3. Muestra  el importe más alto. Es requisito que este cálculo se efectúe como función que devolverá  el valor del importe. 
-4. Muestra el importe más bajo. Es requisito que éste cálculo se efectúe como función que devolverá el valor del importe. 
-5. Salir
+4. Muestra el importe más bajo. Es requisito que éste cálculo se efectúe como función que devolverá el valor del importe.
+5. Pide al usuario qué factura quiere modificar, y el importe total de la misma. 
+6. Salir
 
 
      Hasta que no se pulse la opción de salir, seguirá en este último menú de opciones.

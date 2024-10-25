@@ -108,7 +108,7 @@ public class UT03E01if {
  */
 
 /**
- * Ejercicio 5.
+ * Ejercicio 4.
  * Escribe un programa que calcule el coste de un parking. El programa
  * pedirá las horas y minutos que ha estado estacionado el vehículo.
  * El precio es: 

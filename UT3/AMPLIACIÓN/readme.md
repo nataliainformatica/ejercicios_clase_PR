@@ -13,6 +13,8 @@ Debemos comprobar si el número es capicúa
  *
  * Si se introduce un número válido, le mostraremos al usuario los días que
  * tiene ese mes. * Y después "FIN DE PROGRAMA"
+
+ * 
  * ## Ejercicio 3
  *      /*Vamos a realizar el cálculo de la nota de un examen 
      * de tipo test. Para ello, tendremos en cuenta el número
@@ -28,3 +30,15 @@ Debemos comprobar si el número es capicúa
      * utilizando la estructura condicional múltiple o switch. 
      * 
      */
+## Ejercicio 4
+Calcula la letra del documento DNI: 
+![image](https://github.com/user-attachments/assets/a3dbb72e-9608-440d-9fed-a94246800d17)
+
+
+## Ejercicio 5
+En este ejercicio usaremos  tipos decimales para los kilos. 
+
+En una granja de animales vamos a comprobar si tenemos comida suficiente para todos los animales, para ello, preguntaremos qué cantidad de comida tenemos en kilos , qué cantidad en kilos come cada animal, y cuántos animales hay en la granja. 
+Si  hay suficiente comida mostraremos por pantalla "Hay suficiente comida",  mostraremos "No hay suficiente comida", y además mostraremos la ración que le tocaría a cada animal con la comida que hay (solamente si hay al menos un animal).
+
+

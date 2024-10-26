@@ -18,7 +18,11 @@ public class Ejcho {
     public static void main(String[] args) {
         
         // Pintar por consola la palabra ECHO 4 veces
-        
+        for(;;){
+            System.out.println("hola");
+        }
+        /* 
+
         // Caso 1: si bucle
         System.out.println("ECHO");
         System.out.println("ECHO");
@@ -33,6 +37,10 @@ public class Ejcho {
             System.out.println("["+i+"] HECHO");
         }
         
+        for(;;){
+            System.out.println("hola");
+        }
+
         
         
         
@@ -48,7 +56,7 @@ public class Ejcho {
         }*/
         
         
-        
+        */
         
         
     }

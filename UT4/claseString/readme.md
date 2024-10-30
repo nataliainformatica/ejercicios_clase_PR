@@ -32,9 +32,13 @@ Implementa un método que devuelva true o false para indicar si se cumplen los r
 
 
 Implementa una función que comprobará si la contraseña tiene entre 8 y 20 caracteres.
+
 Implementa una función que comprobará si la contraseña tiene alguna letra mayúscula. Esta función debe implementarse utilizando array de caracteres.
+
 Implementa una función que comprobará si la contraseña tiene alguna letra minúscula. Esta función debe implementarse utilizando array de caracteres.
+
 Implementa una función que comprobará si la constraseña tiene algún carácter raro entre $ % _ *. Esta función debe implementarse utilizando array de caracteres. 
+
 Implementa una función que comprobará si la constraseña tiene   algún número
 
 

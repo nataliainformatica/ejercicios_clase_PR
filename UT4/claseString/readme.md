@@ -30,7 +30,7 @@ A man a plan a canal Panama
 Implementa un validador de contraseñas. Ésta se debe leer por teclado y debemos comprobar que cumple determinadas características. 
 Implementa un método que devuelva true o false para indicar si se cumplen los requisitos de contraseña válida o no. La contraseña debe enviarse al método como parámetro.
 
-
+Implementa una función que pida la contraseña y la devuelva como array de caracteres. 
 Implementa una función que comprobará si la contraseña tiene entre 8 y 20 caracteres.
 
 Implementa una función que comprobará si la contraseña tiene alguna letra mayúscula. Esta función debe implementarse utilizando array de caracteres.

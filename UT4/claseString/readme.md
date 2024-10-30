@@ -24,3 +24,17 @@ Amigo no gima
 Dabale arroz a la zorra el abad
 Amo la pacífica paloma
 A man a plan a canal Panama
+
+
+6. ## validador de contraseñas
+Implementa un validador de contraseñas. Ésta se debe leer por teclado y debemos comprobar que cumple determinadas características. 
+Implementa un método que devuelva true o false para indicar si se cumplen los requisitos de contraseña válida o no. La contraseña debe enviarse al método como parámetro.
+
+
+Implementa una función que comprobará si la contraseña tiene entre 8 y 20 caracteres.
+Implementa una función que comprobará si la contraseña tiene alguna letra mayúscula. Esta función debe implementarse utilizando array de caracteres.
+Implementa una función que comprobará si la contraseña tiene alguna letra minúscula. Esta función debe implementarse utilizando array de caracteres.
+Implementa una función que comprobará si la constraseña tiene algún carácter raro entre $ % _ *. Esta función debe implementarse utilizando array de caracteres. 
+Implementa una función que comprobará si la constraseña tiene   algún número
+
+

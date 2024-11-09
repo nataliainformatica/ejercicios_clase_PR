@@ -14,9 +14,11 @@ IMPORTANTE: Si no sabes utilizar el array que se facilita, puedes hacer que todo
 Al arrancar la aplicación,  se muestra  información sobre rondas e intentos: 
 ESTE JUEGO TIENE 3 RONDAS – EN CADA RONDA 5 INTENTOS
 Comienza el juego 
+
 RONDA 1
 INTENTO 1
 INTRODUCE UNA PALABRA
+
 Si el jugador no adivina la palabra (**), se le informa y continúa con el siguiente intento, si no ha alcanzado el máximo de intentos: 
 NO HAS ACERTADO LA PALABRA
 INTENTO 2

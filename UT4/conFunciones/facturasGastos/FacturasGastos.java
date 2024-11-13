@@ -23,6 +23,7 @@ public class FacturasGastos {
         double[] totalFactura;
         double totalFacturas = 0, totalGastosFactura = 0;
         Scanner sc = new Scanner(System.in);
+        Scanner scCadena = new Scanner(System.in);
         boolean continua = true;
         String opcion;
         System.out.println("Indica el número de faturas que vas introducir:");
@@ -50,19 +51,22 @@ public class FacturasGastos {
 
         }
         System.out.println("***************************************************");
-        System.out.println("Importe total de todas las facturas: " + totalFacturas);
+        System.out.println("Importe total de todas las facturas: " + sumarTotales(totalFactura));
         System.out.println("***************************************************");
 
         // aquí ya tenemos los datos de las facturas
 
         while (continua) {
+
             System.out.println("1. Mostrar todos los importes totales de las facturas");
             System.out.println("2. Mostrar el total de todas las facturas");
             System.out.println("3. Muestra el importe más alta.");
             System.out.println("4. Muestra el importe más bajo");
-            System.out.println("5. Salir");
 
-            opcion = sc.nextLine();
+            System.out.println("5. Pide al usuario qué factura quiere modificar y el importe de total de la misma");
+            System.out.println("6. Salir");
+
+            opcion = scCadena.nextLine();
 
             switch (opcion) {
                 case "1":
@@ -74,8 +78,38 @@ public class FacturasGastos {
                 case "3":
                     devolverAlto(totalFactura);
                     break;
-                    // TODO  - FINALIZAR LAS OPCIONES DEL SWITCH
-                    
+                case "4":
+                    // devolverBajo
+                    break;
+                case "5":
+                    // pedir el número de factura y cambiarlo en array
+
+                    int cambio = 0;
+                    double valor = 0;
+                    // después revisamos las posibles excepciones
+                    boolean pideMas = true;
+                    while (pideMas) {
+                        try {
+                            System.out.println("Dame el número de factura que quieres modificar");
+                            cambio = sc.nextInt();
+                            System.out.println("Dime el importe final de la factura " + cambio);
+                            valor = sc.nextDouble();
+                            totalFactura[cambio - 1] = valor;
+                            pideMas =false; 
+
+                        } catch (Exception mException) {
+                            System.out.println("EL VALOR  NO ES CORRECTO ");
+                            sc.nextLine();
+                            pideMas = true;
+                        }
+
+                    }
+                    break;
+                case "6":
+                    // salir
+                    continua=false; 
+                    System.out.println("fin");
+                    break;
                 default:
                     System.out.println("Opción no válida");
                     continua = false;
@@ -85,13 +119,22 @@ public class FacturasGastos {
         }
     }
 
+    public static double sumarTotales(double[] valores) {
+        double acumulado = 0;
+        for (int i = 0; i < valores.length; i++) {
+            acumulado += valores[i];
+        }
+        return acumulado;
+
+    }
+
     // función que muestra todos los importes totales de las facturas
     public static void mostrarTotales(double[] valores) {
 
         // aquí en "valores" ya tengo el array con los totales de las facturas
         System.out.println("MUESTRA TODOS LOS IMPORTES DE LAS FACTURAS GUARDADAS");
         for (int i = 0; i < valores.length; i++) {
-            System.out.println("Factura num " + (i + 1) + valores[i]);
+            System.out.println("Factura num " + (i + 1) + ":" + valores[i]);
         }
     }
 
@@ -103,40 +146,40 @@ public class FacturasGastos {
             total += totalFactura[i];
 
         }
-        System.out.println("El total de " + totalFactura.length + "es: " + total);
+        System.out.println("El total de " + totalFactura.length + " facturas es: " + total);
     }
-/**
- * Muestra el importe más alto.
- *  Es requisito que este cálculo se efectúe como función que devolverá  el valor del importe. 
- * @param totalFactura
- * @return
- */
-    public static double devolverAlto(double[] totalFactura){
+
+    /**
+     * Muestra el importe más alto.
+     * Es requisito que este cálculo se efectúe como función que devolverá el valor
+     * del importe.
+     * 
+     * @param totalFactura
+     * @return
+     */
+    public static double devolverAlto(double[] totalFactura) {
 
         // 5, 2,10,2, 50
-        double alto=0; 
-        for(int i=0; i<totalFactura.length;i++){
-            if(totalFactura[i]> alto){
+        double alto = 0;
+        for (int i = 0; i < totalFactura.length; i++) {
+            if (totalFactura[i] > alto) {
                 alto = totalFactura[i];
-            }        
+            }
         }
-        return alto; 
+        return alto;
 
     }
 
-    public static double devolverBajo(double[] totalFactura){
+    public static double devolverBajo(double[] totalFactura) {
 
-        double bajo=Double.MAX_VALUE; 
-        for(int i=0; i<totalFactura.length;i++){
-            if(totalFactura[i]< bajo){
+        // 5, 2,10,2, 50
+        double bajo = Double.MAX_VALUE;
+        for (int i = 0; i < totalFactura.length; i++) {
+            if (totalFactura[i] < bajo) {
                 bajo = totalFactura[i];
-            }        
+            }
         }
-        return bajo; 
+        return bajo;
 
     }
-
-
-    // TODO FUNCIONES PARA LAS OPCIONES 5 
 }
-

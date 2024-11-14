@@ -29,6 +29,4 @@ Una vez que se han introducido todos los datos, aparecerá un menú que nos perm
 
 
  
- 
 
-**Ejemplo salida por consola:**

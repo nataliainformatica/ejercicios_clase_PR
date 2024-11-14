@@ -13,21 +13,14 @@ Factura tendrá un método que permitirá conocer cualquiera de los gastos, si s
 devolverá cero.
 
 
-En 
 
-Por cada gasto debe pedir el importe del mismo.
-Una vez que se han introducido todos los datos, aparecerá un menú que nos permitirá:
+Desde la clase TestMain, realizaremos las siguientes pruebas: 
 
-Mostrar todos los importes totales de cada una de las facturas. Es requisito que este cálculo se efectúe como función que mostrará los valores.
+Pedir el número de gastos y crear la instancia de Factura. 
+Pedir los gastos de la factura y almacenarlos en el objeto.
 
-Mostrar la suma de todas las facturas. Es requisito que este cálculo se efectúe como función que mostrará la suma.
+Mostrar el total de la factura. 
+Mostrar el gasto 2,
+Mostrar un  número de gasto que no exista. 
 
-Muestra el importe más alto. Es requisito que este cálculo se efectúe como función que devolverá el valor del importe.
 
-Muestra el importe más bajo. Es requisito que éste cálculo se efectúe como función que devolverá el valor del importe.
-
-Pide al usuario qué factura quiere modificar, y el importe total de la misma.
-
-Salir
-
-Hasta que no se pulse la opción de salir, seguirá en este último menú de opciones.

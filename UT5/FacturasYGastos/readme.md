@@ -2,7 +2,7 @@
 
 PROGRAMA QUE CALCULA EL IMPORTE TOTAL DE TODAS LAS FACTURAS Y SUS GASTOS ASOCIADOS
 
-REQUISITOS: Crea el objeto Factura que tendrá los siguientes atributos: 
+REQUISITOS: Crea el objeto Factura que tendrá los siguientes atributos: número de gastos y array para todos los importes de los gastos.
 
 En el momento de crear la instancia, se definirán el número de gastos que tiene la factura. 
 

@@ -1,10 +1,20 @@
+![image](https://github.com/user-attachments/assets/bf5f8707-c11b-46e1-bf9a-411918e065ad)
 
 PROGRAMA QUE CALCULA EL IMPORTE TOTAL DE TODAS LAS FACTURAS Y SUS GASTOS ASOCIADOS
 
-REQUISITOS:
+REQUISITOS: Crea el objeto Factura que tendrá los siguientes atributos: 
 
-Debe pedir el número de facturas del cliente.
-Por cada factura debe pedir el número de gastos que tiene la factura.
+En el momento de crear la instancia, se definirán el número de gastos que tiene la factura. 
+
+Después será posible almacenar los gastos en la factura. 
+
+Factura tendrá un método que permitirá conocer el total de la factura. 
+Factura tendrá un método que permitirá conocer cualquiera de los gastos, si se pasa un número de gasto que no existe, 
+devolverá cero.
+
+
+En 
+
 Por cada gasto debe pedir el importe del mismo.
 Una vez que se han introducido todos los datos, aparecerá un menú que nos permitirá:
 

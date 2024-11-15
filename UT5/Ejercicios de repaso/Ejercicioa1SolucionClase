@@ -1,0 +1,20 @@
+/**
+ * Crea un programa con una clase llamada Punto que representará un punto de dos
+ * dimensiones en un plano. Solo contendrá dos atributos enteros llamadas x e y
+ * (coordenadas).
+ */
+
+
+ //MÉTODOS DE COMPORTAMIENTO
+ //  INCREMENTAR COORDENADAS X E Y en una unidad
+ //  public void incrementarUnidadXY(){...}
+
+ // MODIFICAR LAS DOS COORDENADAS
+ // public void modificarCoordenadasXY(int X, int Y){....}
+
+ // RESETEAR COORDENADAS - PONER A CERO X E Y
+ // public void resetearCoordenadasXY(){...}
+
+
+
+ // 

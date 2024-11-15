@@ -17,6 +17,9 @@ Añade los siguientes métodos a la clase:
 entrenar(): Incrementa el nivel del Pokémon en 1 y aumenta sus puntos de vida en 10.
 
 atacar(): Muestra un mensaje indicando que el Pokémon ha usado su ataque característico. El ataque se puede determinar en base al tipo (por ejemplo, "Llamarada" si es de tipo "Fuego").
+     * tipo es Fuego: ataque característico: "LLAMARADA"
+     * tipo es Agua: ataque característico: "HIDROBOMBA"
+     * tipo es Planta: atatque característico: "LÁTIGO CEPA"
 
 mostrarEstado(): Muestra en consola el nombre, tipo, nivel y puntos de vida del Pokémon.
 En el método main, crea varios objetos de la clase Pokemon con diferentes valores iniciales. Por ejemplo:

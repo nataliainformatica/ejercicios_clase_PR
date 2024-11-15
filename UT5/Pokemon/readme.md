@@ -26,6 +26,7 @@ atacar(): Muestra un mensaje indicando que el Pokémon ha usado su ataque caract
      
 
 mostrarEstado(): Muestra en consola el nombre, tipo, nivel y puntos de vida del Pokémon.
+
 En el método main, crea varios objetos de la clase Pokemon con diferentes valores iniciales. Por ejemplo:
 
 

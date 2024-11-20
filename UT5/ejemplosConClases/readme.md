@@ -4,6 +4,7 @@ Diseñar la clase Texto que gestiona una cadena de caracteres con algunas
 características:
 
  La cadena de caracteres tendrá una longitud máxima que se especifica en el constructor.
+
  Permite añadir un carácter al principio o al final, siempre y cuando no se exceda la
 longitud máxima, es decir, exista espacio disponible.
 

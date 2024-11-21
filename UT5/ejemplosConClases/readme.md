@@ -32,7 +32,7 @@ La aplicación nos mostrará un menú:
 
 1. Modificar libros existentes
    1.1 Introduce un libro
-   1.2 Elimina un libro (por ISBN) 
+
     
 2. Venta  de un libro
 4. Valoración de un usuario para un título (por ISBN)
@@ -53,6 +53,19 @@ La aplicación nos mostrará un menú:
   
 
 
+## EJERCICIO LIBRERIA - AMPLICACIÓN
+Añade la funcionalidad al menú para Eliminar un libro
+
+La aplicación nos mostrará un menú: 
+
+1. Modificar libros existentes
+   1.1 Introduce un libro
+   1.2 Elimina un libro (por ISBN) 
+    
+2. Venta  de un libro
+4. Valoración de un usuario para un título (por ISBN)
+5. Muestra los datos de un libro (por ISBN)
+6. Muestra los datos de todos los libros
 
 
 

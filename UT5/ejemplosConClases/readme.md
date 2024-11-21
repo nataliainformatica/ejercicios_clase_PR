@@ -20,7 +20,7 @@ y hora de la última modificación efectuada.
 
 
 
-Ejercicio LIBRERÍA
+## Ejercicio LIBRERÍA
 
 Nuestro objetivo es hacer una aplicación que nos permita gestinar una pequeña librería. 
 Para ello debemos seguir los siguientes requisitos: 

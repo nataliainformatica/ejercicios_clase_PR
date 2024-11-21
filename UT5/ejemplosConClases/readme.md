@@ -32,9 +32,10 @@ La aplicación nos mostrará un menú:
 
 1. Modificar libros existentes
    1.1 Introduce un libro
+            (con todos los datos necesarios) 
 
     
-2. Venta  de un libro
+3. Venta  de un libro (por ISBN)
 4. Valoración de un usuario para un título (por ISBN)
 5. Muestra los datos de un libro (por ISBN)
 6. Muestra los datos de todos los libros

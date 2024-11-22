@@ -1,3 +1,4 @@
+
 public class Libro {
 
     private String titulo;
@@ -94,4 +95,12 @@ public class Libro {
 
 
     }
+
+    @Override
+    public String toString() {
+        return "Libro [titulo=" + titulo + ", autor=" + autor + ", sinopsis=" + sinopsis + ", isbn=" + isbn
+                + ", precio=" + precio + ", stock=" + stock + ", valoracion=" + valoracion + "]";
+    }
+
+    
 }

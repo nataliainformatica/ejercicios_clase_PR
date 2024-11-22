@@ -1,4 +1,3 @@
-
 public class Libro {
 
     private String titulo;
@@ -61,22 +60,38 @@ public class Libro {
     }
 
     /**
-     * Valoración, es como en la reseñas de una web, 
-     * son votos positivos o negativos, y se almacena el total. 
-     * Por lo tanto, la clase libro tendrá un método que recibirá el valor "POSITIVO" O "NEGATIVO" 
+     * Valoración, es como en la reseñas de una web,
+     * son votos positivos o negativos, y se almacena el total.
+     * Por lo tanto, la clase libro tendrá un método que recibirá el valor
+     * "POSITIVO" O "NEGATIVO"
      * que modificará la calificación del libro.
+     * 
      * @param valor
      */
     public void valorarLibro(String valor) {
         switch (valor.toUpperCase()) {
             case "POSITIVO":
-            valoracion++; 
+                valoracion++;
 
                 break;
             case "NEGATIVO":
-            valoracion-- ; 
+                valoracion--;
                 break;
 
+        }    
     }
 
+    public boolean venderLibro(){
+        // venta, significa stock - 1
+        boolean resultado = false; 
+
+        if(this.stock >0){
+            this.stock--; 
+             resultado = true; 
+        }
+
+        return resultado; 
+
+
+    }
 }

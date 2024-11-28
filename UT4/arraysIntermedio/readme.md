@@ -57,3 +57,11 @@ puntuaciones en orden descendente (de la más alta a la más baja).
 20. Crea un programa que cree un array de tamaño 1000 y lo rellene con valores enteros
 aleatorios entre 0 y 99 (utiliza Math.random()*100). Luego pedirá por teclado un valor N y se
 mostrará por pantalla si N existe en el array, además de cuantas veces.
+21. Utilizando arrays
+Pedimos al usuario que introduzca una cadena de caracteres que tenga una longitud de 25 caracteres
+ Si la candena no tiene longitud 25, se completará con ****
+
+Después  vamos a hacer el cifrado siguiente: sustituye las 'a' por 'e' y las 'e' por 'a'
+
+
+

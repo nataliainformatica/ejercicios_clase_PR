@@ -1,6 +1,5 @@
-8. Crea un programa que cree un array con 100 números reales aleatorios entre 0.0 y 1.0,
-utilizando Math.random(), y luego le pida al usuario un valor real R. Por último, mostrará
-cuántos valores del array son igual o superiores a R.
+8. Crea un programa que cree un array con 100 números enteros aleatorios entre 0 y 200,
+utilizando Math.random()- o la clase Random, y luego le pida al usuario un valor entero E. Por último, mostrará cuántos valores del array son igual o superiores a E.
 
 10. Crea un programa que cree un array de enteros de tamaño 100 y lo rellene con valores
 enteros aleatorios entre 1 y 10 (utiliza 1 + Math.random()*10). Luego pedirá un valor N y

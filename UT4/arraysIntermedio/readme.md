@@ -80,3 +80,52 @@ Encuentre al superhéroe más fuerte (el que tiene puntuación  más alta) y mue
 
 Calcule el promedio de fuerza de todos los superhéroes y muestre un mensaje indicando si cada superhéroe está por encima o por debajo del promedio.
 
+## 23. Gestión de reservas en un hotel (
+Eres el encargado de un pequeño hotel con 10 habitaciones. Debes gestionar las reservas de los huéspedes. El hotel inicialmente tiene todas sus habitaciones vacías (representadas como valores nulos en un array).
+
+Tu tarea es escribir un programa que permita:
+
+Inicializar un array estático de tamaño 10 con valores null, donde cada posición representa una habitación.
+
+Permitir que el usuario:
+
+Reserve una habitación, indicando su nombre. La reserva se debe asignar a la primera habitación disponible (nula). Si no hay habitaciones libres, muestra un mensaje indicando que el hotel está lleno.
+Cancelar una reserva, indicando el número de habitación (de 1 a 10). La habitación se debe liberar (colocar null).
+Mostrar el estado actual del hotel, indicando si cada habitación está ocupada (nombre del huésped) o vacía.
+Controlar que no se pueda reservar una habitación ya ocupada ni cancelar una reserva de una habitación vacía.
+
+
+24. Gestión de reservas en un hotel (versión orientada a objetos)
+Eres el encargado de un pequeño hotel con 10 habitaciones.
+
+Cada habitación estará representada por un objeto de la clase  Habitacion, que tendrá los siguientes atributos:
+
+numero (entero): el número de la habitación (1 a 10).
+
+huesped (cadena): el nombre del huésped que ocupa la habitación, o null si está vacía.
+
+La tarea es escribir un programa en Java que permita:
+
+Crear una clase Habitacion con los atributos mencionados y métodos para:
+
+Reservar una habitación asignándole un huésped.
+
+Cancelar una reserva, dejando la habitación vacía.
+
+Mostrar el estado de la habitación (ocupada o vacía).
+
+Inicializar un array estático de 10 objetos de tipo Habitacion, con habitaciones vacías al inicio.
+
+Permitir al usuario realizar las siguientes acciones:
+
+Mostrar el estado del hotel: Ver todas las habitaciones indicando si están vacías o quién las ocupa.
+
+Reservar una habitación: Asignar un huésped a la primera habitación disponible.
+
+Cancelar una reserva: Indicar el número de habitación a liberar.
+
+Gestionar los casos en los que no se pueda realizar la acción, como:
+
+Intentar reservar cuando todas las habitaciones están ocupadas.
+
+Intentar cancelar la reserva de una habitación que ya está vacía.

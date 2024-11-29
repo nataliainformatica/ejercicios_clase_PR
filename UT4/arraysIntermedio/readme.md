@@ -115,6 +115,8 @@ Cancelar una reserva, dejando la habitación vacía.
 
 Mostrar el estado de la habitación (ocupada o vacía).
 
+En la clase principal realizaremos las siguientes operaciones:  
+
 Inicializar un array estático de 10 objetos de tipo Habitacion, con habitaciones vacías al inicio.
 
 Permitir al usuario realizar las siguientes acciones:

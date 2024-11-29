@@ -95,7 +95,8 @@ Mostrar el estado actual del hotel, indicando si cada habitación está ocupada 
 Controlar que no se pueda reservar una habitación ya ocupada ni cancelar una reserva de una habitación vacía.
 
 
-24. Gestión de reservas en un hotel (versión orientada a objetos)
+## 24. Gestión de reservas en un hotel (versión orientada a objetos)
+    
 Eres el encargado de un pequeño hotel con 10 habitaciones.
 
 Cada habitación estará representada por un objeto de la clase  Habitacion, que tendrá los siguientes atributos:

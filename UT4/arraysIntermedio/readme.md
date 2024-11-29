@@ -63,5 +63,20 @@ Pedimos al usuario que introduzca una cadena de caracteres que tenga una longitu
 
 Después  vamos a hacer el cifrado siguiente: sustituye las 'a' por 'e' y las 'e' por 'a'
 
+22. Liga de Superhéroes
+Eres el programador encargado de gestionar la lista de superhéroes que forman parte de una liga.
 
+Cada superhéroe tiene un nombre y un puntaje de fuerza. Debes escribir un programa en Java que:
+
+Declare y llene dos arrays estáticos:
+
+Un array de tipo String que contenga los nombres de 5 superhéroes.
+
+Un array de tipo int que contenga el puntaje de fuerza correspondiente de cada superhéroe.
+
+Muestre la lista de superhéroes y sus puntuaciones.
+
+Encuentre al superhéroe más fuerte (el que tiene puntuación  más alta) y muestre su nombre.
+
+Calcule el promedio de fuerza de todos los superhéroes y muestre un mensaje indicando si cada superhéroe está por encima o por debajo del promedio.
 

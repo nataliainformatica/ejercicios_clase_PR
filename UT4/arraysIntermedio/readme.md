@@ -158,3 +158,18 @@ Puedes usar un array para almacenar los likes y otro array para los nombres de l
 Usa bucles for para recorrer el array y realizar cálculos.
 Usa condicionales if para comparar valores y encontrar el mínimo.
 
+
+
+LA APP ARRANCA Y MUESTRA UN MENÚ
+¿QUÉ QUIERES HACER?
+1. MOSTRAR CANCIONES CON DATOS
+2. VOTAR CANCIONES
+3. Calcular y mostrar el promedio de likes.
+4.  Indicar qué canción tiene el menor número de likes y su posición (por ejemplo, "Canción 3").
+5.  Mostrar cuántas canciones tienen más likes que el promedio.
+
+6.  SALIR
+
+   LA OPCIÓN 2 VOTAR CANCIONES: 
+   Irá mostrando una a una las canciones, y preguntando los votos que se le dan. 
+   

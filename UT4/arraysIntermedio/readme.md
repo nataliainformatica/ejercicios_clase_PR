@@ -131,4 +131,16 @@ Gestionar los casos en los que no se pueda realizar la acción, como:
 
 Intentar reservar cuando todas las habitaciones están ocupadas.
 
+
+## Ejercicio 25
+Crea un programa en Java que registre los likes de 7 canciones populares en un array. Luego, el programa debe:
+
+Calcular y mostrar el promedio de likes.
+Mostrar cuántas canciones tienen más likes que el promedio.
+Indicar cuál canción tiene el menor número de likes y su posición (por ejemplo, "Canción 3").
+(Opcional) Mostrar la lista de canciones ordenada de menor a mayor según los likes.
+Detalles adicionales:
+Puedes usar un array para almacenar los likes y otro array para los nombres de las canciones, si deseas relacionarlos.
+Usa bucles for para recorrer el array y realizar cálculos.
+Usa condicionales if para comparar valores y encontrar el mínimo.
 Intentar cancelar la reserva de una habitación que ya está vacía.

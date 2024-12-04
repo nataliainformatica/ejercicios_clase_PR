@@ -131,16 +131,30 @@ Gestionar los casos en los que no se pueda realizar la acción, como:
 
 Intentar reservar cuando todas las habitaciones están ocupadas.
 
+Intentar cancelar la reserva de una habitación que ya está vacía.
+
 
 ## Ejercicio 25
-Crea un programa en Java que registre los likes de 7 canciones populares en un array. Luego, el programa debe:
+Crea un programa en Java que registre los likes de 7 canciones populares en un array.
+El array estará en una clase aparte. 
+
+Luego, el programa debe:
 
 Calcular y mostrar el promedio de likes.
+
 Mostrar cuántas canciones tienen más likes que el promedio.
-Indicar cuál canción tiene el menor número de likes y su posición (por ejemplo, "Canción 3").
-(Opcional) Mostrar la lista de canciones ordenada de menor a mayor según los likes.
+
+Indicar qué canción tiene el menor número de likes y su posición (por ejemplo, "Canción 3").
+
+Mostrar la lista de canciones ordenada de menor a mayor según los likes.
+PRÁCTICA DEL MÉTODO DE LA BURBUJA-
+
+
 Detalles adicionales:
-Puedes usar un array para almacenar los likes y otro array para los nombres de las canciones, si deseas relacionarlos.
+
+Puedes usar un array para almacenar los likes y otro array para los nombres de las canciones.  O  puedes utilizar un array bidimensional. 
+
+// detalles de la implementación y repaso 
 Usa bucles for para recorrer el array y realizar cálculos.
 Usa condicionales if para comparar valores y encontrar el mínimo.
-Intentar cancelar la reserva de una habitación que ya está vacía.
+

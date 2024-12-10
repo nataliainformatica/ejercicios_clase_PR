@@ -362,7 +362,9 @@ Razona qué cambios sería necesario realizar a la clase Articulo e impleméntal
 Un cine tiene varias salas (3)  con X filas y Y  asientos por fila. Debes crear la clase Sala, que tendrá  un array bidimensional para representar los asientos. 
 
 SALA 1: 5 FILAS CON 8 ASIENTOS CADA UNA
+
 SALA 2: 6 FILAS CON 6 ASIENTOS CADA UNA
+
 SALA 3: 4 FILAS CON 4 ASIENTOS CADA UNA
 
 

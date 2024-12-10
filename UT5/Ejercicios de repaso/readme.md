@@ -354,3 +354,23 @@ En España existen tres tipos de IVA según el tipo de producto:
 Estos tres tipos de IVA no pueden variar y a cada artículo se le aplicará uno de los tres.
 
 Razona qué cambios sería necesario realizar a la clase Articulo e impleméntalos.
+
+Ejercicios avanzados
+
+Gestión de Entradas de un Cine. 
+
+Un cine tiene varias salas con X filas y Y  asientos por fila. 
+
+Representa el estado de la sala con un array bidimensional . 
+
+
+Se te pide implementar un programa que permita gestionar una sala que indique el usuario. Con las siguientes opciones: 
+
+1. Permita al usuario visualizar el estado de la sala.
+   
+2. Permita al usuario reservar un asiento indicando la fila y el número del asiento.  Debe verificar si un asiento está libre antes de reservarlo.  Si el asiento ya está ocupado, muestre un mensaje adecuado.
+
+
+   
+El programa debe repetirse hasta que el usuario decida salir.
+

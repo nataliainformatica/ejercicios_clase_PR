@@ -355,14 +355,11 @@ Estos tres tipos de IVA no pueden variar y a cada artículo se le aplicará uno 
 
 Razona qué cambios sería necesario realizar a la clase Articulo e impleméntalos.
 
-Ejercicios avanzados
+## Ejercicios avanzados
 
-Gestión de Entradas de un Cine. 
+## Gestión de Entradas de un Cine. 
 
-Un cine tiene varias salas con X filas y Y  asientos por fila. 
-
-Representa el estado de la sala con un array bidimensional . 
-
+Un cine tiene varias salas (3)  con X filas y Y  asientos por fila. Debes crear la clase Sala, que tendrá  un array bidimensional para representar los asientos. 
 
 Se te pide implementar un programa que permita gestionar una sala que indique el usuario. Con las siguientes opciones: 
 

@@ -31,17 +31,6 @@ public class Sala {
     public Sala(int numeroSala, int filas, int columnas) {
         this.numeroSala = numeroSala;
         this.asientos = new boolean[filas][columnas];
-
-
-        // ejemplo de array irregular
-        int prueba[][] = new int[3][];
-
-        prueba[0]= new int[2];
-        prueba[1]= new int[3]; 
-        prueba[3]= new int[5]; 
-
-
-    // fin del ejemplo
     }
 
     public String mostrarEstado() {
@@ -53,8 +42,6 @@ public class Sala {
         // - x - x
         // - - - -
         // x x x x
-
-
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < asientos.length; i++) {
@@ -73,6 +60,17 @@ public class Sala {
         return numeroSala;
     }
 
+    public boolean  reservarAsiento(int fila, int columna){
+        boolean resultado = false; 
+        // en nuestro código hemos definido true como ocupado 
+        if(!asientos[fila][columna]){
+            // reservo el asiento
+            asientos[fila][columna]= true; 
+            resultado = true;
+
+        }
+        return resultado; 
+    }
 
 
     

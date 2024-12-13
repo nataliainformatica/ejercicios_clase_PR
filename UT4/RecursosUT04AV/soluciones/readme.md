@@ -102,6 +102,15 @@ public class Ejercicio2 {
             System.out.print(" ");
         }
     }
+    
+    public static void cambiarPalabras(String[] palabras) {
+        // muestro las filas
+        for (int i = 0; i < palabras.length; i++) {
+
+            System.out.print(palabras[i]);
+            System.out.print(" ");
+        }
+    }
 
     /**
      * Ten en cuenta que las palabras

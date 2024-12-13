@@ -1,7 +1,7 @@
 APARTADO A – CLASES SIMPLES CON ATRIBUTOS
 En cada ejercicio debes crear un programa con dos clases: una clase principal (puedes llamarla por ejemplo UD8_ProgramaPunto, según el ejercicio) que solo contendrá la función main, además de otra clase (con sus atributos y métodos) que utilizarás desde el main de la clase principal para hcer pruebas sobre su funcionamiento.
 
-En este apartado las clases solo contendrán atributos (variables) y haremos algunas pruebas sencillas con ellas para entender cómo se instancia objetos y se accede a sus atirbutos. Por ahora no utilices ningún modificador en los atributos (public, private, static, final...).
+En este apartado las clases solo contendrán atributos (variables) y haremos algunas pruebas sencillas con ellas para entender cómo se instancia objetos y se accede a sus atirbutos. 
 
  
 
@@ -354,3 +354,28 @@ En España existen tres tipos de IVA según el tipo de producto:
 Estos tres tipos de IVA no pueden variar y a cada artículo se le aplicará uno de los tres.
 
 Razona qué cambios sería necesario realizar a la clase Articulo e impleméntalos.
+
+## Ejercicios avanzados
+
+## Gestión de Entradas de un Cine. 
+
+Un cine tiene varias salas (3)  con X filas y Y  asientos por fila. Debes crear la clase Sala, que tendrá  un array bidimensional para representar los asientos. 
+
+SALA 1: 5 FILAS CON 8 ASIENTOS CADA UNA
+
+SALA 2: 6 FILAS CON 6 ASIENTOS CADA UNA
+
+SALA 3: 4 FILAS CON 4 ASIENTOS CADA UNA
+
+
+
+Se te pide implementar un programa que permita gestionar una sala que indique el usuario. Con las siguientes opciones: 
+
+1. Permita al usuario visualizar el estado de la sala.
+   
+2. Permita al usuario reservar un asiento indicando la fila y el número del asiento.  Debe verificar si un asiento está libre antes de reservarlo.  Si el asiento ya está ocupado, muestre un mensaje adecuado.
+
+
+   
+El programa debe repetirse hasta que el usuario decida salir.
+

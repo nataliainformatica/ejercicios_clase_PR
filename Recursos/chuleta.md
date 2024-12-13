@@ -73,3 +73,64 @@ String[] split(String regex):Divide la cadena en un arreglo usando el delimitado
 char[] toCharArray():Convierte la cadena en un arreglo de caracteres.
 
 static String valueOf(Object obj):Convierte varios tipos de datos, como enteros o caracteres, en una cadena. También funciona para objetos.
+
+Math. Métodos para conocer
+
+int abs(int a)  Devuelve el valor absoluto de un número entero.
+
+double abs(double a)  Devuelve el valor absoluto de un número de punto flotante.
+
+int max(int a, int b) Devuelve el mayor de dos números enteros.
+
+int min(int a, int b) evuelve el menor de dos números enteros.
+
+double max(double a, double b) Devuelve el mayor de dos números de punto flotante.
+
+double min(double a, double b)  Devuelve el menor de dos números de punto flotante.
+
+long round(double a) Redondea el valor de punto flotante al entero más cercano.
+
+double pow(double a, double b) Devuelve el resultado de elevar a a la potencia de b.
+
+ double sqrt(double a) Devuelve la raíz cuadrada de un número.
+ 
+double cbrt(double a) Devuelve la raíz cúbica de un número.
+
+double exp(double a) Devuelve el número de Euler elevado a la potencia de a.
+
+double log(double a) Devuelve el logaritmo natural (base e) de un número.
+
+double log10(double a) Devuelve el logaritmo en base 10 de un número.
+
+double log1p(double x) Devuelve el logaritmo natural de (1 + x) con precisión para valores pequeños de x.
+
+double sin(double a) Devuelve el seno de un ángulo en radianes.
+
+double cos(double a) Devuelve el coseno de un ángulo en radianes.
+
+double tan(double a) Devuelve la tangente de un ángulo en radianes.
+
+double asin(double a) Devuelve el arco seno (en radianes) de un número. 
+
+double acos(double a) Devuelve el arco coseno (en radianes) de un número.
+
+double atan(double a)  Devuelve el arco tangente (en radianes) de un número.
+
+double atan2(double y, double x) Calcula el arco tangente de la relación y/x. 
+
+double random()  Devuelve un número aleatorio en el rango [0.0, 1.0).
+
+double ceil(double a) Devuelve el menor número entero mayor o igual a a.
+
+double floor(double a) Devuelve el mayor número entero menor o igual a a. 
+
+double rint(double a) Devuelve el número entero más cercano a a, como un valor de punto flotante.
+
+double signum(double a)  Devuelve el signo de un número: 1.0 para positivo, -1.0 para negativo, y 0.0 para cero. 
+
+double hypot(double x, double y) Calcula sqrt(x² + y²) sin desbordamiento intermedio. 
+
+double toRadians(double angdeg) Convierte un ángulo de grados a radianes.
+
+double toDegrees(double angrad) Convierte un ángulo de radianes a grados.
+

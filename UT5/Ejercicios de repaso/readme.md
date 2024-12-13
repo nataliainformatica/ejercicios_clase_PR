@@ -379,3 +379,27 @@ Se te pide implementar un programa que permita gestionar una sala que indique el
    
 El programa debe repetirse hasta que el usuario decida salir.
 
+
+## Tablero de juego
+
+Vamos a escribir un juego en el que nos mostrará un tablero de 5 x 5 posiciones
+Avatares disponibles: (?, *, ¿, +, %)
+En el tablero habrá 4 personajes, siendo Personaje una clase que debes crear con los siguientes requisitos: 
+Tendrá un avatar (que en realidad es un carácter). 
+Tendrá un atributo fuerza, que al crear el Personaje es 0. 
+Tendrá un método mover, que se invocará al mover el personaje por el tablero, lo que hace es incrementar la fuerza en uno. 
+Tendrá un método cambiarAvatar, que solo permitirá cambiar el avatar si la fuerza es >3, porque el cambio de avatar implica perder 3 puntos de fuerza
+
+
+En el tablero,habrá además del personaje con el que jugamos, 3 personajes más que se crearán de forma aleatoria (avatar, posición y fuerza). 
+Los valores aleatorios de  fuerza pueden variar entre 1 y 5. Se permiten repetir valores de avatar y fuerza, pero no de posición. 
+
+Una vez comenzado el juego, el objetivo es "comernos" al resto de personajes,  nuestro jugador, siempre va a comenzar en la posición 0,0.  Y podremos moverlo una posición a la derecha o hacia abajo. 
+Si llegamos a la posicón 4,4 , el juego habrá finalizado. 
+En el tablero, cuando le pedimos mover un personaje, lo cambiará a la posición solicitada (derecha o abajo). Invocando al método mover.
+Si la posición en la que se va a poner el Personaje está ocupada, si el avatar es el mismo, automáticamente gana nuestro personaje y se come al otro, si no es el mismo avatar, nuestro personaje debe tener más fuerza para poder ganar. Si en  el intento el otro personaje tiene más fuerza, el juego habrá acabado. 
+
+
+
+
+

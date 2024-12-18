@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class RegistroEventos {
     public static void main(String[] args) {
+        int contador =0; 
         Scanner scanner = new Scanner(System.in);
         String[]  eventos = new String[20];
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
@@ -36,7 +37,8 @@ public class RegistroEventos {
                     String horaFormateada = horaActual.format(timeFormatter);
                     
                     // Registrar el evento
-                    eventos.add("Evento: " + descripcion + " | Fecha: " + fechaFormateada + " | Hora: " + horaFormateada);
+                    eventos[contador] = "Evento: " + descripcion + " | Fecha: " + fechaFormateada + " | Hora: " + horaFormateada;
+                    contador ++; 
                     System.out.println("¡Evento registrado exitosamente!");
                     break;
 
@@ -45,7 +47,7 @@ public class RegistroEventos {
                     if (eventos.isEmpty()) {
                         System.out.println("No hay eventos registrados.");
                     } else {
-                        for (String evento : eventos) {
+                        for (int i=0; i<(contador-1); i++) {
                             System.out.println(evento);
                         }
                     }

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class RegistroEventos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> eventos = new ArrayList<>();
+        String[]  eventos = new String[20];
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         

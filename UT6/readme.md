@@ -8,5 +8,12 @@ Para crear la fecha se puede utilizar el método:
 static LocalDate	
 LocalDate.of(int year, Month month, int dayOfMonth)
 
-Obtains an instance of LocalDate from a year, month and day.
+
+La aplicación mostrará un menú,  que pedirá al usuario los datos para crear la tarea. 
+La aplicación permite almacenar hasta 20 tareas
+La aplicacion también tendrá un punto del menú que permitirá mostrar las tareas almacenadas. 
+
+
+
+
 */

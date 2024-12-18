@@ -34,7 +34,9 @@ class Tarea {
 public class GestionTareas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Tarea> tareas = new ArrayList<>();
+        final int MAX_TAREAS =20; 
+        int contador =0; 
+       Tarea[] tareas = new Tarea[MAX_TAREAS];
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         System.out.println("¡Bienvenido al gestor de tareas!");
@@ -64,7 +66,8 @@ public class GestionTareas {
 
                         // Crear y agregar la tarea
                         Tarea nuevaTarea = new Tarea(nombre, descripcion, fechaVencimiento);
-                        tareas.add(nuevaTarea);
+                        tareas[contador]=nuevaTarea;
+                        contador++;
                         System.out.println("¡Tarea añadida exitosamente!");
                     } catch (DateTimeParseException e) {
                         System.out.println("Formato de fecha inválido. Usa el formato dd/MM/yyyy.");
@@ -76,11 +79,9 @@ public class GestionTareas {
                     if (tareas.isEmpty()) {
                         System.out.println("No hay tareas registradas.");
                     } else {
-                        // Ordenar las tareas por fecha de vencimiento
-                        tareas.sort(Comparator.comparing(Tarea::getFechaVencimiento));
-
-                        for (Tarea tarea : tareas) {
-                            System.out.println(tarea.getDetalle());
+                      
+                        for (inti=0; i<contador; i++) {
+                            System.out.println(tareas[i].getDetalle());
                         }
                     }
                     break;

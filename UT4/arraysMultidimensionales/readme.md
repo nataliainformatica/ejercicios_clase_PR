@@ -18,3 +18,23 @@ empresa y detectar si existe brecha salarial entre ambos. El programa pedirá po
 información de N personas distintas (valor también introducido por teclado). Para cada
 persona, pedirá su género (0 para varón y 1 para mujer) y su sueldo. Esta información debe
 guardarse
+
+
+## Ejemplo de clase Ejercicio1
+
+/**
+ * Haz el código que cree un array bidimensional de 5x5
+ * que se rellenará en las filas pares con un 1 
+ * y en las filas impares con un 2
+ * Muestra el array completo
+
+ */
+
+## Ejemplo de clase Ejercicio2
+/**
+ * Haz un ejercicio que tenga una función para sumar las filas del array bidimensional
+ * Y otra para sumar las columnas
+ * Muestra los resultados
+
+ */
+ 

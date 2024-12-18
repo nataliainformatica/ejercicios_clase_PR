@@ -6,6 +6,10 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 // Clase Tarea
+
+/*
+Crearemos una clase llamada Tarea, donde cada tarea tiene un nombre, una descripción y una fecha de vencimiento (utilizando LocalDate). El programa permitirá al usuario crear tareas y verlas
+*/
 class Tarea {
     private String nombre;
     private String descripcion;

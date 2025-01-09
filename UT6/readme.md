@@ -44,7 +44,7 @@ La letra no es un carácter vacío (' ').
 
 Método mostrarDni():
 
-Debe imprimir en consola el número completo del DNI en formato 12345678A.
+Debe devolver un string para poder imprimir  en consola el número completo del DNI en formato 12345678A.
 
 Tareas a realizar:
 

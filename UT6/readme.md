@@ -62,7 +62,7 @@ Diseña un programa en Java que gestione la información de alumnos, módulos y 
 Tendrá las siguientes clases, 
 Principal, Alumno, Modulo, Nota
 
-lase Alumno:
+Clase Alumno:
 
 Atributos:
 

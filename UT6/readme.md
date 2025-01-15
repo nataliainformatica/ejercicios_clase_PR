@@ -157,7 +157,7 @@ Probaremos a listar en la consola todas las tareas.
 
 
 
-## Ejercicio 4
+## Ejercicio 4 - avanzado
 
 El objetivo de este ejercicio es desarrollar una aplicación que permita gestionar una lista de tareas utilizando una clase llamada TodoList. 
 

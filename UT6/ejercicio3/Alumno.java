@@ -46,7 +46,7 @@ public class Alumno {
         for(Modulo m: modulos){
             sb.append("\n Título del módulo: ");
             // añadimos el nombre del módulos
-            sb.append(m.getNombre()); 
+            sb.append(m); 
             
         }
         return sb.toString(); 

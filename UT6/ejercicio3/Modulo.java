@@ -30,7 +30,8 @@ public class Modulo {
 
     @Override
     public String toString() {
-        return "Modulo [nombre=" + nombre + ", codigo=" + codigo + ", notas=" + Arrays.toString(notas) + "]";
+        return "Modulo [nombre=" + 
+        nombre + ", codigo=" + codigo + ", notas=" + Arrays.toString(notas) + "]";
     }
 
     public String getNombre() {
@@ -56,6 +57,7 @@ public class Modulo {
     public void setNotas(Nota[] notas) {
         this.notas = notas;
     }
+    
 
     
     

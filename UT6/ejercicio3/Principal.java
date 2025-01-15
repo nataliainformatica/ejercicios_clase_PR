@@ -9,17 +9,18 @@ public class Principal {
         String tipo = notas[0].getTipo();  
         notas[1]= new Nota(TipoNota.EXTRAORDINARIA, 5); 
         modulos[0] = new Modulo("Programación", "489",
-            new Nota[3]);
+            notas);
         modulos[1] = new Modulo("DOS", "489",
-            new Nota[3]);
-
-           
+           notas);
         Alumno alumno1 = new Alumno("alumno1", 
             "1", modulos);
+    
 
-        System.out.println(alumno1.mostrarInformacion());
+            System.out.println(alumno1.mostrarInformacion());
+
         
-       System.out.println(tipo);
+        
+    
     }
 
 }

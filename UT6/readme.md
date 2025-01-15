@@ -54,6 +54,7 @@ Pida por consola los datos para crear 2 objetos de la clase Dni con diferentes d
 Muestre el resultado de verificar si cada uno de los DNIs es válido usando el método esValido().
 Muestre los datos de los DNIs en consola usando el método mostrarDni().
 
+
 ## Ejercicio3 
 
 Enunciado del ejercicio: Sistema de Gestión Académica
@@ -127,6 +128,34 @@ Añadir alumnos, módulos y notas.
 Listar alumnos con sus módulos y calificaciones.
 
 Mostrar estadísticas como promedios por módulo o alumno.
+
+## Ejercicio 4
+Vamos a crear una clase tarea:
+
+
+Clase Tarea
+
+Cada tarea estará representada por una clase Tarea con los siguientes atributos:
+
+titulo: (String) el título de la tarea.
+
+categoria: (enum) la categoría de la tarea, con valores como:
+
+TRABAJO, ESTUDIO, PERSONAL, OTRO.
+
+estado: (enum) el estado de la tarea, con valores como:
+
+PENDIENTE, EN_PROGRESO, COMPLETADA, CANCELADA.
+
+fecha: (LocalDate) la fecha asignada a la tarea.
+
+hora: (LocalTime) la hora asignada a la tarea.
+
+En la clase principal, crearemos un array de tareas, y realizaremos la carga con la llamada a la clase facilitada. 
+
+Probaremos a listar en la consola todas las tareas.  
+
+
 
 ## Ejercicio 4
 

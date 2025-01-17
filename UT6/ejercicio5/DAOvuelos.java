@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DAOvuelos {
-
-   
-        public Vuelo(String numeroVuelo, String origen, String destino, LocalDate fecha, LocalTime hora, EstadoVuelo estado) {
-           .....
-        }
+      
+   // formato del constructor utilizando para el DAO
+        //public Vuelo(String numeroVuelo, String origen, String destino, LocalDate fecha, LocalTime hora, EstadoVuelo estado) {  .....   }
 
 public Vuelo[] getVuelos() {
     Vuelo[] vuelos = {

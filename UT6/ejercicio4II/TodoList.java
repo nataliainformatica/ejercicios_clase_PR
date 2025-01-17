@@ -71,6 +71,7 @@ public class TodoList {
             // comprobar si hay una tarea con esa fecha y hora
             if (comprobarTarea(tarea))
                 tareas[numTareas] = tarea;
+                numTareas++;
             success = true;
         }
         return success;
@@ -80,10 +81,8 @@ public class TodoList {
     private boolean comprobarTarea(Tarea tarea) {
         boolean success = false;
         // recorrer el array para buscar una tarea con la misma fecha y hora
-         
-        try {
-            
-            for (Tarea t : tareas) {
+        for (Tarea t : tareas) {
+            try {
                 // si se lanza una exception
                 if ((t.getFecha().equals(tarea.getFecha())) &&
                         t.getHora().equals(tarea.getHora())) {
@@ -91,14 +90,57 @@ public class TodoList {
                     return success;
 
                 }
+            } catch (Exception e) {
+                // no continua el bucle
             }
-        } catch (Exception e) {
-            // no continua el bucle
         }
+
         success = true;
 
         return success;
 
     }
 
+    public boolean modificarTarea(int index, Tarea tarea) {
+        boolean success = false;
+        // comprobamos que no existe otra tarea en el array con los valores
+        // de fecha y hora de la tarea actual
+        // solución 1 - elimino la tarea y cuando compruebe que no hay ninguna igual la
+        // añado
+        Tarea tarea_aux = tareas[index]; 
+        tareas[index] = null;
+            // comprobarTarea devuelve true si no hay otra tarea en la misma fecha y hora
+        if (comprobarTarea(tarea)) {
+            // cuidado, porque , la posición del índice no debemos
+            // tenerla en cuenta, porque es la posición que vamos a utilizar
+            /** solución 1 */
+            tareas[index]= tarea; 
+
+            success = true; 
+        }else{
+            // si no se puede añadir, vuelvo a dejar la tarea antigua
+            tareas[index]= tarea_aux;
+        }
+
+        return success;
+
+    }
+
+    public String devolverListadoTareas(){
+
+        StringBuilder sb = new StringBuilder(); 
+        
+      
+        // recorrer el array
+        for(int i= 0; i< tareas.length; i++){
+            if(tareas[i]!= null){
+                sb.append("Tarea : ");
+                sb.append(i); 
+                sb.append(tareas[i]);}
+
+        }   
+
+        return sb.toString();
+
+    }
 }

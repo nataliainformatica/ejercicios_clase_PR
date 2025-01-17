@@ -32,13 +32,16 @@ import java.util.Scanner;
  */
 public class Principal {
     private static Scanner sc = new Scanner(System.in);
+    public static int contador;
 
     public static void main(String[] args) {
 
         int opcion = 0;
+        int index; 
 
         TodoList td = new TodoList();
-        do {
+        Tarea tarea;
+        do{
             System.out.println("MENÚ");
             System.out.println("1. Añadir tarea");
             System.out.println("2.Modificar tarea");
@@ -49,48 +52,78 @@ public class Principal {
             opcion = pedirOpcion();
             switch (opcion) {
                 case 1:
-                try{
-                    String titulo, categoria, estado, anio, mes,dia, horas,minutos;
-                    LocalDate fecha; 
-                    LocalTime hora; 
-                    Tarea tarea; 
-                    // pedir datos de tarea y llamar al método de TodoList
-                    System.out.println("Título");
-                    titulo = sc.nextLine();
-                    System.out.println("Categoría (TRABAJO, ESTUDIO, PERSONAL, OTRO)");
-                    categoria = sc.nextLine();
-                    System.out.println("Estado (PENDIENTE, EN_PROGRESO, COMPLETADA, CANCELADA)");
-                    estado = sc.nextLine();
-                    System.out.println("Fecha - Año");
-                    anio = sc.nextLine();
-                    System.out.println("Fecha - Mes");
-                    mes = sc.nextLine();
-                    System.out.println("Fecha - Día");
-                    dia = sc.nextLine();
-                    System.out.println("Hora - HH");
-                    horas = sc.nextLine();
-                    System.out.println("Hora: Minutos ");
-                    minutos = sc.nextLine(); 
-                    fecha = LocalDate.of(Integer.parseInt(anio), 
-                        Integer.parseInt(mes), Integer.parseInt(dia)); 
-                    hora = LocalTime.of(Integer.parseInt(horas), 
-                        Integer.parseInt(minutos));
-                        // intancia de la tarea
-                    tarea = new Tarea(titulo,Categoria.valueOf(categoria),
-                     Estado.valueOf(estado), fecha,hora);
-                // se añade la tarea a TodoList mediante el método
-                     td.aniadirTarea(tarea); 
-                }catch(Exception e){
-                    System.out.println("Algún valor no es válido");
-                }
-                
-                    break;
 
-                default:
+                    tarea = pedirDatosTarea();
+
+                    if (tarea != null) {
+
+                        if (td.aniadirTarea(tarea))
+                            System.out.println("Se ha añadido la tarea correctamente");
+                        ;
+                    } else
+                        System.out.println("No se ha podido añadir la tarea");
+                    break;
+                    case 2: 
+                        System.out.println("Dime el número de tarea que quieres modificar");
+                        // TODO capturar la posible excepción 
+                        index = Integer.parseInt(sc.nextLine()); 
+                        tarea = pedirDatosTarea();
+                    if (tarea != null) {
+
+                        if (td.modificarTarea(index,tarea))
+                            System.out.println("Se ha añadido la tarea correctamente");
+                        ;
+                    } else
+                        System.out.println("No se ha podido añadir la tarea");
+                    break; 
+                    case 3: 
+                        // mostrar la lista de tareas
+                        System.out.println(td.devolverListadoTareas());
+                      
                     break;
             }
         } while (opcion != 0);
 
+    }
+    
+
+    private static Tarea pedirDatosTarea() {
+        Tarea tarea = null;
+        try {
+            String titulo, categoria, estado, anio, mes, dia, horas, minutos;
+            LocalDate fecha;
+            LocalTime hora;
+
+            // pedir datos de tarea y llamar al método de TodoList
+            System.out.println("Título");
+            titulo = sc.nextLine();
+            System.out.println("Categoría (TRABAJO, ESTUDIO, PERSONAL, OTRO)");
+            categoria = sc.nextLine();
+            System.out.println("Estado (PENDIENTE, EN_PROGRESO, COMPLETADA, CANCELADA)");
+            estado = sc.nextLine();
+            System.out.println("Fecha - Año");
+            anio = sc.nextLine();
+            System.out.println("Fecha - Mes");
+            mes = sc.nextLine();
+            System.out.println("Fecha - Día");
+            dia = sc.nextLine();
+            System.out.println("Hora - HH");
+            horas = sc.nextLine();
+            System.out.println("Hora: Minutos ");
+            minutos = sc.nextLine();
+            fecha = LocalDate.of(Integer.parseInt(anio),
+                    Integer.parseInt(mes), Integer.parseInt(dia));
+            hora = LocalTime.of(Integer.parseInt(horas),
+                    Integer.parseInt(minutos));
+            // intancia de la tarea
+            tarea = new Tarea(titulo, Categoria.valueOf(categoria),
+                    Estado.valueOf(estado), fecha, hora);
+            // se añade la tarea a TodoList mediante el método
+
+        } catch (Exception e) {
+            System.out.println("Algún valor no es válido");
+        }
+        return tarea;
     }
 
     private static int pedirOpcion() {
@@ -106,5 +139,7 @@ public class Principal {
         } while (opcion < 0 && opcion > 3);
         return opcion;
     }
+
+    
 
 }

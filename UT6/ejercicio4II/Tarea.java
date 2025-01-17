@@ -102,11 +102,11 @@ public void setHora(LocalTime hora) {
 
 @Override
 public String toString() {
-    return "Tarea [titulo=" + titulo 
+    return "Titulo=" + titulo 
     + ", categoria=" + categoria 
     + ", estado=" + estado 
     + ", fecha=" + fecha
-    + ", hora=" + hora + "]"+ "\n";
+    + ", hora=" + hora + "\n";
 }
 
 

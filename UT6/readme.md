@@ -260,6 +260,116 @@ El usuario selecciona "Modificar tarea" y cambia la fecha y hora de la tarea.
 
 Mensaje: "Tarea modificada correctamente."
 
+## Ejercicio 5
+Sistema de Reservas de Vuelos
+El objetivo de este ejercicio es desarrollar un sistema de reservas de vuelos que permita gestionar la información de vuelos, pasajeros y reservas de forma organizada. Se deben implementar las siguientes clases y funcionalidades:
+
+1. Clase Vuelo
+   
+Descripción: Representa un vuelo con la información básica necesaria.
+
+Atributos:
+
+numeroVuelo: (String) número único del vuelo.
+
+origen: (String) ciudad de origen.
+
+destino: (String) ciudad de destino.
+
+fecha: (LocalDate) fecha de salida.
+
+hora: (LocalTime) hora de salida.
+
+estado: (enum) estado del vuelo, con valores como:
+
+PROGRAMADO, DEMORADO, CANCELADO.
+
+Métodos:
+
+Constructor para inicializar los atributos.
+
+Métodos getters y setters.
+
+Método toString() para mostrar información del vuelo.
+
+3. Clase Pasajero
+   
+Descripción: Representa a un pasajero con los datos básicos y su asiento asignado.
+
+Atributos:
+
+nombre: (String) nombre completo del pasajero.
+
+documentoIdentidad: (String) documento único del pasajero.
+
+asiento: (String) asiento asignado (por ejemplo, "12A").
+
+categoria: (enum) categoría del pasajero, con valores como:
+
+ECONOMICA, PREMIUM, EJECUTIVA.
+
+Métodos:
+
+Constructor para inicializar los atributos.
+
+Métodos getters y setters.
+
+Método toString() para mostrar información del pasajero.
+
+5. Clase Reserva
+6. 
+Descripción: Representa una reserva que asocia un pasajero a un vuelo.
+
+Atributos:
+
+vuelo: (Vuelo) el vuelo reservado.
+
+pasajero: (Pasajero) el pasajero asociado.
+
+Métodos:
+
+Constructor para inicializar los atributos.
+
+Métodos getters y setters.
+
+Método toString() para mostrar los detalles de la reserva.
+
+8. Clase DAOvuelos
+   
+Descripción: Provee una lista de instancias de vuelos para pruebas.
+Método:
+getVuelos(): Devuelve un array o lista de 10 vuelos predeterminados con valores variados para origen, destino, fecha, hora y estado.
+
+10. Clase DAOpasajeros
+    
+Descripción: Provee una lista de instancias de pasajeros para pruebas.
+
+Método:
+
+getPasajeros(): Devuelve un array o lista de 5-10 pasajeros predeterminados con valores variados para nombre, documentoIdentidad, asiento y categoria.
+
+12. Clase Principal
+
+Descripción: Implementa un menú para interactuar con el sistema.
+
+Opciones del menú:
+
+a. Listar vuelos disponibles: Muestra la lista de vuelos generada por el método getVuelos() de la clase DAOvuelos.
+
+b.Listar pasajeros disponibles: Muestra la lista de pasajeros generada por el método getPasajeros() de la clase DAOpasajeros.
+
+c.Realizar una reserva: 
+Permitir al usuario seleccionar un vuelo y un pasajero de las listas. 
+Crear una nueva instancia de Reserva asociando el vuelo y el pasajero seleccionados.
+
+d.Mostrar reservas realizadas: Listar todas las reservas creadas.
+e. Salir: Finalizar el programa.
+
+Restricciones
+Usar enumeraciones (enum) para representar el estado de los vuelos y la categoría de los pasajeros.
+Validar entradas del usuario para evitar errores (por ejemplo, índices fuera de rango al seleccionar vuelos o pasajeros).
+Permitir que los vuelos y pasajeros estén predeterminados en las clases DAO para simplificar las pruebas.
+
 
 
 

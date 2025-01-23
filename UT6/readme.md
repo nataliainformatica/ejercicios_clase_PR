@@ -370,7 +370,12 @@ Usar enumeraciones (enum) para representar el estado de los vuelos y la categor�
 Validar entradas del usuario para evitar errores (por ejemplo, índices fuera de rango al seleccionar vuelos o pasajeros).
 Permitir que los vuelos y pasajeros estén predeterminados en las clases DAO para simplificar las pruebas.
 
+## Modificación al EJERCICIO 5
+Al realizar la reserva, se permite al usuario seleccionar el vuelo mediante el número de vuelo (el atributo creado en la clase)
+Debes implementar el método equals en Vuelo, que permita identificar si dos instancias de esta clase que tengan el 
+mismo número de vuelo son iguales. 
 
+Con esta implementación de equals(), modifica el método de reserva, para que se busque el vuelo que quiere el usuario: (número que introduce por consola)
 
 
 

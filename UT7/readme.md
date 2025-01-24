@@ -15,6 +15,10 @@ Incluye el método devolverFechaCaducidad.
 
 Incluye el método calcularPrecioFinal que calcula un descuento según los días restantes.
 
+Si quedan menos de tres días se hace un descuento del 50%
+
+Si queda menos de un día se hace un 75 % de descuento. 
+
 Clase ProductoNoPerecedero:
 
 Añade el atributo descuento. 

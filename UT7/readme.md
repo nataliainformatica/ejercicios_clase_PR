@@ -7,6 +7,7 @@ Clase Producto:
 
 Contiene atributos comunes a todos los productos (nombre y precio).
 Tiene un método mostrarInformacion que las subclases pueden extender.
+
 Clase ProductoPerecedero:
 
 Añade el atributo diasParaCaducar.

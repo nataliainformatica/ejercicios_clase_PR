@@ -10,11 +10,15 @@ Tiene un método mostrarInformacion que las subclases pueden extender.
 Clase ProductoPerecedero:
 
 Añade el atributo diasParaCaducar.
+Incluye el método devolverFechaCaducidad. 
+
 Incluye el método calcularPrecioFinal que calcula un descuento según los días restantes.
 
 Clase ProductoNoPerecedero:
-Añade el atributo tipo (como "educativo", "electrónico", etc.).
+Añade el atributo descuento. 
+Añade el atributo tipo ( ejemplo   "educativo", "electrónico", etc.).
 Tiene un método aplicarPromocion que simula un descuento en el precio.
+
 
 
 Clase Principal:

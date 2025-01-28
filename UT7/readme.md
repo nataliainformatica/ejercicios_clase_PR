@@ -47,6 +47,11 @@ precio (double)
 
 Además, incluye:
 
+El constructor que permite inicializar la instancia conociendo el valor de totos sus atributos. 
+
+Tanto el código como el nombre son atributos obligatorios, aunque está permitido crear una instancia sin que se concozca el precio del producto. 
+Se podrá cambiar el precio del producto, sin embargo, no será posible cambiar ni el nombre ni el código, una vez realizada la inicialización del objeto.
+
 Un método calcularDescuento(double porcentaje) que devuelva el precio del producto después de aplicar un descuento.
 
 Sobrescribe el método equals para comparar productos por su codigo.

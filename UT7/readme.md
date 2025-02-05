@@ -250,7 +250,7 @@ Clase Parking:
 
 Atributos:
 
-ArrayList<Vehiculo> vehiculosEstacionados
+ArrayList<Vehiculo>  vehiculosEstacionados
 Métodos:
 void agregarVehiculo(Vehiculo vehiculo): agrega un vehículo al parking.
 

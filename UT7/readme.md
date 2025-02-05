@@ -181,7 +181,7 @@ Métodos:
 
 Constructor para inicializar todos los atributos.
 
-Método concreto void mostrarInformacion(): muestra la información básica del vehículo.
+Método concreto String mostrarInformacion(): muestra la información básica del vehículo.
 
 Método abstracto double calcularCostoMantenimiento(): debe ser implementado por cada subclase para calcular el coste de mantenimiento.
 

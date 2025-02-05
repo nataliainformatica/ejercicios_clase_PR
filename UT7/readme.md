@@ -250,8 +250,10 @@ Clase Parking:
 
 Atributos:
 
-ArrayList<Vehiculo>  vehiculosEstacionados
+ArrayList<Vehiculo>   vehiculosEstacionados
+
 Métodos:
+
 void agregarVehiculo(Vehiculo vehiculo): agrega un vehículo al parking.
 
 void mostrarTarifas(): recorre la lista de vehículos y muestra el precio por hora de cada uno usando polimorfismo.

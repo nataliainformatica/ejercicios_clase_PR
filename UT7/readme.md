@@ -270,3 +270,234 @@ Mostrar la información de cada vehículo, su costo de mantenimiento y su precio
 Mostrar la recaudación total del parking.
 
 Ejercicio adicional: Si el vehículo implementa la interfaz Electrico, mostrar también el costo de carga y la autonomía usando instanceof y casting.
+
+
+## Ejercicio 5
+
+# Electrodomésticos: práctica guiada que realizaremos en clase juntos. Aprenderemos las clases enumeradas
+
+La primera versión que haremos del programa será sin Clases enumeradas!!!!!
+
+## Crearemos una superclase llamada Electrodomestico con las siguientes características:
+
+Sus **atributos** son precio base, color, consumo energético (letras entre A y F) y peso. **Usa una clase enumerada.**
+    
+Por defecto, el color será blanco, el consumo energético sera F, el precioBase es de 100 € y el peso de 5 kg. Usa constantes para ello.
+    
+Los colores disponibles son blanco, negro, rojo, azul y gris. **Usa una clase enumerada.**
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Electrodomestico() 
+- Un constructor con el precio y peso. El resto por defecto. public Electrodomestico(float precioBase, float peso)
+- Un constructor con todos los atributos. public Electrodomestico(float precioBase, String color, char consumoEnergetico, float peso)
+
+Los **métodos** que implementara serán:
+    
+- Métodos get de todos los atributos.
+- comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, si no es correcta, usara la letra por defecto. Se invocara al crear el objeto y no será visible.
+- comprobarColor(String color): comprueba que el color es correcto, si no lo es, usa el color por defecto. Se invocara al crear el objeto y no será visible.
+- getPrecioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también. Esta es la lista de precios:
+
+**LETRA	PRECIO**
+
+A	100 €
+
+B	80 €
+
+C	60 €
+
+D	50 €
+
+E	30 €
+
+F	10 €
+
+**TAMAÑO	PRECIO**
+
+Entre 0 y 19 kg:	10 €
+
+Entre 20 y 49 kg:	50 €
+
+Entre 50 y 79 kg:	80 €
+
+Mayor que 80 kg:	100 €
+
+
+## Crearemos una subclase llamada Lavadora con las siguientes características:
+
+Su **atributo** es carga, además de los atributos heredados.
+    
+Por defecto, la carga es de 5 kg. Usa una constante para ello.
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Lavadora()
+- Un constructor con el precio y peso. El resto por defecto. public Lavadora(float precioBase, float peso)
+- Un constructor con la carga y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre. public Lavadora(float precioBase, float peso, char consumoEnergetico, String color, int carga) y public Lavadora(float precioBase, float peso, int carga)
+- Un constructor con precio, peso, consumo energético y color (sin carga). public Lavadora(float precioBase, float peso, char consumoEnergetico, String color) 
+
+ Los **métodos** que se implementara serán:
+    
+ - Método get de carga.
+ - getPrecioFinal():, si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se incrementara el precio. Llama al método padre y añade el código necesario. Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+
+
+## Crearemos una subclase llamada Television con las siguientes características:
+
+Sus **atributos** son resolución (en pulgadas) y sintonizador TDT (booleano), además de los atributos heredados.
+    
+Por defecto, la resolución sera de 20 pulgadas y el sintonizador sera false.
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Television()
+- Un constructor con el precio y peso. El resto por defecto. public Television(float precio, float peso)
+- Un constructor con la resolución, sintonizador TDT y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre. public Television(float precio, float peso, char consumo, String color, int resolucion, boolean siTDT
+
+Los **métodos** que se implementara serán:
+    
+- Método get de resolución y sintonizador TDT.
+- getPrecioFinal(): si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un 30% y si tiene un sintonizador TDT incorporado, aumentara 50 €. Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+
+
+## Ahora crea una clase ejecutable que realice lo siguiente:
+
+Crea un ArrayList de Electrodomesticos.
+    
+Crea diferentes electrodomésticos con los valores que desees.
+    
+Ahora, recorre este ArrayList y ejecuta el método precioFinal().
+    
+Deberás mostrar el precio de cada clase, es decir, el precio de todas las televisiones por un lado, el de las lavadoras por otro y la suma de los Electrodomesticos (puedes crear objetos Electrodomestico, pero recuerda que Television y Lavadora también son electrodomésticos). 
+
+**Polimorfismo: Recuerda el uso operador instanceof.**
+
+Por ejemplo, si tenemos un Electrodomestico con un precio final de 300, dos lavadoras de 200 y una televisión de 500, el resultado final sera de 1000 (300+400+500) para electrodomésticos, 400 para lavadora y 500 para televisión.
+
+## Ejercicio 6 
+Define una jerarquía de clases que permita almacenar datos sobre los planetas y satélites (lunas) que forman parte del sistema solar. 
+
+Algunos atributos que necesitaremos almacenar son: 
+
+- Nombre
+- Radio
+- Rotación del eje
+- Masa del cuerpo. 
+- Temperatura media
+- Gravedad
+
+En el caso de los **planetas** es necesario almacenar:
+
+- Distancia al sol
+- Órbita al sol
+- tiene satélites (guardadlos en una lista dinámica **ArrayList**)
+
+En el caso de los **satélites** es necesario almacenar:
+
+- Distancia al planeta 
+
+- Órbita al planeta planeta al que pertenece
+
+
+
+**Define las clases necesarias conteniendo:**
+
+• Constructores. 
+
+• Métodos para recuperar y almacenas atributos. 
+
+• Método para mostrar la información del objeto. 
+
+
+**Sobreescribir el método toString()**
+Vamos a sobreescribirlo para que dado un objeto del sistema solar (planeta o satélite), devuelva un String con toda la información que se dispone sobre el mismo (además de su lista de satélites si los tuviera).
+
+Para ello haremos uso de la clase StringBuilder.
+
+**Aunque salga en la captura, no hay que implementar el método muestra y mucho menos abstracto!!!!! utilizad el método toString() adecuadamente en cada caso** 
+
+![Captura de pantalla de 2022-01-14 18-55-49](https://user-images.githubusercontent.com/91023374/149562533-f583c5b3-2c44-4b25-8155-ecba6e193b6d.png)
+
+
+## Ejemplo de salida del programa
+
+Con un menú para elegir los diferentes astros
+
+![image](https://user-images.githubusercontent.com/91023374/213674199-dedb6630-9c8f-49ff-b964-2c791049b035.png)
+
+**CONTROL DE ERRORES**
+El programa controla que se intruduzca un número de planeta correcto (debe ser un entero positivo relacionado a un planeta existente)
+
+
+## Valores de ejemplo para planetas y satélites
+
+```
+        // Instanciamos planetas
+        Planeta tierra = new Planeta("Tierra", 5.97E24, 12742.0, 1.0, 365.25, 14.05, 9.78, 146600000.0);
+        Planeta venus = new Planeta("Venus", 4.869E24, 12103.6, 243.02, 584.0, 463.85, 8.87, 108200000.0);
+        Planeta marte = new Planeta("Marte", 6.42E23, 6794.4, 24.62, 686.97, -46.0, 3.711, 227940000.0);
+
+        // Instanciamos satélites
+        Satelite luna = new Satelite("Luna", 7.349E22, 3474.0, 27.5, 27.5, -153.0, 1.62, 384400.0, tierra);
+        Satelite fobos = new Satelite("Fobos", 1.072E16, 11000.0, 0.0, 0.319, -40.15, 0.0084, 6000, marte);
+        Satelite deimos = new Satelite("Deimos", 2.244E15, 12400.0, 0.0, 1.262, -40.15, 0.0039, 23460, marte);
+```
+
+### Pista: para crear correctamente el método toString()
+Investiga sobre:
+- getClass()
+- getClass().getSimpleName()
+
+```
+    public String toString() {
+        StringBuilder sb = new StringBuilder("\n*** "+getClass().getSimpleName()+" "+super.getNombre()+" ***");
+        sb.append(super.toString());
+        sb.append("\ndistPlaneta=").append(distPlaneta);
+        sb.append("\norbPlaneta=").append(orbPlaneta);
+        sb.append("\nplaneta=").append(planeta.getNombre());
+        return sb.toString();
+    }
+```
+
+
+
+# VERSIÓN 2: Con clase abstracta
+
+Implementar el método abstracto en Astro:
+
+```
+    // MÉTODO ABSTRACTO
+    public abstract double obtenerNumeroDistanciaSoles();
+    
+```
+
+Para obtener el número de soles de distancia hay que tener en cuenta que no se obtiene igual en los planetas que en los satélites. Vamos a considerar (que no se entere ningún astrónomo que nos mata!!!!) que:
+- **En los planetas:** el número de soles será la distancia al sol dividida por el diámetro del sol (distSol / DIAMETRO_SOL).
+- **En los satélites:** el número de soles será la distancia del satélite al planeta + la distancia del planeta el sol, dividido por el diámetro del sol.
+
+```
+    // Constante en la clase padre Astro
+    protected final double DIAMETRO_SOL = 1500000;
+
+```
+
+**Al usar el método abstracto obligará a:**
+
+- Declarar Astro como clase abstracta.
+
+- Implementar el método abstracto en las clases hijas Planeta y Satélite.
+
+
+# VERSIÓN 3: Uso de instance of
+
+Solo la clase **Planeta** va a tener un nuevo método de comportamiento:
+
+```
+    // Método de comportamiento
+    public String infoExtra(){
+       return "Un planeta es un cuerpo esférico sin luz propia, que gira alrededor de una estrella"; 
+    }
+```
+
+En la clase Main añade la lógica para que en el caso de que el astro de la lista sea un Planeta además muestra dicha información extra.

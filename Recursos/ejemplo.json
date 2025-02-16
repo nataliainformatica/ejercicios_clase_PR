@@ -1,0 +1,498 @@
+{
+    "various": [
+        {
+            "group": {
+                "name": "emojis",
+                "elements": [
+                    {
+                        "code": "U+1F435",
+                        "character": "🐵",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F435.png",
+                        "name": "monkey face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F412",
+                        "character": "🐒",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F412.png",
+                        "name": "monkey",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F98D",
+                        "character": "🦍",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F98D.png",
+                        "name": "gorilla",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F9A7",
+                        "character": "🦧",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F9A7.png",
+                        "name": "orangutan",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F436",
+                        "character": "🐶",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F436.png",
+                        "name": "dog face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F415",
+                        "character": "🐕",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F415.png",
+                        "name": "dog",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F9AE",
+                        "character": "🦮",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F9AE.png",
+                        "name": "guide dog",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F415 U+200D U+1F9BA",
+                        "character": "🐕‍🦺",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F415%20U%2B200D%20U%2B1F9BA.png",
+                        "name": "service dog",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F429",
+                        "character": "🐩",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F429.png",
+                        "name": "poodle",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F43A",
+                        "character": "🐺",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F43A.png",
+                        "name": "wolf",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F98A",
+                        "character": "🦊",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F98A.png",
+                        "name": "fox",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F99D",
+                        "character": "🦝",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F99D.png",
+                        "name": "raccoon",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F431",
+                        "character": "🐱",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F431.png",
+                        "name": "cat face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F408",
+                        "character": "🐈",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F408.png",
+                        "name": "cat",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F408 U+200D U+2B1B",
+                        "character": "🐈‍⬛",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F408%20U%2B200D%20U%2B2B1B.png",
+                        "name": "black cat",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F981",
+                        "character": "🦁",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F981.png",
+                        "name": "lion",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F42F",
+                        "character": "🐯",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F42F.png",
+                        "name": "tiger face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F405",
+                        "character": "🐅",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F405.png",
+                        "name": "tiger",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F406",
+                        "character": "🐆",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F406.png",
+                        "name": "leopard",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F434",
+                        "character": "🐴",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F434.png",
+                        "name": "horse face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F40E",
+                        "character": "🐎",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F40E.png",
+                        "name": "horse",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F984",
+                        "character": "🦄",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F984.png",
+                        "name": "unicorn",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F993",
+                        "character": "🦓",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F993.png",
+                        "name": "zebra",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F98C",
+                        "character": "🦌",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F98C.png",
+                        "name": "deer",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F9AC",
+                        "character": "🦬",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F9AC.png",
+                        "name": "bison",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F42E",
+                        "character": "🐮",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F42E.png",
+                        "name": "cow face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F402",
+                        "character": "🐂",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F402.png",
+                        "name": "ox",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F403",
+                        "character": "🐃",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F403.png",
+                        "name": "water buffalo",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F404",
+                        "character": "🐄",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F404.png",
+                        "name": "cow",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    },
+                    {
+                        "code": "U+1F437",
+                        "character": "🐷",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F437.png",
+                        "name": "pig face",
+                        "group": "animals_nature",
+                        "subgroup": "animal_mammal"
+                    }
+                ]
+            }
+        },
+        {
+            "group": {
+                "name": "Emojis2",
+                "elements": [
+                    {
+                        "code": "U+1F3C1",
+                        "character": "🏁",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3C1.png",
+                        "name": "chequered flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F6A9",
+                        "character": "🚩",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F6A9.png",
+                        "name": "triangular flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F38C",
+                        "character": "🎌",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F38C.png",
+                        "name": "crossed flags",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F3F4",
+                        "character": "🏴",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3F4.png",
+                        "name": "black flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F3F3",
+                        "character": "🏳",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3F3.png",
+                        "name": "white flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F3F3 U+FE0F U+200D U+1F308",
+                        "character": "🏳️‍🌈",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3F3%20U%2BFE0F%20U%2B200D%20U%2B1F308.png",
+                        "name": "rainbow flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F3F3 U+FE0F U+200D U+26A7 U+FE0F",
+                        "character": "🏳️‍⚧️",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3F3%20U%2BFE0F%20U%2B200D%20U%2B26A7%20U%2BFE0F.png",
+                        "name": "transgender flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F3F4 U+200D U+2620 U+FE0F",
+                        "character": "🏴‍☠️",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F3F4%20U%2B200D%20U%2B2620%20U%2BFE0F.png",
+                        "name": "pirate flag",
+                        "group": "flags",
+                        "subgroup": "flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1E8",
+                        "character": "🇦🇨",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1E8.png",
+                        "name": "flag: Ascension Island",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1E9",
+                        "character": "🇦🇩",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1E9.png",
+                        "name": "flag: Andorra",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1EA",
+                        "character": "🇦🇪",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1EA.png",
+                        "name": "flag: United Arab Emirates",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1EB",
+                        "character": "🇦🇫",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1EB.png",
+                        "name": "flag: Afghanistan",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1EC",
+                        "character": "🇦🇬",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1EC.png",
+                        "name": "flag: Antigua & Barbuda",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1EE",
+                        "character": "🇦🇮",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1EE.png",
+                        "name": "flag: Anguilla",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F1",
+                        "character": "🇦🇱",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F1.png",
+                        "name": "flag: Albania",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F2",
+                        "character": "🇦🇲",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F2.png",
+                        "name": "flag: Armenia",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F4",
+                        "character": "🇦🇴",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F4.png",
+                        "name": "flag: Angola",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F6",
+                        "character": "🇦🇶",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F6.png",
+                        "name": "flag: Antarctica",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F7",
+                        "character": "🇦🇷",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F7.png",
+                        "name": "flag: Argentina",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F8",
+                        "character": "🇦🇸",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F8.png",
+                        "name": "flag: American Samoa",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1F9",
+                        "character": "🇦🇹",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1F9.png",
+                        "name": "flag: Austria",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1FA",
+                        "character": "🇦🇺",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1FA.png",
+                        "name": "flag: Australia",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1FC",
+                        "character": "🇦🇼",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1FC.png",
+                        "name": "flag: Aruba",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1FD",
+                        "character": "🇦🇽",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1FD.png",
+                        "name": "flag: Åland Islands",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E6 U+1F1FF",
+                        "character": "🇦🇿",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E6%20U%2B1F1FF.png",
+                        "name": "flag: Azerbaijan",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E7 U+1F1E6",
+                        "character": "🇧🇦",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E7%20U%2B1F1E6.png",
+                        "name": "flag: Bosnia & Herzegovina",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E7 U+1F1E7",
+                        "character": "🇧🇧",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E7%20U%2B1F1E7.png",
+                        "name": "flag: Barbados",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E7 U+1F1E9",
+                        "character": "🇧🇩",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E7%20U%2B1F1E9.png",
+                        "name": "flag: Bangladesh",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E7 U+1F1EA",
+                        "character": "🇧🇪",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E7%20U%2B1F1EA.png",
+                        "name": "flag: Belgium",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    },
+                    {
+                        "code": "U+1F1E7 U+1F1EB",
+                        "character": "🇧🇫",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F1E7%20U%2B1F1EB.png",
+                        "name": "flag: Burkina Faso",
+                        "group": "flags",
+                        "subgroup": "country_flag"
+                    }
+                ]
+            }
+        }
+        ]
+    }

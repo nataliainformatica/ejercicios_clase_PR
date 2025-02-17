@@ -15,7 +15,7 @@
                     {
                         "code": "U+1F6A9",
                         "character": "🚩",
-                        "image": "https://picsum.photos/200",
+                        "image":"https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F6A9.png",
                         "name": "triangular flag",
                         "group": "flags",
                         "subgroup": "flag"

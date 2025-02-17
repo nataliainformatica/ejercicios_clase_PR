@@ -7,7 +7,7 @@
                     {
                         "code": "U+1F435",
                         "character": "🐵",
-                        "image": "https://picsum.photos/200",
+                        "image":  "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F435.png",,
                         "name": "monkey face",
                         "group": "animals_nature",
                         "subgroup": "animal_mammal"
@@ -15,7 +15,7 @@
                     {
                         "code": "U+1F412",
                         "character": "🐒",
-                        "image": "https://picsum.photos/200",
+                        "image": "https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F412.png",
                         "name": "monkey",
                         "group": "animals_nature",
                         "subgroup": "animal_mammal"
@@ -23,7 +23,7 @@
                     {
                         "code": "U+1F98D",
                         "character": "🦍",
-                        "image": "https://picsum.photos/200",
+                        "image":"https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F98D.png",
                         "name": "gorilla",
                         "group": "animals_nature",
                         "subgroup": "animal_mammal"

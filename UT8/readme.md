@@ -6,19 +6,22 @@ de una cuenta. Si el saldo es insuficiente, se debe lanzar una excepción que se
 ## Ejercicio 2: Propagación de excepciones en múltiples niveles
 Simular un proceso de compra en una tienda, donde diferentes métodos podrían lanzar excepciones
 y estas se propagan hasta el método main.
-Ejercicio 3: Uso de excepciones en una jerarquía de clases
+
+## Ejercicio 3: Uso de excepciones en una jerarquía de clases
 Crear una jerarquía de clases para gestionar una empresa con trabajadores y excepciones
 relacionadas con salarios.
-Ejercicio 4: Propagación de excepciones entre clases
+
+## Ejercicio 4: Propagación de excepciones entre clases
 Crear una clase Cajero que realice una operación de pago y que propague excepciones si los datos
 ingresados no son correctos.
-Ejercicio 5: Excepciones personalizadas con try-catch y finally
+
+## Ejercicio 5: Excepciones personalizadas con try-catch y finally
 Crear una clase para manejar un sistema de inventarios con excepciones personalizadas. Al final de
 cada operación, imprimir un mensaje de cierre con el bloque finally.
 
 # Ejercicios para trabajar con excepciones propias checked (comprobadas)
 
-## Ejercicio 3: PhoneNumberAlreadyExistsException 
+## Ejercicio 6: PhoneNumberAlreadyExistsException 
 
 ### Versión 1
 1. Descarga los fuente iniciales

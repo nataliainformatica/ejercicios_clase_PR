@@ -34,7 +34,8 @@ cada operación, imprimir un mensaje de cierre con el bloque finally.
 5. Cuando dicha lista contenga el número recibido como argumento, debe crear, lanzar y propagar la excepción con el mensaje "El número de teléfono XXXXX está en uso por otro cliente!"
 6. En la clase principal haz la prueba con varios números de teléfono, uno que no esté repetido y otro que lo esté ("+34 222 222 222", "+34 111 111 113")
 7. Implementa en la clase PhoneNumberRegisterService la funcionalidad que permite consultar la lista de números de teléfono.
-8. 
+8. Desde la clase RegisterClientApp prueba a recorrer la lista de teléfonos y mostrándolos por pantalla.
+   
 
 Deberás obtener algo similar a esto:
 

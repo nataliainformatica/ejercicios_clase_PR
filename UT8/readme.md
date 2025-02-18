@@ -107,7 +107,7 @@ Crea sus constructores, getters, setters y toString.
 ## Función calcular
 Tendremos una función llamada *calcular*, que según cada clase hará una cosa u otra, a esta función le pasaremos un numero siendo la cantidad de productos.
 
-En **Producto**, simplemente seria multiplicar el precio por la cantidad de productos pasados.
+En **No perecedero**, simplemente seria multiplicar el precio por la cantidad de productos pasados.
 
 En **Perecedero**, aparte de lo que hace producto, el precio se reducirá según los días a caducar:
 
@@ -117,6 +117,8 @@ En **Perecedero**, aparte de lo que hace producto, el precio se reducirá según
 
 En **NoPerecedero**, hace lo mismo que en producto.
 
+## Pruebas: 
+
 Crea una clase ejecutable y crea un array de productos y muestra el precio total de vender 5  productos de cada uno. Crea tú mismo los elementos del array.
 
 ## Pregunta: ¿Utilizarías una clase abstracta? Razona la respuesta
@@ -124,12 +126,15 @@ Crea una clase ejecutable y crea un array de productos y muestra el precio total
 ## NUEVOS REQUISITOS
 
 ### REQUISITO 1
-Debemos ampliar el programa anterior de tal forma que TODOS los productos deben poder devolverse al proveedor.
+Debemos ampliar el programa anterior de tal forma que se podrá consultar si el producto tiene devolución (true o false), siguiendo el siguiente criterio.
 
 - Si son **perecederos** solo pueden devolverse cuando le queda más de 5 días para caducar.
 - Si **no son perecederos** solo pueden devolverse en el caso de que el tipo sea "Permite devolución".
 
+
+
 #### Pregunta: ¿Utilizarías una clase abstracta? ¿Qué método sería abstracto? Razona la respuesta
+
 
 ### REQUISITO 2
 Todos los productos, al igual que todos los clientes y proveedores (producto, cliente y proveedor son clases del programa de gestión de la tienda) deben poder exportarse a formato XML.

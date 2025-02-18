@@ -1,4 +1,4 @@
-package es.avellaneda.juegoTablero;
+
 
 import java.util.Random;
 
@@ -53,19 +53,66 @@ public class Personaje {
     }
  // Tendrá un método mover, que se invocará al mover el personaje por el tablero, 
  //  lo que hace es incrementar la fuerza en uno. 
-    public void mover(){ 
+    public void mover(int x, int y){
+       this.x = x; 
+       this.y = y; 
+       fuerza++;
+  
+     
+    }
 
-        // TODO , pendiente ver si le paso tipo de movimiento para cambiar las coordenadas
-        fuerza ++;
-
-
-        //
-
+    public boolean comer(Personaje otroPersonaje){
+        boolean resultado= false; 
+        if(this.equals(otroPersonaje)|| this.fuerza>=otroPersonaje.fuerza)  {
+       // si es el mismo avatar gana y se come al otro
+       // si no es el mismo pero tiene más fuerza también gana y se come al otro
+            this.fuerza = this.fuerza + otroPersonaje.fuerza;
+            resultado = true;
+        
+        }return resultado;
     }
     @Override
     public String toString() {
         // al concatenar el char con un string lo convierto a string
         return avatar+"";
+    }
+    public int getX() {
+        return x;
+    }
+    public void setX(int x) {
+        this.x = x;
+    }
+    public int getY() {
+        return y;
+    }
+    public void setY(int y) {
+        this.y = y;
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + avatar;
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Personaje other = (Personaje) obj;
+        if (avatar != other.avatar)
+            return false;
+        return true;
+    }
+    public int getFuerza() {
+        return fuerza;
+    }
+    public char getAvatar() {
+        return avatar;
     }
     
 

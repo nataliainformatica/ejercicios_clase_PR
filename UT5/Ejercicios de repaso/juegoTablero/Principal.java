@@ -30,6 +30,7 @@ public class Principal {
 
         do {
             x = rd.nextInt(tablero.length);
+        
             // es un tablero regular, es decir todas las filas tienen las mismas columnas
             y = rd.nextInt(tablero[0].length);
 

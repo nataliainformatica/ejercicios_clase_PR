@@ -28,10 +28,13 @@ cada operación, imprimir un mensaje de cierre con el bloque finally.
    Dispones de la clase principal RegisterClientApp, en la que haremos las pruebas registrando un cliente con la clase PhoneNumberRegisterService (que deberás completar). 
 3. Crea la excepción PhoneNumberAlreadyExistsException en el paquete es.daw.poo2.exceptions.
 4. En el método **validatePhone** de la clase PhoneNumberRegisterService implementa el código para comprobar si el número existe en la lista de números proporcionados. Observa cómo se crea el List.
+
 **NUEVO:** método contains de ArrayList, para comprobar si existe el número. 
 
 5. Cuando dicha lista contenga el número recibido como argumento, debe crear, lanzar y propagar la excepción con el mensaje "El número de teléfono XXXXX está en uso por otro cliente!"
-6. En la clase principal haz la prueba con varios números de teléfono, uno que no esté repetido y otro que lo esté ("+34 222 222 222", "+34 111 111 113") 
+6. En la clase principal haz la prueba con varios números de teléfono, uno que no esté repetido y otro que lo esté ("+34 222 222 222", "+34 111 111 113")
+7. Implementa en la clase PhoneNumberRegisterService la funcionalidad que permite consultar la lista de números de teléfono.
+8. 
 
 Deberás obtener algo similar a esto:
 

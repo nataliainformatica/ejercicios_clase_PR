@@ -37,3 +37,52 @@ Deberás obtener algo similar a esto:
 
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/ee5ba4a8-0741-45e3-b157-fc2dff7f97e4" />
 
+
+
+### Versión 2: trabajando con objetos cliente
+Vamos a ampliar el ejercicio anterior.
+
+Para ello vamos a crear la **clase Client** (es.daw.poo2.model) en base al siguiente **ClientDAO** que debes crear en el paquete es.daw.poo.dao:
+
+```
+package es.daw.poo2.dao;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+import es.daw.poo2.model.Client;
+
+public class ClientDAO {
+    private ArrayList<Client> clients;
+
+    public ClientDAO() {
+        clients = new ArrayList<>();
+        clients.add(new Client("2A", "Cliente2", "+34 111 111 112",LocalDate.parse("2024-02-28")));
+        clients.add(new Client("1A", "Cliente1", LocalDate.parse("2024-02-27")));
+        clients.add(new Client("3A", "Cliente3", "+34 111 111 113",LocalDate.parse("2024-02-29")));
+        clients.add(new Client("4B", "Cliente4", "+34 111 111 114",LocalDate.parse("2024-02-29")));
+    }
+
+    public ArrayList<Client> select(){
+        //return (ArrayList<Cliente>)clientes.clone();
+        return new ArrayList<>(clients);
+    }
+    
+}
+
+```
+
+Debes tener en cuenta que para dar de alta un cliente se puede hacer de dos formas:
+- Con el código, nombre, número de teléfono y fecha de registro.
+- Con el código, nombre y fecha de registro
+
+En el caso de que un cliente se de de alta sin número de teléfono deberá indicarse "WITHOUT_PHONE" en dicho atributo.
+
+Solo el número de teléfono podrá modificarse una vez creado el cliente en el sistema.
+
+En el método **validatePhone** de la clase PhoneNumberRegisterService implementa el código para comprobar si el número existe un cliente con un teléfono en cuestión. La firma del método será:
+
+```
+public void validatePhone(ArrayList<Client> clients, String phoneNumber) throws PhoneNumberAlreadyExistsException
+```
+

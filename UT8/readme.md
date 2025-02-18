@@ -46,7 +46,7 @@ Deberás obtener algo similar a esto:
 ### Versión 2: trabajando con objetos cliente
 Vamos a ampliar el ejercicio anterior.
 
-Para ello vamos a crear la **clase Client** (es.daw.poo2.model) en base al siguiente **ClientDAO** que debes crear en el paquete es.daw.poo.dao:
+Para ello vamos a crear la **clase Client** (es.daw.poo2.model) en base al siguiente **ClientDAO** que debes crear en el paquete es.daw.poo2.dao:
 
 ```
 package es.daw.poo2.dao;

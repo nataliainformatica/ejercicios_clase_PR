@@ -34,4 +34,5 @@ cada operación, imprimir un mensaje de cierre con el bloque finally.
 
 Deberás obtener algo similar a esto:
 
-![alt text](image.png)
+<img width="635" alt="image" src="https://github.com/user-attachments/assets/ee5ba4a8-0741-45e3-b157-fc2dff7f97e4" />
+

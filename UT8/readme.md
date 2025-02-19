@@ -188,13 +188,20 @@ Calcula cuántas veces aparece ese día en en mes. Esta funcionalidad también s
 
 LocalDate
    LocalDate.now()
+   
    LocalDate.getYear()
+   
    LocalDate.getMonth()
-   LocalDate.getDayofWeek
+   
+   LocalDate.getDayofWeek()
+   
 YearMonth
    YearMonth.of(mes, anño)
+   
    YearMonth.lengthOfMonth
+   
    YearMonth.atDay(index)
+   
 
    public int calcularNumero(DiaSemana, int mes, int anio){....}
 

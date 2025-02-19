@@ -1,0 +1,23 @@
+En Java, ArrayList es una implementación de la interfaz List, lo que significa que hereda su comportamiento y debe implementar sus métodos.
+
+1. Jerarquía de ArrayList
+La estructura de herencia de ArrayList es la siguiente:
+
+📌 ArrayList<E> extiende de AbstractList<E>, que a su vez implementa la interfaz List<E>.
+
+📌 List<E> es una subinterfaz de Collection<E>, que a su vez extiende Iterable<E>.
+
+
+Iterable<E>
+   └── Collection<E>
+         └── List<E>
+               ├── AbstractList<E>
+               │     └── ArrayList<E>
+               ├── LinkedList<E>
+               ├── Vector<E>
+               └── Stack<E>
+Esto significa que ArrayList hereda métodos de todas estas interfaces y clases abstractas.
+
+Como ArrayList implementa la interfaz List, está obligado a definir varios métodos, como:
+
+add(E e), remove(Object o), get(int index), set(int index, E element), size(), etc.

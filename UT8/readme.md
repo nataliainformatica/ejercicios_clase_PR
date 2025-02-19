@@ -177,3 +177,36 @@ Necesitamos generar un informe de los productos ordenados por nombre de forma de
 
 Con el uso de la interface **Comparator** implementa dicha funcionalidad y muestra los productos ordenados por nombre de forma descendente.
 
+## Ejercicio 8
+Escribe Un programa en Java que:
+
+Pide un día de la semana al usuario. Ésta funcionalidad deberás completarla en un método aparte,  en el caso de que el valor introducido no sea un valor válido (LUNES, MARTES, MIÉRCOLES, JUEVES, VIERNES), el método propagará la excepción. 
+
+public DiaSemana introducirDia(){...}
+
+Calcula cuántas veces aparece ese día en en mes. Esta funcionalidad también se realizará en un método aparte.  Trabajaremos las siguientes clases:
+
+LocalDate
+   LocalDate.now()
+   LocalDate.getYear()
+   LocalDate.getMonth()
+   LocalDate.getDayofWeek
+YearMonth
+   YearMonth.of(mes, anño)
+   YearMonth.lengthOfMonth
+   YearMonth.atDay(index)
+
+   public int calcularNumero(DiaSemana, int mes, int anio){....}
+
+Completa una función que recibiendo el día de la semana, devolverá  el número de días que tiene el mes de la fecha actual. Si el mes tiene más de 4 días del día de la semana facilitado (por ejemplo, abril tiene 5 martes), el método creará una excepción MesLargoException, que capturará el mes y dia de la semana, la lanzará y la propagará. 
+
+La excepción MesLargoException extiende de RunTimeException. 
+
+Completa la clase Principal y haz algunas pruebas para comprobar si has escrito bien el código. 
+
+   
+
+
+
+
+

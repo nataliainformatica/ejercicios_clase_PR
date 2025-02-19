@@ -21,3 +21,20 @@ Esto significa que ArrayList hereda métodos de todas estas interfaces y clases 
 Como ArrayList implementa la interfaz List, está obligado a definir varios métodos, como:
 
 add(E e), remove(Object o), get(int index), set(int index, E element), size(), etc.
+
+
+## Uso de Comparable en Java
+
+La interfaz Comparable<T> en Java se usa para definir un orden natural entre los objetos de una clase. 
+
+Permite que los objetos de esa clase puedan ser comparados entre sí, lo que facilita la ordenación en estructuras como ArrayList, TreeSet, TreeMap, etc.
+
+El método compareTo(T otro) debe devolver:
+Un número negativo si this es menor que otro.
+Cero (0) si son iguales.
+Un número positivo si this es mayor que otro.
+
+📌 Comparable<T>:
+Se implementa en la clase que queremos ordenar.
+Define un único criterio de ordenación (el "orden natural").
+Se usa con Collections.sort() y Arrays.sort().

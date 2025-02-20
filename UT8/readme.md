@@ -105,7 +105,7 @@ Tenemos dos tipos de productos:
 Crea sus constructores, getters, setters y toString.
 
 ## Función calcular
-Tendremos una función llamada *calcular*, que según cada clase hará una cosa u otra, a esta función le pasaremos un numero siendo la cantidad de productos.
+Tendremos una función llamada *calcular*, que según cada clase hará una cosa u otra, a esta función le pasaremos un entero, siendo este parámetro la cantidad de productos.
 
 En **No perecedero**, simplemente seria multiplicar el precio por la cantidad de productos pasados.
 

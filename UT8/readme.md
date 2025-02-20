@@ -212,46 +212,78 @@ La excepción MesLargoException extiende de RunTimeException.
 Completa la clase Principal y haz algunas pruebas para comprobar si has escrito bien el código. 
 
 ## Ejercicio 9
-Nuestro objetivo es realizar la aplicación para la gestión de las citas  (las citas de un solo día) de un centro de salud.  Para ello dispondremos de una clase GestionCentro que implementará Gestionable (esta interface se proporciona en la plantilla del proyecto).
+
+Nuestro objetivo es realizar la aplicación para la gestión de las citas 
+(las citas de un solo día) de un centro de salud.  
+Para ello dispondremos de una clase **GestionCentro**  que implementará **Gestionable** 
+
+(esta interface se proporciona en la plantilla del proyecto).
+
 public interface Gestionable {
     public ArrayList<ConsultaMedica> devolverListaConsultasMedico();
+    
     public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas();
+    
     public String mostrarDetallesConsultaMedica(String numHistorial);
+    
     public String imprimirTicket(String numHistorial);
+    
     public ArrayList<ConsultaMedica> buscarCitas(Paciente paciente);
+    
     public Analisis buscarAnalisis(String numHistorial) throws HistorialNoEncontrado; 
+    
 
 
-Se debe tener en cuenta que las citas del centro pueden ser de dos tipos,  ConsultaMedica o  Analisis. 
-Se entrega junto con la plantilla una clase DAO_citas,  con los datos de prueba de las citas de una  fecha  concreta que se deben gestionar. La clase GestionCentro recibe en el momento de crearse, las citas de ese día.  IMPORTANTE: esta clase DAO no se puede modificar.  
+Se debe tener en cuenta que las citas del centro pueden ser de dos tipos,  **ConsultaMedica** o  **Analisis**. 
 
-La cita de consulta médica debe tener los siguientes atributos, todos ellos imprescindibles para poder crear esta cita. ConsultaMedica
+Se entrega junto con la plantilla una clase **DAO_citas**,  con los datos de prueba de las citas de una  fecha  concreta que se deben gestionar. 
+La clase **GestionCentro** recibe en el momento de crearse, las citas de ese día.  
+
+**IMPORTANTE**: esta clase DAO no se puede modificar.  
+
+La cita de consulta médica debe tener los siguientes atributos, todos ellos imprescindibles para poder crear esta cita. 
+
+**ConsultaMedica**
+
     private Paciente paciente; ( no es necesario encapsular  este atributo)
+    
     private String sala; 
+    
     private String resultadoCita;
+    
     private LocalDateTime horaCita; // este atributo define el orden natural
+    
 
-La cita de análisis tendrá los siguientes atributos, todos ellos imprescindibles para poder crear esta cita Analisis
+La cita de **Analisis** tendrá los siguientes atributos, todos ellos imprescindibles para poder crear esta cita Analisis
+
    private String numHistorial;
+   
     private String tipo;
+    
     private LocalDateTime horaAnalisis;
+    
 
-La clase Paciente debe tener los siguientes atributos, todos imprescindibles para poder crear el paciente. 
+La clase **Paciente** debe tener los siguientes atributos, todos imprescindibles para poder crear el paciente. 
+
     private String numHistorial;
+    
     private String nombreApellidos;
+    
     private int edad;
+    
 
-ConsultaMedica  y Analisis deberán implementar la interface Citable(que se entrega en la plantilla del proyecto): 
+**ConsultaMedica**  y **Analisis** deberán implementar la interface **Citable**(que se entrega en la plantilla del proyecto): 
+
 public interface Citable {
     public String consultarDetalle();
     // devolverá el número de historial y la hora de cita 
 }
 
 
+Completa las clases anteriores, incluyendo el **TestMain**,  con el código necesario para conseguir el comportamiento de **GestionCentro** con los métodos que se describen a continuación:
 
-Completa las clases anteriores, incluyendo el TestMain,  con el código necesario para conseguir el comportamiento de GestionCentro con los métodos que se describen a continuación:
 1.	    public ArrayList<ConsultaMedica> devolverListaConsultasMedico(); 
-1 PUNTO
+
 Devuelve una colección con las todas las consultas médicas que tiene programadas el centro de salud. 
 EJEMPLO:” MOSTRAR TODAS LAS CONSULTAS MÉDICAS “
 Consulta Médica{

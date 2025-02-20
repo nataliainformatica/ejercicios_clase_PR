@@ -286,6 +286,8 @@ Completa las clases anteriores, incluyendo el **TestMain**,  con el código nece
 
 Devuelve una colección con las todas las consultas médicas que tiene programadas el centro de salud. 
 EJEMPLO:” MOSTRAR TODAS LAS CONSULTAS MÉDICAS “
+
+```
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T08:00}
@@ -299,6 +301,7 @@ Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 
+```
 2.	    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas(); 
 1,5  PTO 
 Devuelve una colección con todas las consultas médicas ordenadas por la hora de la cita. 
@@ -377,7 +380,7 @@ Ejemplo: “MOSTRAR CITA DE ANÁLISIS PARA EL NÚMERO DE HISTORIAL  NH0000025”
 Numero Historial   NH0000025 NO ENCONTRADO
 
 
-
+7.	Completa TestMain para mostrar el resultado de cada uno de los métodos de comportamiento de GestionCentro. 1 PUNTO
 
 
 

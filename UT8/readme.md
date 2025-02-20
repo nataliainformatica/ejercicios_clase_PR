@@ -300,8 +300,8 @@ Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
-
 ```
+
 2.	    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas(); 
 1,5  PTO 
 Devuelve una colección con todas las consultas médicas ordenadas por la hora de la cita. 

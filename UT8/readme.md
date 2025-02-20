@@ -211,7 +211,140 @@ La excepción MesLargoException extiende de RunTimeException.
 
 Completa la clase Principal y haz algunas pruebas para comprobar si has escrito bien el código. 
 
-   
+## Ejercicio 9
+Nuestro objetivo es realizar la aplicación para la gestión de las citas  (las citas de un solo día) de un centro de salud.  Para ello dispondremos de una clase GestionCentro que implementará Gestionable (esta interface se proporciona en la plantilla del proyecto).
+public interface Gestionable {
+    public ArrayList<ConsultaMedica> devolverListaConsultasMedico();
+    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas();
+    public String mostrarDetallesConsultaMedica(String numHistorial);
+    public String imprimirTicket(String numHistorial);
+    public ArrayList<ConsultaMedica> buscarCitas(Paciente paciente);
+    public Analisis buscarAnalisis(String numHistorial) throws HistorialNoEncontrado; 
+
+
+Se debe tener en cuenta que las citas del centro pueden ser de dos tipos,  ConsultaMedica o  Analisis. 
+Se entrega junto con la plantilla una clase DAO_citas,  con los datos de prueba de las citas de una  fecha  concreta que se deben gestionar. La clase GestionCentro recibe en el momento de crearse, las citas de ese día.  IMPORTANTE: esta clase DAO no se puede modificar.  
+
+La cita de consulta médica debe tener los siguientes atributos, todos ellos imprescindibles para poder crear esta cita. ConsultaMedica
+    private Paciente paciente; ( no es necesario encapsular  este atributo)
+    private String sala; 
+    private String resultadoCita;
+    private LocalDateTime horaCita; // este atributo define el orden natural
+
+La cita de análisis tendrá los siguientes atributos, todos ellos imprescindibles para poder crear esta cita Analisis
+   private String numHistorial;
+    private String tipo;
+    private LocalDateTime horaAnalisis;
+
+La clase Paciente debe tener los siguientes atributos, todos imprescindibles para poder crear el paciente. 
+    private String numHistorial;
+    private String nombreApellidos;
+    private int edad;
+
+ConsultaMedica  y Analisis deberán implementar la interface Citable(que se entrega en la plantilla del proyecto): 
+public interface Citable {
+    public String consultarDetalle();
+    // devolverá el número de historial y la hora de cita 
+}
+
+
+
+Completa las clases anteriores, incluyendo el TestMain,  con el código necesario para conseguir el comportamiento de GestionCentro con los métodos que se describen a continuación:
+1.	    public ArrayList<ConsultaMedica> devolverListaConsultasMedico(); 
+1 PUNTO
+Devuelve una colección con las todas las consultas médicas que tiene programadas el centro de salud. 
+EJEMPLO:” MOSTRAR TODAS LAS CONSULTAS MÉDICAS “
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T08:00}
+Consulta Médica{
+Paciente{numHistorial=NH000002, nombreApellidos=nombreapellidos2, edad=30}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T10:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A3, resultadoCita=pendiente confirmar, horaCita=2022-10-02T09:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
+
+2.	    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas(); 
+1,5  PTO 
+Devuelve una colección con todas las consultas médicas ordenadas por la hora de la cita. 
+Ejemplo:”MOSTRAR TODAS LAS CONSULTAS MÉDICAS ORDENADAS”
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T08:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A3, resultadoCita=pendiente confirmar, horaCita=2022-10-02T09:00}
+Consulta Médica{
+Paciente{numHistorial=NH000002, nombreApellidos=nombreapellidos2, edad=30}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T10:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
+3.	    public String mostrarDetallesConsultaMedica(String numHistorial); 
+1,5 PTO
+Devuelve los detalles de todas las ConsultaMedica que tenga concertadas el paciente con el número de historial que recibe.  Si el número de historial no existe devolverá “EL NÚMERO DE HISTORIAL NO EXISTE”.
+Ejemplo “MOSTRAR TODAS LOS DETALLES DE LAS CONSULTAS MÉDICAS  DEL PACIENTE CON NÚMERO DE HISTORIAL NH000001 “
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T08:00}Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A3, resultadoCita=pendiente confirmar, horaCita=2022-10-02T09:00}Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
+
+Ejemplo: “MOSTRAR TODAS LOS DETALLES DE LAS CONSULTAS MÉDICAS  DEL PACIENTE CON NÚMERO DE HISTORIAL NH000025 “
+EL NÚMERO DE HISTORIAL NH000025 NO EXISTE
+
+
+4.	    public String imprimirTicket(String numHistorial);
+ 2 PTO
+Devuelve una cadena de texto con los detalles de todas las citas con ese número de historial.  Si el número de historial no existe,  devolverá “EL NÚMERO DE HISTORIAL NO EXISTE”.
+Se entrega en la plantilla del proyecto el paquete utilidades, que te facilitará la labor de convertir la fecha y hora de la cita para mostrarla. 
+Ejemplo  "IMPRIMIR TICKET DE CITA" 
+IMPRIMIR TICKET DE CITA
+PACIENTE NH000001
+CONSULTA MEDICA  EN SALA A1
+CITADO 02/10/2022 08:00:00
+
+PACIENTE NH000001
+CITADO 02/10/2022 09:00:00
+
+PACIENTE NH000001
+CONSULTA MEDICA  EN SALA A3
+CITADO 02/10/2022 09:00:00
+PACIENTE NH000001
+CONSULTA MEDICA  EN SALA A4
+CITADO 02/10/2022 11:00:00
+
+5.	public ArrayList<ConsultaMedica> buscarCitas(Paciente paciente); 
+1,5PTO
+Devolverá una colección con todas las consultas médicas que tenga ese paciente (importante, deben coincidir el número de historial y nombre y apellidos del paciente  y la edad). 
+Ejemplo “MOSTRAR CITAS DE UN PACIENTE CON NÚMERO DE HISTORIAL NH000001 Y  nombreapellidos1 Y EDAD 21 AÑOS”
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A1, resultadoCita=pendiente confirmar, horaCita=2022-10-02T08:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A3, resultadoCita=pendiente confirmar, horaCita=2022-10-02T09:00}
+Consulta Médica{
+Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
+, sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
+
+
+6.	   public Analisis buscarAnalisis(String numHistorial)
+ throws HistorialNoEncontrado; 
+(1,5PTOS)
+Devolverá la cita de Analisis que corresponda a ese número de historial (si hubiese más, devuelve la primera que encuentra).  Si no se encuentra ese número de historial, deberá lanzar una excepción del tipo controlada HistorialNoEncontrado , capturando el número de  historial y la hora de búsqueda del mismo. El mensaje de la excepción será: “Número de Historial xxxxxx NO ENCONTRADO”
+
+Ejemplo” MOSTRAR CITA DE ANÁLISIS PARA EL NÚMERO DE HISTORIAL  NH000001”
+Analisis{numHistorial=NH000001, tipo=, horaAnalisis=2022-10-02T09:00}
+Ejemplo: “MOSTRAR CITA DE ANÁLISIS PARA EL NÚMERO DE HISTORIAL  NH0000025”
+Numero Historial   NH0000025 NO ENCONTRADO
+
+
 
 
 

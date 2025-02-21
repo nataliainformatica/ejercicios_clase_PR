@@ -322,11 +322,14 @@ Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 
 
-'''
+´´´
 
-3.	    public String mostrarDetallesConsultaMedica(String numHistorial); 
-1,5 PTO
+3.	    public String mostrarDetallesConsultaMedica(String numHistorial);
+
+
 Devuelve los detalles de todas las ConsultaMedica que tenga concertadas el paciente con el número de historial que recibe.  Si el número de historial no existe devolverá “EL NÚMERO DE HISTORIAL NO EXISTE”.
+
+'''
 Ejemplo “MOSTRAR TODAS LOS DETALLES DE LAS CONSULTAS MÉDICAS  DEL PACIENTE CON NÚMERO DE HISTORIAL NH000001 “
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
@@ -336,14 +339,24 @@ Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 
+´´´
+
+``
+
 Ejemplo: “MOSTRAR TODAS LOS DETALLES DE LAS CONSULTAS MÉDICAS  DEL PACIENTE CON NÚMERO DE HISTORIAL NH000025 “
 EL NÚMERO DE HISTORIAL NH000025 NO EXISTE
 
+´´´
 
 4.	    public String imprimirTicket(String numHistorial);
- 2 PTO
+
+
 Devuelve una cadena de texto con los detalles de todas las citas con ese número de historial.  Si el número de historial no existe,  devolverá “EL NÚMERO DE HISTORIAL NO EXISTE”.
-Se entrega en la plantilla del proyecto el paquete utilidades, que te facilitará la labor de convertir la fecha y hora de la cita para mostrarla. 
+
+
+Se entrega en la plantilla del proyecto el paquete utilidades, que te facilitará la labor de convertir la fecha y hora de la cita para mostrarla.
+
+```
 Ejemplo  "IMPRIMIR TICKET DE CITA" 
 IMPRIMIR TICKET DE CITA
 PACIENTE NH000001
@@ -360,9 +373,13 @@ PACIENTE NH000001
 CONSULTA MEDICA  EN SALA A4
 CITADO 02/10/2022 11:00:00
 
-5.	public ArrayList<ConsultaMedica> buscarCitas(Paciente paciente); 
-1,5PTO
+´´´
+
+5.	public ArrayList<ConsultaMedica> buscarCitas(Paciente paciente);
+
 Devolverá una colección con todas las consultas médicas que tenga ese paciente (importante, deben coincidir el número de historial y nombre y apellidos del paciente  y la edad). 
+
+```
 Ejemplo “MOSTRAR CITAS DE UN PACIENTE CON NÚMERO DE HISTORIAL NH000001 Y  nombreapellidos1 Y EDAD 21 AÑOS”
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
@@ -374,19 +391,24 @@ Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 
+´´´
 
 6.	   public Analisis buscarAnalisis(String numHistorial)
  throws HistorialNoEncontrado; 
-(1,5PTOS)
+
+
 Devolverá la cita de Analisis que corresponda a ese número de historial (si hubiese más, devuelve la primera que encuentra).  Si no se encuentra ese número de historial, deberá lanzar una excepción del tipo controlada HistorialNoEncontrado , capturando el número de  historial y la hora de búsqueda del mismo. El mensaje de la excepción será: “Número de Historial xxxxxx NO ENCONTRADO”
+
+```
 
 Ejemplo” MOSTRAR CITA DE ANÁLISIS PARA EL NÚMERO DE HISTORIAL  NH000001”
 Analisis{numHistorial=NH000001, tipo=, horaAnalisis=2022-10-02T09:00}
 Ejemplo: “MOSTRAR CITA DE ANÁLISIS PARA EL NÚMERO DE HISTORIAL  NH0000025”
 Numero Historial   NH0000025 NO ENCONTRADO
+´´´
 
 
-7.	Completa TestMain para mostrar el resultado de cada uno de los métodos de comportamiento de GestionCentro. 1 PUNTO
+7.	Completa TestMain para mostrar el resultado de cada uno de los métodos de comportamiento de GestionCentro. 
 
 
 

@@ -409,6 +409,33 @@ Numero Historial   NH0000025 NO ENCONTRADO
 
 7.	Completa TestMain para mostrar el resultado de cada uno de los métodos de comportamiento de GestionCentro. 
 
+## Ejercicio 10
+
+Realizar un programa para gestionar una tienda mediante un menú interactivo. La tienda permitirá dar de alta productos, que serán almacenados en una colección de tipo ArrayList.
+
+El programa tendrá dos clases principales:
+
+Clase Producto:
+
+No podrá instanciarse si el nombre está vacío o si el precio es menor o igual a cero. En estos casos, lanzará una excepción con distintos mensajes según el error detectado.
+
+Incluirá una funcionalidad para aplicar un descuento. Si el precio final después del descuento es inferior a 5 euros, se lanzará una excepción que capturará los detalles del producto en ese momento, garantizando la encapsulación mediante una copia del objeto.
+
+Clase Tienda:
+
+Gestionará los productos mediante un ArrayList.
+
+Tendrá funcionalidades para:
+
+Añadir un producto a la lista.
+
+Eliminar un producto de la lista.
+
+Aplicar un descuento a un producto específico.
+
+Mantener una colección de productos cuyo precio final tras aplicar el descuento sea inferior a 5 euros.
+
+El programa permitirá al usuario interactuar con estas funcionalidades mediante un menú en consola.
 
 
 

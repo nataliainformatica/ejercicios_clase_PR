@@ -409,7 +409,7 @@ Numero Historial   NH0000025 NO ENCONTRADO
 
 7.	Completa TestMain para mostrar el resultado de cada uno de los métodos de comportamiento de GestionCentro. 
 
-## Ejercicio 10
+# Ejercicio 10 - Lanzar excepciones desde el constructor
 
 Realizar un programa para gestionar una tienda mediante un menú interactivo. La tienda permitirá dar de alta productos, que serán almacenados en una colección de tipo ArrayList.
 

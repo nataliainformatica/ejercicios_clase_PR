@@ -1,4 +1,8 @@
-class Persona implements Comparable<Persona> {
+IMPLEMENTACIÓN DE LA INTERFACE COMPARABLE
+
+class Persona implements Comparable<Persona> 
+
+{
     private String nombre;
     private int edad;
 

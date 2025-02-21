@@ -393,8 +393,7 @@ Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 ```
 
-6.	   public Analisis buscarAnalisis(String numHistorial)
- throws HistorialNoEncontrado; 
+6.	   public Analisis buscarAnalisis(String numHistorial) throws HistorialNoEncontrado; 
 
 
 Devolverá la cita de Analisis que corresponda a ese número de historial (si hubiese más, devuelve la primera que encuentra).  Si no se encuentra ese número de historial, deberá lanzar una excepción del tipo controlada HistorialNoEncontrado , capturando el número de  historial y la hora de búsqueda del mismo. El mensaje de la excepción será: “Número de Historial xxxxxx NO ENCONTRADO”

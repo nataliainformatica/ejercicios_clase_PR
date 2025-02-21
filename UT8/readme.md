@@ -421,7 +421,7 @@ No podrá instanciarse si el nombre está vacío o si el precio es menor o igual
 ```
 "El nombre del producto no puede estar vacío"
 "El precio  del producto no puede ser cero"
-``
+```
 
 
 Incluirá una funcionalidad para aplicar un descuento. Si el precio final después del descuento es inferior a 5 euros, se lanzará una excepción propia que capturará los detalles del producto en ese momento, garantizando la encapsulación mediante una copia del objeto.

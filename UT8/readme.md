@@ -302,9 +302,11 @@ Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
 ```
 
-2.	    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas(); 
-1,5  PTO 
+2.	    public ArrayList<ConsultaMedica> devolverConsultasMedicoOrdenadas();
+
+
 Devuelve una colección con todas las consultas médicas ordenadas por la hora de la cita. 
+```
 Ejemplo:”MOSTRAR TODAS LAS CONSULTAS MÉDICAS ORDENADAS”
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
@@ -318,6 +320,10 @@ Paciente{numHistorial=NH000002, nombreApellidos=nombreapellidos2, edad=30}
 Consulta Médica{
 Paciente{numHistorial=NH000001, nombreApellidos=nombreapellidos1, edad=21}
 , sala=A4, resultadoCita=pendiente confirmar, horaCita=2022-10-02T11:00}
+
+
+'''
+
 3.	    public String mostrarDetallesConsultaMedica(String numHistorial); 
 1,5 PTO
 Devuelve los detalles de todas las ConsultaMedica que tenga concertadas el paciente con el número de historial que recibe.  Si el número de historial no existe devolverá “EL NÚMERO DE HISTORIAL NO EXISTE”.

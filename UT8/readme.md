@@ -415,17 +415,22 @@ Realizar un programa para gestionar una tienda mediante un menú interactivo. La
 
 El programa tendrá dos clases principales:
 
-Clase Producto:
+Clase **Producto**:
 
 No podrá instanciarse si el nombre está vacío o si el precio es menor o igual a cero. En estos casos, lanzará una excepción con distintos mensajes según el error detectado.
+```
+"El nombre del producto no puede estar vacío"
+"El precio  del producto no puede ser cero"
+``
 
-Incluirá una funcionalidad para aplicar un descuento. Si el precio final después del descuento es inferior a 5 euros, se lanzará una excepción que capturará los detalles del producto en ese momento, garantizando la encapsulación mediante una copia del objeto.
 
-Clase Tienda:
+Incluirá una funcionalidad para aplicar un descuento. Si el precio final después del descuento es inferior a 5 euros, se lanzará una excepción propia que capturará los detalles del producto en ese momento, garantizando la encapsulación mediante una copia del objeto.
+
+Clase **Tienda**:
 
 Gestionará los productos mediante un ArrayList.
 
-Tendrá funcionalidades para:
+Tendrá  al menos las siguientes funcionalidades para:
 
 Añadir un producto a la lista.
 
@@ -435,7 +440,16 @@ Aplicar un descuento a un producto específico.
 
 Mantener una colección de productos cuyo precio final tras aplicar el descuento sea inferior a 5 euros.
 
+Puedes crear además cualquier otro método o funcionalidad que creas necesaria para el desarrollo del ejercicio. 
+
 El programa permitirá al usuario interactuar con estas funcionalidades mediante un menú en consola.
 
+En la clase Principal, habrá un menú, que  tendrá la instancia de Tienda, y mediante un menú el usuario podrá gestionar las opciones de la tienda:
 
+```
+1. Introducir producto (... completa el resto del menú para introducir los datos... )
+2. Eleminar producto
+3. Mostrar los productos que tiene la tienda
+4. Mostrar productos rebajados con precio inferior a 5 euros
+5. SALIR
 

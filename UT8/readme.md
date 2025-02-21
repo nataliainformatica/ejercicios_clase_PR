@@ -274,6 +274,7 @@ La clase **Paciente** debe tener los siguientes atributos, todos imprescindibles
 
 **ConsultaMedica**  y **Analisis** deberán implementar la interface **Citable**(que se entrega en la plantilla del proyecto): 
 
+
 public interface Citable {
     public String consultarDetalle();
     // devolverá el número de historial y la hora de cita 

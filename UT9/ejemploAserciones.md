@@ -31,7 +31,7 @@ public class Circulo {
 
 
 #RECORDATORIO 
-Aserciones en Java son útiles para verificar condiciones internas durante el desarrollo, pero deben habilitarse explícitamente en tiempo de ejecución.
+Aserciones en Java son útiles para verificar condiciones internas durante el desarrollo, pero deben deshabilitarse explícitamente para producción. 
 
 Son ideales para asegurarse de que ciertos valores o estados sean correctos antes de continuar con la ejecución del código.
 

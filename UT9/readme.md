@@ -1,4 +1,15 @@
 COLLECCIONES
+## Ejemplo1 - Implementación de HashMap
+Haremos una aplicación de agenda de contactos utilizando un HashMap como colección. 
+La clave será el número de teléfono, el nombre el valor.
+Al ejecutar la aplicación, mostrará un menú: 
+  1.Insertar contacto
+  2.Consultar contacto (número)
+  3.Mostrar todos
+  4. Salir
+
+
+
 
 ## Ejercicio 1
 

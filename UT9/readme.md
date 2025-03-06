@@ -23,9 +23,9 @@ Se requiere desarrollar una aplicación en Java, repasando la orientación a obj
 Repasaremos herencia abstracta, interfaces y excepciones. 
 
 La aplicación debe permitir registrar ingresos y gastos, calcular los saldos individuales y determinar cuánto debe pagar o recibir cada participante para equilibrar los costos.
-
 Se usará herencia abstracta para definir una clase base **Persona**.
 Se implementará una interfaz **Transaccion** , que será utilizada por Gasto e Ingreso.
+
 
 Gestión de Participantes y Transacciones
 
@@ -34,7 +34,7 @@ La clase **Participante**  representará a cada persona involucrada en los gasto
 Cada Participante tendrá una lista de Transaccion (gastos e ingresos).
 
 Se podrá agregar transacciones (gastos o ingresos) a un participante.
-Si el  participante tiene mayor importe en ingresos que en gastos, se propagará una excepción **ImportePositivoExcepcion**,  con los datos del participante y el importe resultante. 
+Si el  participante tiene mayor importe en ingresos que en gastos, se propagará una excepción **ImportePositivoException**,  con los datos del participante y el importe resultante. 
 
 Se podrá consultar el importe pendiente de cada participante (gastos - ingresos).
 

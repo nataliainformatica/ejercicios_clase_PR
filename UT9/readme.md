@@ -36,13 +36,13 @@ Cada Participante tendrá una lista de Transaccion (gastos e ingresos).
 Se podrá agregar transacciones (gastos o ingresos) a un participante.
 Si el  participante tiene mayor importe en ingresos que en gastos, se propagará una excepción **ImportePositivoException**,  con los datos del participante y el importe resultante. 
 
-Se podrá consultar el importe pendiente de cada participante (gastos - ingresos).
+Se podrá consultar el importe pendiente de cada participante (ingresos- gastos).
 
 Gestión de **Gastos**  e  **Ingresos**
 
 La clase Gasto representará un gasto con un importeGasto(double),  categoría (tipo enumerado)  y detalle(String).
 
-La clase Ingreso representará un ingreso con un importeIngredo(double) y descripción (String).
+La clase Ingreso representará un ingreso con un importeIngreso(double) y descripción (String).
 
 Gasto lanzará una excepción personalizada (GastoInvalidoException) si el monto es negativo (tanto desde el constructor, como desde el setter)
 

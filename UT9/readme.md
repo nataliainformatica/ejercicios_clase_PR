@@ -1,11 +1,17 @@
 COLLECCIONES
 ## Ejemplo1 - Implementación de HashMap
 Haremos una aplicación de agenda de contactos utilizando un HashMap como colección. 
+
 La clave será el número de teléfono, el nombre el valor.
+
 Al ejecutar la aplicación, mostrará un menú: 
+
   1.Insertar contacto
+  
   2.Consultar contacto (número)
+  
   3.Mostrar todos
+  
   4. Salir
 
 
@@ -44,7 +50,8 @@ Cálculo de Saldos Pendientes
 
 En la clase **GestionGastos** , se implementará un método calcularPendientes, que:
 
-
+// utilizaremos un DAOparticipantes con las instancias de todos los participantes
+// en lugar de introducir los datos por consola
 Determinará la cuota equitativa dividiendo el total de gastos entre el número de participantes.
 Indicará cuánto debe pagar o recibir cada participante. 
 
@@ -56,8 +63,11 @@ Ejemplo de Funcionamiento
 Si tres participantes han registrado los siguientes gastos e ingresos:
 
 Ana: Gasto de 30€ en comida, Ingreso de 50€
+
 Juan: Gasto de 20€ en transporte, Ingreso de 30€
+
 Luis: Gasto de 50€ en entradas
+
 El programa calculará cuánto ha pagado y cuánto debería haber pagado cada uno, y mostrará los saldos pendientes de cada participante.
 
 # Ejercicio2 : ORDENACIÓN DE PRODUCTOS

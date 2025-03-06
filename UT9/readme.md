@@ -235,3 +235,125 @@ Muestra una lista con todos los detalles de los vehículos NO  alquilados
 **Opción 5:**
 
 La aplicación pide la matrícula del vehículo, muestra el precio del alquiler y marca el vehículo como no alquilado. 
+
+# ejercicio 4: Electrodomésticos: 
+
+## Crearemos una superclase llamada Electrodomestico con las siguientes características:
+
+Sus **atributos** son precio base, color, consumo energético (letras entre A y F) y peso. **Usa enumerados para color y consumo.**
+    
+Por defecto, el color será blanco, el consumo energético sera F, el precioBase es de 100 € y el peso de 5 kg. Usa constantes para ello.
+    
+Los colores disponibles son blanco, negro, rojo, azul y gris. **Usa una clase enumerada.**
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Electrodomestico() 
+- Un constructor con el precio y peso. El resto por defecto. public Electrodomestico(float precioBase, float peso)
+- Un constructor con todos los atributos. public Electrodomestico(float precioBase, String color, char consumoEnergetico, float peso)
+
+Los **métodos** que implementara serán:
+    
+- Métodos get de todos los atributos.
+- comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, si no es correcta, usara la letra por defecto. Se invocara al crear el objeto y no será visible.
+- comprobarColor(String color): comprueba que el color es correcto, si no lo es, usa el color por defecto. Se invocara al crear el objeto y no será visible.
+- getPrecioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también. Esta es la lista de precios:
+
+**LETRA	PRECIO**
+
+A	100 €
+
+B	80 €
+
+C	60 €
+
+D	50 €
+
+E	30 €
+
+F	10 €
+
+**TAMAÑO	PRECIO**
+
+Entre 0 y 19 kg:	10 €
+
+Entre 20 y 49 kg:	50 €
+
+Entre 50 y 79 kg:	80 €
+
+Mayor que 80 kg:	100 €
+
+
+## Crearemos una subclase llamada Lavadora con las siguientes características:
+
+Su **atributo** es carga, además de los atributos heredados.
+    
+Por defecto, la carga es de 5 kg. Usa una constante para ello.
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Lavadora()
+- Un constructor con el precio y peso. El resto por defecto. public Lavadora(float precioBase, float peso)
+- Un constructor con la carga y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre. public Lavadora(float precioBase, float peso, char consumoEnergetico, String color, int carga) y public Lavadora(float precioBase, float peso, int carga)
+- Un constructor con precio, peso, consumo energético y color (sin carga). public Lavadora(float precioBase, float peso, char consumoEnergetico, String color) 
+
+ Los **métodos** que se implementara serán:
+    
+ - Método get de carga.
+ - getPrecioFinal():, si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se incrementara el precio. Llama al método padre y añade el código necesario.
+Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+
+
+## Crearemos una subclase llamada Television con las siguientes características:
+
+Sus **atributos** son resolución (en pulgadas) y sintonizador TDT (booleano), además de los atributos heredados.
+    
+Por defecto, la resolución sera de 20 pulgadas y el sintonizador sera false.
+    
+Los **constructores** que se implementaran serán:
+    
+- Un constructor por defecto. public Television()
+- Un constructor con el precio y peso. El resto por defecto. public Television(float precio, float peso)
+- Un constructor con la resolución, sintonizador TDT y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre. public Television(float precio, float peso, char consumo, String color, int resolucion, boolean siTDT
+
+Los **métodos** que se implementara serán:
+    
+- Método get de resolución y sintonizador TDT.
+- getPrecioFinal(): si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un 30% y si tiene un sintonizador TDT incorporado, aumentara 50 €. Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
+
+
+## Ahora crea una clase ejecutable que realice lo siguiente:
+
+Crea un ArrayList de Electrodomesticos.
+    
+Crea diferentes electrodomésticos con los valores que desees.
+    
+Ahora, recorre este ArrayList y ejecuta el método precioFinal().
+    
+Deberás mostrar el precio de cada clase, es decir, el precio de todas las televisiones por un lado, el de las lavadoras por otro y la suma de los Electrodomesticos (puedes crear objetos Electrodomestico, pero recuerda que Television y Lavadora también son electrodomésticos). 
+
+**Polimorfismo: Recuerda el uso operador instanceof.**
+
+Por ejemplo, si tenemos un Electrodomestico con un precio final de 300, dos lavadoras de 200 y una televisión de 500, el resultado final sera de 1000 (300+400+500) para electrodomésticos, 400 para lavadora y 500 para televisión.
+
+
+# Ejercicio5
+## para practicar  herencia y sobreescritura del método equals
+
+## Parte I
+
+![image](https://user-images.githubusercontent.com/91023374/149546516-f3a9e2b1-9815-4317-a0a3-769c0ce91537.png)
+
+## Parte II
+
+![image](https://user-images.githubusercontent.com/91023374/149546559-be226c3f-69af-4060-a003-d0f0535f4ee8.png)
+
+## Parte III
+
+![image](https://user-images.githubusercontent.com/91023374/149546782-c5094ebf-6044-4402-9bc7-7a5d38f16068.png)
+
+## Ejemplo de salidas del programa con diferentes set de datos
+
+![image](https://user-images.githubusercontent.com/91023374/149550906-e4e64e8e-318b-4221-b9eb-866c7e3e32a9.png)
+
+![image](https://user-images.githubusercontent.com/91023374/149551033-788a47a8-34df-467a-8dd6-576646866fe0.png)

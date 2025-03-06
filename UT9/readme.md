@@ -126,7 +126,7 @@ Mostraremos el catálogo de productos en el siguiente orden:
 
 # AMPLIACIÓN: PRÁCTICA GUIADA: con Servicio de Ordenación y Patrón Singleton
 Singleton - también llamado instancia única
-![https://refactoring.guru/es/design-patterns/singleton]
+![https://refactoring.guru/es/design-patterns/singleton
 
 Aprenderemos a crear un servicio de ordenación (una única instancia)
 privte static ArrayList<T> listaClonada;

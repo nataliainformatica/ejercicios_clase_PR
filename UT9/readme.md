@@ -52,6 +52,7 @@ En la clase **GestionGastos** , se implementará un método calcularPendientes, 
 
 // utilizaremos un DAOparticipantes con las instancias de todos los participantes
 // en lugar de introducir los datos por consola
+
 Determinará la cuota equitativa dividiendo el total de gastos entre el número de participantes.
 Indicará cuánto debe pagar o recibir cada participante. 
 

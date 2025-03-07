@@ -32,8 +32,12 @@ public class Participante extends Persona {
 
     public void agregarTransaccion(Transaccion transaccion) {
         // es necesario calcular el importe tota, y si es positivo 
-         gastosIngresos.add(transaccion);
-         devolverTotal(); 
+         
+        double total=0; 
+        gastosIngresos.add(transaccion);
+        total = devolverTotal();  
+         if(total>0 ) 
+            throw new ImportePositivoException(new Participante( this),total);; 
     }
   /**
      * Se podrá consultar el importe
@@ -44,7 +48,8 @@ public class Participante extends Persona {
      * propagará una excepción **ImportePositivoException**, con los datos del
      * participante y el importe resultante.
      */
-    private double devolverTotal(){
+
+    public double devolverTotal(){
         // recorre el arraylist de Transacción, si es Gasto es negativo, 
         double total=0; 
         for(Transaccion t: gastosIngresos){
@@ -57,8 +62,7 @@ public class Participante extends Persona {
                 total+= t.devolverImporte(); 
 
             }
-            if(total>0)
-                throw new ImportePositivoException(new Participante( this),total);
+            
         }
         
         return  total;

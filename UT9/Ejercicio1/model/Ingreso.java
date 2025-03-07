@@ -1,4 +1,4 @@
-package ut9.Ejercicio1;
+package ut9.Ejercicio1.model;
 
 public class Ingreso implements Transaccion {
 
@@ -17,5 +17,11 @@ public class Ingreso implements Transaccion {
         return importeIngreso; 
         
     }
+
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+    
 
 }

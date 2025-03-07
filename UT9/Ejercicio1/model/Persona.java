@@ -1,4 +1,4 @@
-package ut9.Ejercicio1;
+package ut9.Ejercicio1.model;
 
 public abstract class Persona {
 

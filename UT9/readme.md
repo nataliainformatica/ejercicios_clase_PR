@@ -89,9 +89,10 @@ El programa calculará cuánto ha pagado y cuánto debería haber pagado cada un
 
 Nos piden hacer la lógica que podrá ordenar (por distintos parámetros) una colección de Productos. 
 
-Para esto completaremos la clase **Ordenaciones** que deberá tener tres métodos con las siguientes firmas: 
+Para esto completaremos la clase **Ordenaciones** que  implementará Ordenable, inteface con tres métodos con las siguientes firmas: 
 
 ```
+public interface Ordenable{
 
 public ArrayList<Producto> ordenarAltoProducto(  ArrayList<Producto>   coleccion);
   
@@ -100,7 +101,7 @@ public ArrayList<Producto> ordenarAnchoProducto(  ArrayList<Producto>   coleccio
   
 
 public ArrayList<Producto> ordenarLargoProducto(  ArrayList<Producto>   coleccion); 
-  
+}  
 ```
 
 ### La clase Producto
@@ -483,3 +484,13 @@ Solo la clase **Planeta** va a tener un nuevo método de comportamiento:
     }
 ```
 En la clase Main añade la lógica para que en el caso de que el astro de la lista sea un Planeta además muestra dicha información extra.
+
+#Ejercicio 7 - Iterator
+Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
+Muestra la lista tras la conversión.
+Ejemplo:
+rfg
+hrw
+GHU
+ACE
+hjl

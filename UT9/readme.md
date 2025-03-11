@@ -136,6 +136,9 @@ Mostraremos el catálogo de productos en el siguiente orden:
 - sin ordenar
 - ordenados por largo
 
+##Usando un **Iterador** 
+Muestra de nuevo los productos sin ordenar, eliminando los productos con nombre : "xxxx" (elige un nombre de producto que exista en el dao)
+
 # AMPLIACIÓN: PRÁCTICA GUIADA: con Servicio de Ordenación y Patrón Singleton
 Singleton - también llamado instancia única
 ![https://refactoring.guru/es/design-patterns/singleton

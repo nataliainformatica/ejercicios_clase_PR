@@ -89,18 +89,18 @@ El programa calculará cuánto ha pagado y cuánto debería haber pagado cada un
 
 Nos piden hacer la lógica que podrá ordenar (por distintos parámetros) una colección de Productos. 
 
-Para esto completaremos la clase **Ordenaciones** que  implementará Ordenable, inteface con tres métodos con las siguientes firmas: 
+Para esto completaremos la clase **Ordenaciones** que  implementará tres métodos con las siguientes firmas: 
 
 ```
 public interface Ordenable{
 
-public ArrayList<Producto> ordenarAltoProducto(  ArrayList<Producto>   coleccion);
+public static ArrayList<Producto> ordenarAltoProducto(  ArrayList<Producto>   coleccion);
   
 
-public ArrayList<Producto> ordenarAnchoProducto(  ArrayList<Producto>   coleccion);
+public static ArrayList<Producto> ordenarAnchoProducto(  ArrayList<Producto>   coleccion);
   
 
-public ArrayList<Producto> ordenarLargoProducto(  ArrayList<Producto>   coleccion); 
+public static ArrayList<Producto> ordenarLargoProducto(  ArrayList<Producto>   coleccion); 
 }  
 ```
 

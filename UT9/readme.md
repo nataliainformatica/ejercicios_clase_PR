@@ -507,6 +507,22 @@ Vamos a modelar un sistema de biblioteca con una clase base Libro y dos clases d
 El número de clasificación se deberá crear usando código Dewey, con la clasificación y el título que se reciben por el constructor.
 
 **LibroFisico** y **LibroDigita**l heredan de Libro.
+**constructor de LibroDigital**
+tiene como atributo tamanoMB (que es el tamaño del libro en MB)
+
+ public LibroDigital(String titulo, String autor, 
+        String isbn, double tamanoMB, 
+            String categoriaDewey) {
+        super(titulo, autor, isbn, categoriaDewey);
+        this.tamanoMB = tamanoMB;
+    }
+
+**constructor de LibroFisico**
+tiene como atributo numPaginas , que es el número total de páginas del libro
+ public LibroFisico(String titulo, String autor, String isbn, int numPaginas, String categoriaDewey) {
+        super(titulo, autor, isbn, categoriaDewey);
+        this.numPaginas = numPaginas;
+    }
 
 Se usa HashSet para almacenar los libros sin orden específico.
 

@@ -30,14 +30,16 @@ public class Producto implements Comparable<Producto> {
     public Producto(double alto, double ancho, double largo, String nombre) {
         this.ancho = ancho;
         this.largo = largo;
-        this.alto = alto;
+        //this.alto = alto;
         // alto desde 2 cm hasta 30 cm
         if (alto < 2) {
             this.alto = 2;
         }
         else if (alto > 30) {
             this.alto = 30;
-        }
+        }else
+            this.alto = alto;
+
         // Ancho: desde 2 cm hasta 10 cm 
         if (ancho < 2) {
             this.ancho = 2;

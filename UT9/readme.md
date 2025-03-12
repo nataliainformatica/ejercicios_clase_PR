@@ -488,7 +488,7 @@ Solo la clase **Planeta** va a tener un nuevo método de comportamiento:
 ```
 En la clase Main añade la lógica para que en el caso de que el astro de la lista sea un Planeta además muestra dicha información extra.
 
-#Ejercicio 7 - Iterator
+# Ejercicio 7 - Iterator
 Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
 Muestra la lista tras la conversión.
 Ejemplo:
@@ -497,3 +497,57 @@ hrw
 GHU
 ACE
 hjl
+
+# Ejercicio 8 - Biblioteca - uso de Set
+Vamos a modelar un sistema de biblioteca con una clase base Libro y dos clases derivadas: LibroFisico y LibroDigital.
+
+Utilizaremos HashSet para almacenar libros en una colección sin orden específico y TreeSet para almacenarlos ordenados por título.
+
+
+**Características principales:**
+**Libro** es la clase base con los atributos titulo, autor y isbn, número de clasificación.
+El número de clasificación se deberá crear usando código Dewey, con la clasificación y el título que se reciben por el constructor.
+
+**LibroFisico** y **LibroDigita**l heredan de Libro.
+
+Se usa HashSet para almacenar los libros sin orden específico.
+
+Se usa TreeSet para ordenar por título.
+
+**número de clasificación** ,  suele basarse en sistemas como:
+
+Dewey Decimal (DDC): Usado en muchas bibliotecas públicas y escolares. Clasifica libros en 10 grandes categorías (000-999)
+
+Library of Congress (LCC): Usado en bibliotecas académicas, con letras y números.
+
+**Ejemplo de código Dewey**
+Un libro sobre programación en Java podría tener:
+005.133 JAV
+
+005.133: Categoría de lenguajes de programación
+JAV: Código basado en el nombre del autor o títu
+
+Cada número representa un área del conocimiento.Detalle de las  10 categorías principales:
+
+Número -	Área del conocimiento	- Ejemplo de libros
+000 - 	Obras generales - 	Enciclopedias, computación, periodismo
+100 -	Filosofía y psicología	 - Ética, lógica, psicoanálisis
+200	 - Religión	 - Teología, mitología, religiones del mundo
+300	- Ciencias sociales - 	Economía, política, educación, derecho
+400 -	Lenguas	 - Gramática, diccionarios, traducción
+500 -	Ciencia pura -	Matemáticas, física, química, biología
+600	 - Tecnología y ciencias aplicadas -	Medicina, ingeniería, negocios, cocina
+700	- Artes y recreación -	Pintura, música, deportes, cine
+800	- Literatura	- Poesía, novelas, teatro, ensayos
+900	- Historia y geografía -	Biografías, historia de países, viajes
+
+Los libros pueden tener una clasificación más detallada, agregando más dígitos:
+
+Número	Tema	Ejemplo
+005	Ciencias de la computación	Programación
+005.133	Lenguajes de programación	Java, Python, Kotlin
+860	Literatura en español	"Don Quijote"
+863	Novela española	"Cien años de soledad"
+823	Literatura inglesa	"1984" de Orwell
+891	Literatura rusa	"Crimen y castigo"
+

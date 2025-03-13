@@ -643,3 +643,49 @@ hrw
 GHU
 ACE
 hjl
+
+# Ejercicio 9 -
+Agenda de Eventos usando Colecciones en Java
+
+Desarrolla una aplicación en Java que administre una agenda de eventos  utilizando colecciones (Set, TreeSet, ArrayList). La aplicación debe incluir un menú con las 
+siguientes funcionalidades:
+
+
+Agenda
+Utiliza un TreeSet<Cita> para almacenar las citas o eventos ordenados
+Se ordenarán por fecha y hora.
+
+** Principal **
+Implementa un sistema de menú para interactuar con las  siguientes opciones.
+
+1. Cargar citas desde un calendario compartido
+
+Simular la carga de citas desde un DAO que devuelve un ArrayList<Cita>.
+Agregar estas citas a la agenda.
+
+2. Cargar citas desde la agenda propia
+
+Simular la carga de citas desde un DAO que devuelve un HashSet<Cita>.
+Agregar estas citas a la agenda.
+
+Listar citas por categoría
+
+Solicitar al usuario una categoría y se eliminarán todas las citas que pertenezcan a esa categoría.
+
+
+Clases y detalles:
+Clase Cita con atributos:
+
+fecha (LocalDate)
+
+hora (LocalTime)
+
+descripción (String)
+
+categoría (String)
+
+**DAOSimulado**
+
+Un método que devuelve un ArrayList<Cita> con citas de un calendario compartido.
+Un método que devuelve un HashSet<Cita> con citas de la agenda propia.
+

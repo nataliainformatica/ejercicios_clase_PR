@@ -488,17 +488,9 @@ Solo la clase **Planeta** va a tener un nuevo método de comportamiento:
 ```
 En la clase Main añade la lógica para que en el caso de que el astro de la lista sea un Planeta además muestra dicha información extra.
 
-# Ejercicio 7 - Iterator
-Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
-Muestra la lista tras la conversión.
-Ejemplo:
-rfg
-hrw
-GHU
-ACE
-hjl
 
-# Ejercicio 8 - Biblioteca - uso de Set
+
+# Ejercicio 7 - Biblioteca - uso de Set
 Vamos a modelar un sistema de biblioteca con una clase base Libro y dos clases derivadas: LibroFisico y LibroDigital.
 
 
@@ -642,4 +634,12 @@ public class DAOclasificaciones {
 
 
 
-
+# Ejercicio 8- Iterator
+Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
+Muestra la lista tras la conversión.
+Ejemplo:
+rfg
+hrw
+GHU
+ACE
+hjl

@@ -692,7 +692,11 @@ Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por t
 Muestra la lista tras la conversión.
 Ejemplo:
 rfg
+
 hrw
+
 GHU
+
 ACE
+
 hjl

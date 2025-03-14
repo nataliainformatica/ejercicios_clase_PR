@@ -52,7 +52,7 @@ public class Principal {
                 Iterator<Cita> it = agenda.devolverCitas().iterator();
 
 
-                ArrayList<Cita> citasPorCategoria = agenda.obtenerCitasPorCategoria(categoria);
+                
                 while(it.hasNext()){
                     Cita cita = it.next(); 
                     if(cita.getCategoria().equalsIgnoreCase(categoria)){

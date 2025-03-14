@@ -669,14 +669,18 @@ Agregar estas citas a la agenda.
 
 Simular la carga de citas desde un DAO que devuelve un HashSet<Cita>.
 Agregar estas citas a la agenda.
+3. Mostrar la agenda de citas (ORDENADAS)");
 
-3 .Eliminar   citas por categoría
+Mostrará todas las citas de la agenda
+
+4 .Eliminar   citas por categoría
 
 Solicitar al usuario una categoría y se eliminarán todas las citas que pertenezcan a esa categoría.
 
+5. Salir
 
-Clases y detalles:
-Clase Cita con atributos:
+
+**Clase Cita**:
 
 fecha (LocalDate)
 

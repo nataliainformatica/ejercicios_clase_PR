@@ -634,17 +634,7 @@ public class DAOclasificaciones {
 
 
 
-# Ejercicio 8- Iterator
-Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
-Muestra la lista tras la conversión.
-Ejemplo:
-rfg
-hrw
-GHU
-ACE
-hjl
-
-# Ejercicio 9 -
+# Ejercicio 8 - AGENDA
 Agenda de Eventos usando Colecciones en Java
 
 Desarrolla una aplicación en Java que administre una agenda de eventos  utilizando colecciones (Set, TreeSet, ArrayList). 
@@ -669,6 +659,7 @@ Agregar estas citas a la agenda.
 
 Simular la carga de citas desde un DAO que devuelve un HashSet<Cita>.
 Agregar estas citas a la agenda.
+
 3. Mostrar la agenda de citas (ORDENADAS)");
 
 Mostrará todas las citas de la agenda
@@ -695,3 +686,13 @@ categoría (String)
 Un método que devuelve un ArrayList<Cita> con citas de un calendario compartido.
 Un método que devuelve un HashSet<Cita> con citas de la agenda propia.
 
+# Ejercicio 9  - Iterator
+
+Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
+Muestra la lista tras la conversión.
+Ejemplo:
+rfg
+hrw
+GHU
+ACE
+hjl

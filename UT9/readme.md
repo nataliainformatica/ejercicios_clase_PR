@@ -488,20 +488,10 @@ Solo la clase **Planeta** va a tener un nuevo método de comportamiento:
 ```
 En la clase Main añade la lógica para que en el caso de que el astro de la lista sea un Planeta además muestra dicha información extra.
 
-# Ejercicio 7 - Iterator
-Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
-Muestra la lista tras la conversión.
-Ejemplo:
-rfg
-hrw
-GHU
-ACE
-hjl
 
-# Ejercicio 8 - Biblioteca - uso de Set
+
+# Ejercicio 7 - Biblioteca - uso de Set
 Vamos a modelar un sistema de biblioteca con una clase base Libro y dos clases derivadas: LibroFisico y LibroDigital.
-
-Utilizaremos HashSet para almacenar libros en una colección sin orden específico y TreeSet para almacenarlos ordenados por título.
 
 
 **Características principales:**
@@ -509,16 +499,30 @@ Utilizaremos HashSet para almacenar libros en una colección sin orden específi
 El número de clasificación se deberá crear usando código Dewey, con la clasificación y el título que se reciben por el constructor.
 
 **LibroFisico** y **LibroDigita**l heredan de Libro.
-
+**constructor de LibroDigital**
+tiene como atributo tamanoMB (que es el tamaño del libro en MB)
+```
+ public LibroDigital(String titulo, String autor, 
+        String isbn, double tamanoMB, 
+            String categoriaDewey) {
+        super(titulo, autor, isbn, categoriaDewey);
+        this.tamanoMB = tamanoMB;
+    }
+```
+**constructor de LibroFisico**
+tiene como atributo numPaginas , que es el número total de páginas del libro
+```
+ public LibroFisico(String titulo, String autor, String isbn, int numPaginas, String categoriaDewey) {
+        super(titulo, autor, isbn, categoriaDewey);
+        this.numPaginas = numPaginas;
+    }
+```
 Se usa HashSet para almacenar los libros sin orden específico.
 
 Se usa TreeSet para ordenar por título.
 
-**número de clasificación** ,  suele basarse en sistemas como:
-
+**número de clasificación** ,  en nuestro ejercicio utilizaremos el código 
 Dewey Decimal (DDC): Usado en muchas bibliotecas públicas y escolares. Clasifica libros en 10 grandes categorías (000-999)
-
-Library of Congress (LCC): Usado en bibliotecas académicas, con letras y números.
 
 **Ejemplo de código Dewey**
 Un libro sobre programación en Java podría tener:
@@ -528,7 +532,7 @@ Un libro sobre programación en Java podría tener:
 JAV: Código basado en el nombre del autor o títu
 
 Cada número representa un área del conocimiento.Detalle de las  10 categorías principales:
-
+```
 Número -	Área del conocimiento	- Ejemplo de libros
 000 - 	Obras generales - 	Enciclopedias, computación, periodismo
 100 -	Filosofía y psicología	 - Ética, lógica, psicoanálisis
@@ -540,9 +544,11 @@ Número -	Área del conocimiento	- Ejemplo de libros
 700	- Artes y recreación -	Pintura, música, deportes, cine
 800	- Literatura	- Poesía, novelas, teatro, ensayos
 900	- Historia y geografía -	Biografías, historia de países, viajes
+```
 
 Los libros pueden tener una clasificación más detallada, agregando más dígitos:
 
+```
 Número	Tema	Ejemplo
 005	Ciencias de la computación	Programación
 005.133	Lenguajes de programación	Java, Python, Kotlin
@@ -551,3 +557,146 @@ Número	Tema	Ejemplo
 823	Literatura inglesa	"1984" de Orwell
 891	Literatura rusa	"Crimen y castigo"
 
+```
+
+Clase **Biblioteca** : 
+Crearemos nuestra biblioteca con tres colecciones de libros, una  sin ordenar ,  otra ordenada usando el criterio natural y una tercera usando un Comparator . Partiendo de la conexión DAOlibros que devuelve un List<Libro>.
+Utilizaremos HashSet para almacenar libros en una colección sin orden específico y TreeSet para almacenarlos ordenados por códigoBibliteca y después por título.
+
+Primero comparamos por codigoBiblioteca 
+→ Si son distintos, usamos ese orden.
+
+→ Si los códigos son iguales, comparamos por titulo.
+
+```
+public class DAOlibros {
+
+    public static List<Libro> getLibros() {
+        List<Libro> listaLibros = new ArrayList<>();
+
+        // Agregamos algunos libros de ejemplo
+        listaLibros.add(new LibroFisico("Cien años de soledad", "García Márquez", "123", 471, "863"));
+        listaLibros.add(new LibroDigital("El Quijote", "Cervantes", "456", 5.2, "860"));
+        listaLibros.add(new LibroFisico("1984", "Orwell", "789", 328, "823"));
+        listaLibros.add(new LibroFisico("Los miserables", "Victor Hugo", "321", 1488, "840"));
+        listaLibros.add(new LibroDigital("Crimen y castigo", "Dostoyevski", "654", 3.8, "891"));
+
+        return listaLibros;
+    }
+}
+```
+Añade un método que sea capaz de recorrer la colección de libros. 
+
+Añade un método que sea capaz de recorrer la colección de libros mediante un iterator. 
+
+Añade un método que recorra la colección de libros y muestre la categoría del libro usando DAOcategorías. 
+```
+package model;
+
+import java.util.*;
+
+public class DAOclasificaciones {
+    private final Map<String, String> clasificaciones;
+
+    public DAOclasificaciones() {
+        clasificaciones = new HashMap<>();
+        cargarClasificaciones();
+    }
+
+    private void cargarClasificaciones() {
+        clasificaciones.put("000", "Obras generales");
+        clasificaciones.put("100", "Filosofía y psicología");
+        clasificaciones.put("200", "Religión");
+        clasificaciones.put("300", "Ciencias sociales");
+        clasificaciones.put("400", "Lenguas");
+        clasificaciones.put("500", "Ciencia pura");
+        clasificaciones.put("600", "Tecnología y ciencias aplicadas");
+        clasificaciones.put("700", "Artes y recreación");
+        clasificaciones.put("800", "Literatura");
+        clasificaciones.put("900", "Historia y geografía");
+        clasificaciones.put("005.133", "Lenguajes de programación");
+        clasificaciones.put("823", "Literatura inglesa");
+        clasificaciones.put("840","Literatura en francés");
+        clasificaciones.put("860", "Literatura en español");
+        clasificaciones.put("863", "Novela española");
+        clasificaciones.put("891", "Literatura rusa");
+    }
+
+    public String getClasificacion(String codigo) {
+        return clasificaciones.getOrDefault(codigo, "Código no encontrado");
+    }
+
+    public Map<String, String> getTodasLasClasificaciones() {
+        return clasificaciones;
+    }
+}
+```
+
+
+
+# Ejercicio 8 - AGENDA
+Agenda de Eventos usando Colecciones en Java
+
+Desarrolla una aplicación en Java que administre una agenda de eventos  utilizando colecciones (Set, TreeSet, ArrayList). 
+
+
+**Agenda**
+
+Utiliza un TreeSet<Cita> para almacenar las citas o eventos ordenados.
+
+Se ordenarán por fecha y hora.
+
+**Principal**
+
+Implementa un sistema de menú para interactuar con las  siguientes opciones.
+
+1. Cargar citas desde un calendario compartido
+
+Simular la carga de citas desde un DAO que devuelve un ArrayList<Cita>.
+Agregar estas citas a la agenda.
+
+2. Cargar citas desde la agenda propia
+
+Simular la carga de citas desde un DAO que devuelve un HashSet<Cita>.
+Agregar estas citas a la agenda.
+
+3. Mostrar la agenda de citas (ORDENADAS)");
+
+Mostrará todas las citas de la agenda
+
+4 .Eliminar   citas por categoría
+
+Solicitar al usuario una categoría y se eliminarán todas las citas que pertenezcan a esa categoría.
+
+5. Salir
+
+
+**Clase Cita**:
+
+fecha (LocalDate)
+
+hora (LocalTime)
+
+descripción (String)
+
+categoría (String)
+
+**DAOSimulado**
+
+Un método que devuelve un ArrayList<Cita> con citas de un calendario compartido.
+Un método que devuelve un HashSet<Cita> con citas de la agenda propia.
+
+# Ejercicio 9  - Iterator
+
+Crea una lista de 30 palabras de forma aleatoria. Cada palabra se formará por tres letras del abecedario al azar. Muestra la lista por pantalla. Usando un iterador, recorre una segunda vez la lista y las palabras que contengan alguna vocal deben convertirse en mayúsculas. Las palabras que empiecen por z se borrarán.
+Muestra la lista tras la conversión.
+Ejemplo:
+rfg
+
+hrw
+
+GHU
+
+ACE
+
+hjl

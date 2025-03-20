@@ -36,13 +36,19 @@ Continuará preguntando al usuario por su opción favorita, hasta que el usuario
 
 Usando el fichero con el calendario laboral en formato CSV, que proporciona la API de datos en abierto : datos.gob.es  
 https://datos.gob.es/es/catalogo/l01280796-calendario-laboral
+
 Haremos una aplicación que será capaz de leer el fichero, para hacer un calendario 2025  para poder usarlo como parte de otras aplicaciones.
 
 Es necesario hacer una jerarquía de clases: 
+
 Dia (que tendrá como atributos fecha y dia_semana)
+
 DiaLaborable - lunes, martes, miércoles, jueves o viernes
+
 DiaSabado - diferenciamos el sábado de los dias laborables
+
 DiaDomingo - diferenciamos el domingo de los días laborables
+
 DiaFestivo - cualquier lunes a domingo que sea festivo
 
 

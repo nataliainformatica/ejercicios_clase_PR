@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "UT9/ejercicio7",
         "UT8/examen/es/daw/poo/principal",
         "UT6/examenUT6_7",
         "UT5/Ejercicios de repaso/juegoTablero",
         "UT4/RecursosUT04AV/soluciones",
-        "UT9/ejercicio7"
+        "UT11/ejercicio2"
     ]
 }

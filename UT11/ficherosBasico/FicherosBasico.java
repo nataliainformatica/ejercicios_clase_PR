@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package ficheros;
 
 import java.io.*;
@@ -250,5 +250,5 @@ private static void verDir(){
         System.out.println("El archivo no existe");
     }
    
->>>>>>> 64fdd31ea5eda85d3d0c6cc985be4734134e5a11
+
 }

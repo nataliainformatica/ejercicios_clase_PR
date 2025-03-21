@@ -95,7 +95,9 @@ con 2 espacios.
 2. Comprar la entrada de una fila y asiento concreto. Se muestra la entrada en pantalla y actualiza 
 el array si está disponible o se comunica al cliente que ya está ocupada. Formato de salida, si la 
 compra se efectúa
+
 ´´´
+
  ------------------------- 
  Cine Club Lumiere 
  fila: numero 

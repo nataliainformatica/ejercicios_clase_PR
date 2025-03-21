@@ -138,7 +138,7 @@ deba gestionar. Al comenzar se encargará de que se lean las ventas desde el arc
 Tendrá un método por cada opción del menú que se encargue de ejecutarla y 
 los métodos que sean necesarios para el menú en sí mismo. 
 
-● AppCine, que contendrá el siguiente método main y que no deberás hacer: 
+● AppCine, que contendrá el siguiente método main: 
 ```
  public static void main(String[] args) { 
  GestorCine gestor=new GestorCine(new Cine()); 

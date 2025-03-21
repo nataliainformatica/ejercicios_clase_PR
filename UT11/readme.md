@@ -96,14 +96,14 @@ con 2 espacios.
 el array si está disponible o se comunica al cliente que ya está ocupada. Formato de salida, si la 
 compra se efectúa
 
-´´´
+```
 
  ------------------------- 
  Cine Club Lumiere 
  fila: numero 
  asiento: numero
  -------------------------
- ´´´
+```
  
 3. Devolver una entrada, sólo si ha sido antes vendida.
    
@@ -139,19 +139,19 @@ Tendrá un método por cada opción del menú que se encargue de ejecutarla y
 los métodos que sean necesarios para el menú en sí mismo. 
 
 ● AppCine, que contendrá el siguiente método main y que no deberás hacer: 
-´´
+```
  public static void main(String[] args) { 
  GestorCine gestor=new GestorCine(new Cine()); 
  gestor.gestionarMenu(); 
  } 
  
-´´´
+```
 
 Asegúrate de capturar y tratar todas las excepciones verificadas en todas las clases. 
 
 ★ Clase Butaca:
 
-´´´
+```
 public class Butaca { 
  private int asiento, fila; 
  
@@ -176,5 +176,5 @@ public class Butaca {
  return fila+":"+asiento; 
  } 
 } 
-´´´
+```
 

@@ -40,6 +40,31 @@ public class Cine {
 
     }
 
+    public void guardarEntradas() {
+        // recorremos el patio de butacas
+        // si la butaca está ocupada (vendida) crearemos la línea en el fichero
+        // butacas = new Butaca[FILAS][ASIENTOS];
+        ArrayList<String> lineas = new ArrayList<>();
+        for (int i = 0; i < FILAS; i++) {
+            for (int j = 0; j < ASIENTOS; j++) {
+                if (butacas[i][j].isOcupado()) {
+                    // añadir la línea al fichero
+                    // formato: fila:asiento
+                    lineas.add(i + ":" + j);
+                }
+            }
+        }
+        try {
+            Path rutaFichero = Path.of(RUTA);
+            // lineas tiene toda la información
+            Files.write(rutaFichero, lineas);
+
+        } catch (IOException ex) {
+
+        }
+
+    }
+
     private void crearPatio() {
         Path ruta = Path.of(RUTA);
 
@@ -77,13 +102,6 @@ public class Cine {
      * línea, con un formato fila:asiento.
      */
 
-    // vender una entrada
-    public boolean venderEntrada(int fila, int asiento) {
-        // recuperar la butaca de la posición fila,asiento
-
-        return true;
-    }
-
     /**
      * Mostrar el cine en pantalla (la visualización consistirá en un doble X (“XX”)
      * para los asientos ocupados y un doble _ (“__”) para los que todavía se
@@ -118,28 +136,30 @@ public class Cine {
      * ya está ocupada. Formato de salida, si la compra se efectúa
      */
 
-
-     public boolean comprarEntrada(int fila, int asiento){
+    // vender una entrada
+    public boolean venderEntrada(int fila, int asiento) {
         // podríamos haber incluido en el enunciado
         // propagar una excepción, en el caso de que la entrada ya esté ocupada
 
-        if(butacas[fila][asiento].isOcupado()){
+        if (butacas[fila][asiento].isOcupado()) {
             return false;
         }
         butacas[fila][asiento].setOcupado(true);
-        return true; 
+        //guardarEntradas();
+        return true;
 
-     }
+    }
 
-     /**
-      * Devolver una entrada, sólo si ha sido antes vendida.
-      */
-    public boolean devoverEntrada(int fila, int asiento){
+    /**
+     * Devolver una entrada, sólo si ha sido antes vendida.
+     */
+    public boolean devolverEntrada(int fila, int asiento) {
 
-        if(!butacas[fila][asiento].isOcupado()){
+        if (!butacas[fila][asiento].isOcupado()) {
             return false;
         }
         butacas[fila][asiento].setOcupado(false);
-        return true; 
+        //guardarEntradas();
+        return true;
     }
 }

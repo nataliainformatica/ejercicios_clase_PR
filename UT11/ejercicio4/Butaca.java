@@ -2,12 +2,10 @@ package ejercicio4;
 
 public class Butaca {
     private int asiento, fila;
-    private boolean ocupado; 
 
     public Butaca(int f, int a) {
         asiento = a;
         fila = f;
-        ocupado = false; 
     }
 
     /**
@@ -19,7 +17,6 @@ public class Butaca {
         String[] b = s.split(":");
         fila = Integer.parseInt(b[0]);
         asiento = Integer.parseInt(b[1]);
-        ocupado = false; 
     }
 
     // getter y setters
@@ -59,15 +56,6 @@ W
             return false;
         return true;
     }
-
-    public boolean isOcupado() {
-        return ocupado;
-    }
-
-    public void setOcupado(boolean ocupado) {
-        this.ocupado = ocupado;
-    }
-    
 
     
 }

@@ -17,7 +17,6 @@
  * opción favorita, hasta que el usuario escriba SALIR (o salir).
  */
 
-package ejercicio2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

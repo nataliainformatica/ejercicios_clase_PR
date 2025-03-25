@@ -93,14 +93,20 @@ public class Calendario {
             br.readLine(); // Saltar la cabeceras
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");
-                if (datos.length >= 3) {
+              
 
                     LocalDate fecha = LocalDate.parse(datos[0], formatter);
+                    // si el año es !0 a 2025 no importamos la fecha
+                    if(fecha.getYear() == 2025){
+
+                        // si quisiéramos importar solamente los festivos
+                        // podemos añadir el condicional if(datos.length >3)
                     String diaSemana = datos[1];
-                    String tipo = datos[2];
+                    String tipo = datos.length > 2? datos[2] : "";
+                   
                     String tipoFestivo = datos.length > 3 ? datos[3] : "";
                     String festividad = datos.length > 4 ? datos[4] : "";
-
+                    
                     switch (tipo.toLowerCase()) {
                         case "laborable":
                             dias.add(new DiaLaborable(fecha, diaSemana));

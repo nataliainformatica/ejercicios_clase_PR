@@ -251,5 +251,5 @@ La decisión de cómo se asignan y cuántos se asignan es libre
 
 **6. Consulta del ranking**
 
-El juego tendrá una opción para mostrar las 10 mejores puntuaciones guardadas en el fichero binario. Ordenadas de mayor a menor. 
+El juego tendrá una opción para mostrar las 10 mejores puntuaciones guardadas en el fichero binario. Ordenadas de mayor a menor.  Se mostrará la puntuación, el alias del usuario y la fecha
 

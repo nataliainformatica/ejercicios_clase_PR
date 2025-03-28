@@ -1,0 +1,14 @@
+5. Sistema de puntuación
+
+La puntuación se calculará en función de:
+
+Cada partida, tendrá un máximo de 10.000 puntos. 
+
+Dificultad elegida (más intentos permitidos reducen la puntuación).
+Dependiendo del dibujo elegido, con más o menos líneas, significa que  tienen más o menos intentos.
+Se dividen los 10.000 puntos entre las letras que tiene la palabra, restando las vocales. 
+Por cada error, se resta un tercio de la puntuación obtenida hasta el momento. 
+
+Si la consonante acertada está más de una vez en la palabra, se multiplica la puntuación por el número de veces que 
+aparece la consonante. 
+

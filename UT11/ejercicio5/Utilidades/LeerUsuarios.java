@@ -1,12 +1,11 @@
 package ejercicio5.Utilidades;
 
 import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -18,8 +17,15 @@ public class LeerUsuarios {
     public static ArrayList<Usuario> getUsuarios() throws IOException {
 
         ArrayList<Usuario> usuarios = new ArrayList<>();
+        /* alternativa con Files
+       if( Files.exists(Path.of("FichData.dat"))){
+         //   
+       }
+        
+        */
 
         // leer el fichero
+        if(fichero.exists()){
 
         DataInputStream dataIS = new DataInputStream(new FileInputStream(fichero));
         boolean continua = true; 
@@ -44,7 +50,8 @@ public class LeerUsuarios {
         }
 
         dataIS.close();
-
+    }else
+        throw new IOException(); 
         return usuarios;
 
     }

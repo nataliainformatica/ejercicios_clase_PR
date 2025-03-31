@@ -7,9 +7,12 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.lang.model.util.ElementScanner14;
 
 import ejercicio5.Utilidades.GuardarUsuario;
 import ejercicio5.Utilidades.LeerDibujo;
@@ -26,11 +29,13 @@ public class Principal {
     private static final String AZUL = "\u001B[34m";
     private static final String VERDE = "\u001B[32m";
     private static final String ROSA = "\u001B[35m";
+    private static final int MAX_PUNTUACION = 100; 
 
     private static ArrayList<String> dibujo;
     private static int nJugadas;
     private static Usuario usuario; 
-
+  
+    private static ArrayList<Integer> puntuaciones;  
     public static void main(String[] args) {
         String opcion;
 
@@ -38,7 +43,7 @@ public class Principal {
 
         String palabraJugada = null;
         ArrayList<String> palabras=null;
-   
+        puntuaciones = new ArrayList<>(); 
         // TODO - revisar para ordenar el código
         try {
             palabras = LeerDibujo.leerDibujo(ruta.toFile());
@@ -77,6 +82,7 @@ public class Principal {
 
             System.out.println("1.Selección del dibujo del ahorcado");
             System.out.println("2. Jugar");
+            System.out.println("3. Mostrar Puntuaciones");
             opcion = sc.nextLine();
 
             switch (opcion) {
@@ -102,31 +108,38 @@ public class Principal {
                     break;
                 case "2":
                     // jugar
+                    // si no se ha seleccionado el dibujo, volver al menu
+                    if(dibujo!= null){
+                       
+                   
                     try {
                         palabraJugada = palabras.get(nJugadas);
                         jugar(palabraJugada);
                     } catch (NullPointerException ex) {
                         System.out.println("NO ES POSIBLE JUGAR PORQUE NO HAY PALABRAS");
+                    } }else{
+                        System.out.println("DEBES ELEGIR PRIMERO EL DIBUJO");
                     }
                     break; 
                 case "3": 
                         // leer puntuaciones
                         // ordenar el array - 
                         // mostrar array (solamente las 10 primeras posiciones)
-
+                     
                     try {
                         ArrayList<Usuario> usuarios = LeerUsuarios.getUsuarios();
                         Collections.sort(usuarios);
-                        for(int i=0; i<10; i++){
-                            System.out.println(usuarios.get(i));
-                        }
+                        mostrarPuntuaciones(usuarios); 
 
                     } catch (IOException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        
+                       System.out.println( ROJO + "NO HAY PUNTUACIONES PARA MOSTRAR" + RESET);
                     } 
-                case "S":
+                    break; 
+                case "s","S":
                 // GUARDAR LOS DATOS DEL USUARIO 
+
+                  usuario.setPuntuacion(Collections.max(puntuaciones));
                     try {
                         GuardarUsuario.escribirUsuario(usuario);
                     } catch (IOException e) {
@@ -140,6 +153,13 @@ public class Principal {
 
     }
 
+    private static void mostrarPuntuaciones(ArrayList<Usuario> usuarios){
+        Iterator<Usuario> it = usuarios.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        
+    }
     private static void mostrarDibujo(ArrayList<String> dibujo, int valor) {
         for (int i = 0; i < valor; i++) {
             System.out.println(dibujo.get(i));
@@ -147,8 +167,7 @@ public class Principal {
     }
 
     /**
-     * CONTINUAR AQUÍ
-     * 
+     *
      * @param palabra
      */
     private static void jugar(String palabra) {
@@ -161,6 +180,9 @@ public class Principal {
         StringBuilder palabraAdivinada = new StringBuilder(palabraOculta);
         char letra;
         int aciertos;
+        int valor; 
+         int puntuacion=0;
+     
 
         do {
             System.out.print(VERDE);
@@ -169,23 +191,29 @@ public class Principal {
             System.out.print(RESET);
             System.out.println("ESTA ES LA PALABRA QUE DEBES ADIVINAR");
             System.out.println(palabraOculta);
+            valor = MAX_PUNTUACION/palabraOculta.length(); 
 
             System.out.println("Introduce una letra");
-            letra = sc.nextLine().charAt(0);
+            letra = sc.nextLine().toLowerCase().charAt(0);
             if (esVocal(letra)) {
                 System.out.println("Las vocales son gratis, prueba con otra letra");
             } else if (letrasProbadas.contains(letra)) {
                 System.out.println("Esta letra ya la has intentado antes, prueba con otra letra");
             } 
             else if (letrasAcertadas.contains(letra)) {
+                // TODO - MOSTRAR LAS LETRAS ACERTADAS
+
                 System.out.println("Esta letra ya la has intentado antes, prueba con otra letra");
+                System.out.println("LETRAS ACERTADAS" + letrasAcertadas);
             }else {
 
                 // comprobar si la letra está en palabra
                 // TODO - con aciertos habrá que actualizar la puntuación
                 aciertos = contarLetra(palabra, letra);
 
+
                 if (aciertos > 0) {
+                    puntuacion += valor* aciertos; 
                     letrasAcertadas.add(letra);
                     System.out.println("La palabra contiene " + letra + " " + aciertos + " veces");
                     palabraOculta = sustituirLetra(palabra, palabraOculta, letra);
@@ -193,17 +221,26 @@ public class Principal {
                         // ACIERTO
                         solucion = false;
                         System.out.println(ROSA);
-                        System.out.println("HAS GANADO " + RESET);
+                        System.out.println("HAS GANADO ");
+                        System.out.println("PUNTUACIÓN ALCANZADA: " + puntuacion  + RESET);
+                        puntuaciones.add(puntuacion);
                     }
                 } else {
+                    // Por cada error, se resta un tercio de la puntuación obtenida hasta el momento. 
+                    
+                    puntuacion -= (puntuacion/3);
                     intentos++;
                     if (intentos >= dibujo.size()) {
+
+                        // guardar los datos de la puntuación obtenida
+                        System.out.println("PUNTUACIÓN ALCANZADA: " + puntuacion);
                         System.out.println(ROJO + "NO HAS ACERTADO, Y HAS PERDIDO!!!!" + RESET);
                     } else {
                         System.out.println(ROJO + "NO HAS ACERTADO, CONTINÚA JUGANDO" + RESET);
                         letrasProbadas.add(letra);
 
                     }
+                    System.out.println("PUNTUACIÓN ALCANZADA: " + puntuacion);
                     mostrarDibujo(dibujo, intentos);
                 }
           

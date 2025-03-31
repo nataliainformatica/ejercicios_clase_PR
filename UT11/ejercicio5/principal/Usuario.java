@@ -1,7 +1,7 @@
 package ejercicio5.principal;
 
 import java.time.LocalDate;
-import java.util.HashMap;
+
 
 public class Usuario implements Comparable<Usuario>{
     private String alias; 
@@ -17,7 +17,7 @@ public class Usuario implements Comparable<Usuario>{
     public Usuario(String alias, LocalDate fecha, int totalPuntuacion){
         this.alias = alias; 
         this.fecha = fecha; 
-        this.fecha = fecha; 
+        this.totalPuntuacion = totalPuntuacion; 
 
     }
     public void setPuntuacion(int puntos){
@@ -46,7 +46,7 @@ public class Usuario implements Comparable<Usuario>{
     public int compareTo(Usuario otroUsuario) {
         //se mostrarán los usuarios ordenados por puntuación
         
-        return Integer.compare(totalPuntuacion, otroUsuario.getTotalPuntuacion());
+        return Integer.compare(otroUsuario.getTotalPuntuacion(),totalPuntuacion );
     }
   
     @Override
@@ -73,6 +73,10 @@ public class Usuario implements Comparable<Usuario>{
         } else if (!alias.equals(other.alias))
             return false;
         return true;
+    }
+    @Override
+    public String toString() {
+        return "Alias=" + alias + ", fecha=" + fecha + ", totalPuntuacion=" + totalPuntuacion + "-";
     }
   
   

@@ -1,0 +1,10 @@
+ La serialización en Java te permite convertir objetos en un flujo de bytes para almacenarlos en archivos o transmitirlos 
+ a través de una red. 
+ Se hace con las clases del paquete java.io, como ObjectOutputStream y ObjectInputStream.
+
+Es necesario hacer que una clase sea serializable
+
+
+Si la clase tiene atributos que no deben ser serializados, márcalos con transient.
+La versión de la clase (serialVersionUID) asegura compatibilidad en cambios de la clase.
+Si un atributo es un objeto, esa clase también debe ser Serializable, o dará un error.

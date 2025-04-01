@@ -259,6 +259,69 @@ El juego tendrá una opción para mostrar las 10 mejores puntuaciones guardadas 
 Completa  el código de la carpeta ejercicio6_base, modifica el programa para que permita agregar nuevas personas a la lista sin borrar las anteriores.
 Añade un  menú para que permita mostrar  las personas de la lista, y una opción para añadir personas. 
 Modifica el código, de forma que la primera vez que se ejecuta la aplicación, muestre un mensaje de que no se pueden mostrar ningún dato (en lugar de guardar los datos del DAO)
+# Ejercicio 7
+Se pretende implementar un control de parkings de Alcalá, en los que pueden aparcar coches y motos y bicicletas eléctricas.
 
+Cumpliendo los requisitos que se especifican a continuación, completa la estructura de clases con sus correspondientes métodos y atributos, aparte de los métodos y atributos especificados puedes añadir los que estimes oportunos.
 
+Las características comunes a todos los parkings estarán en una clase **Parking**, que tendrá su _nombre_, _dirección_, una colección de **Plaza**, que almacenará las instancias de los vehículos que aparquen, y podrán ser de tres tipos: aparca un coche, aparca una moto y plaza con punto de recarga para vehículos eléctricos de los tres tipos (coche, moto o bicicleta). El tendrá definidos el número de plazas para coche, número de plazas para moto y número de plazas para recarga.
 
+De los coches es necesario conocer la _marca_, el _modelo_, la _matrícula y si es eléctrico la potencia máxima de recarga_. Parámetros que no se pueden  modificar.
+
+De una moto se necesita conocer la marca, el _modelo_ y la _matrícula_, _y si es eléctrico la potencia máxima de recarga_. Parámetros que no se pueden  modificar.
+
+De una bicicleta solo se necesita guardar  un número identificador que se le asigna en la entrada al parking.
+
+El identificador de bicicleta será un valor numérico que se obtendrá automáticamente. Para ello puede utilizarse una variable estática que se incrementará.
+
+Tanto **Coche** como **Moto** y **Bicicleta** implementan la interface:
+
+public interface recargable{
+
+public double consultarPotenciaCarga();
+
+// que devolverá los kW de potencia máxima de recarga
+
+Todos los parking deben ser capaces de mostrar su porcentaje de ocupación, (número de total de plazas ocupadas/ número total de plazas disponibles) .
+
+**public double mostrarOcupacion();**
+
+Cada **Plaza** del parking tiene un número asignado.
+
+La tarifa del parking es 0,05 x minuto, si se aparca en una plaza de coche, 0,03xminuto si se aparca en una plaza de moto,  y 0,1€ x Kw(PotenciaVehiculo) x minuto en las plazas de recarga. Por lo tanto la **_cantidadGanada_** la suma de todas las cantidades de las plazas.
+
+****A continuación se definen los métodos de comportamiento del parking:**
+
+**Si el parking no está completo** podrá aparcar y se ocupará una plaza.
+
+Para aparcar en una plaza normal, se implementará el método **aparcarNormal**, que permite solo aparcar a coches y motos, que ocupará una plaza normal (de coche si aparca un coche y de moto si aparca una moto), guardando los todos datos del vehículo que aparca y la hora de entrada.
+
+Para aparcar en una plaza de recarga, se implementará el método **aparcarRecarga**, que permite aparcar a coches, motos y bicicletas eléctricas, que ocupará una plaza de recarga, guardando los datos del vehículo y la hora de entrada.
+
+Para abandonar el parking, se implementará el método **salir** que recibirá el número de plaza del vehículo que va a salir  y la hora de salida. Devolverá el importe a pagar (calculado según el tipo de plaza ocupada) , además el método liberará la plaza ocupada, recalculando el importe que acumula la plaza.
+
+En el caso de que el parking esté completo, el método lanzará una excepción del tipo **Exception** con el nombre del parking y el número de plazas ocupadas, y el tipo de plaza que ha alcanzado el máximo.
+
+_Se debe guardar la excepción en una colección, de forma que se puedan consultar en cualquier momento._
+
+Parking deberá tener además los siguientes métodos de consulta:
+
+public double **mostrarCantidadGanada**();
+
+// devuelve  el total ganado por el parking con todas las plazas de aparcamiento
+
+public String **mostrarlistaPlazasOcupadas**();
+
+//devuelve una lista con las plazas que están ocupadas en el momento de la consulta. plaza con todos los detalles (número de plaza, tipo (coche, moto o eléctrica), cantidadAcumulada.
+
+public String **mostrarlistaPlazasLibres**();
+
+// devuelve una lista con las plazas que están libre en el momento de la consulta, plaza con todos los detalles (número de plaza, tipo (coche, moto o eléctrica), cantidadAcumulada.
+
+public String **mostrarlistaPlazasOrdenadas**();
+
+// mostrará la lista ordenada por número de plaza con todos los detalles (número de plaza, tipo (coche, moto o eléctrica), cantidadAcumulada.
+
+public String **mostrarlistaPlazasOcupadasOrdenadas**();
+
+// mostrará la lista ordenada por hora de ocupación, plaza con todos los detalles (número de plaza, tipo (coche, moto o eléctrica), cantidadAcumulada.

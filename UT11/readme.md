@@ -253,3 +253,12 @@ La decisión de cómo se asignan y cuántos se asignan es libre
 
 El juego tendrá una opción para mostrar las 10 mejores puntuaciones guardadas en el fichero binario. Ordenadas de mayor a menor.  Se mostrará la puntuación, el alias del usuario y la fecha
 
+
+# Ejercicio6
+
+Completa  el código de la carpeta ejercicio6_base, modifica el programa para que permita agregar nuevas personas a la lista sin borrar las anteriores.
+Añade un  menú para que permita mostrar  las personas de la lista, y una opción para añadir personas. 
+Modifica el código, de forma que la primera vez que se ejecuta la aplicación, muestre un mensaje de que no se pueden mostrar ningún dato (en lugar de guardar los datos del DAO)
+
+
+

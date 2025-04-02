@@ -26,19 +26,16 @@ El punto de partida de esta aplicación es que las personas ya están registrada
 -   número de empleado (String para  un código de empleado)
 -   password (contraseña)
 
-<![if !supportLists]>· <![endif]>**Registro**:
+**Registro**:
 
-<![if !supportLists]>o <![endif]>fecha (LocalDate)
+o	fecha (LocalDate)
+o	hora (LocalTime)
+o	Persona
 
-<![if !supportLists]>o <![endif]>hora (LocalTime)
+	Entrada y Salida, heredan de Registro 
+	Entrada tendrá el atributo : motivoEntrada
+	Salida, tendrá los atributos fechaEntrada, horaEntrada. 
 
-<![if !supportLists]>o <![endif]>Persona
-
-<![if !supportLists]>§ <![endif]>Entrada y Salida, heredan de **Registro**
-
-<![if !supportLists]>§ <![endif]>Entrada tendrá el atributo : `motivoEntrada`
-
-<![if !supportLists]>§ <![endif]>Salida, tendrá los atributos fechaEntrada, horaEntrada.
 
 -   **ExcepcionDeValidacion:** Excepción personalizada para errores de validación.
 
@@ -56,9 +53,9 @@ Si el usuario pulsa la opción de registro de acceso,  se le pedirá que se aute
 
 Si el usuario está en la lista de acceso al edificio (fichero),  se registrará su entrada y se le mostrará la opción de ver **sus** registros de entrada:
 
-<![if !supportLists]>1. <![endif]>Ver registros de entrada (ordenados por fecha y hora)
+1.	Ver registros de entrada (ordenados por fecha y hora)
+2.	Salir del menú (acceso al edificio).
 
-<![if !supportLists]>2. <![endif]>Salir del menú (acceso al edificio).
 
 Si el usuario pulsa la opción  registro de salida, se le pedirá que se autentique con su número de empleado y contraseña.
 

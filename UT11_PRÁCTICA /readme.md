@@ -28,13 +28,13 @@ El punto de partida de esta aplicación es que las personas ya están registrada
 
 **Registro**:
 
-o	fecha (LocalDate)
-o	hora (LocalTime)
-o	Persona
+.	fecha (LocalDate)
+.	hora (LocalTime)
+.	Persona
 
-	Entrada y Salida, heredan de Registro 
-	Entrada tendrá el atributo : motivoEntrada
-	Salida, tendrá los atributos fechaEntrada, horaEntrada. 
+ -Entrada y Salida, heredan de Registro 
+ - Entrada tendrá el atributo : motivoEntrada
+ - Salida, tendrá los atributos fechaEntrada, horaEntrada. 
 
 
 -   **ExcepcionDeValidacion:** Excepción personalizada para errores de validación.
